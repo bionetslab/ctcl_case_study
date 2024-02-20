@@ -27,10 +27,15 @@ if __name__ == '__main__':
     
     for heterogeneity_measure in heterogeneity_measures:
         if heterogeneity_measure=='egophily':
+            celltypes_=['T-cells', 'Fibroblasts', 'Suprabasal keratinocytes']
             local_heterogeneity_measure=[f'{heterogeneity_measure}_{radius}' for radius in radii]
             var_name=f'{heterogeneity_measure}_measure'
             value_name=f'{heterogeneity_measure}_score'
         else:
+            if heterogeneity_measure=='entropy':
+                celltypes_=['Macrophages', 'Basal keratinocytes', 'Endothelial cells', 'T-cells']
+            elif heterogeneity_measure=='homophily':
+                celltypes_=['T-cells', 'Basal keratinocytes']
             local_heterogeneity_measure=[f'local_{heterogeneity_measure}_{radius}' for radius in radii]
             var_name=f'local_{heterogeneity_measure}_measure'
             value_name=f'local_{heterogeneity_measure}_score'
@@ -72,7 +77,7 @@ if __name__ == '__main__':
             else:
                 plt.title(f'local {heterogeneity_measure} ({k[0]} vs {k[1]})', fontsize=25, pad=20)
             
-            plt.savefig(f'lineplot_pvals_{heterogeneity_measure}_{k[0]}vs{k[1]}.jpg', format='jpg', bbox_inches='tight')
+            plt.savefig(f'lineplot_pvals_{heterogeneity_measure}_{k[0]}vs{k[1]}.pdf', format='pdf', bbox_inches='tight')
                 
             plt.legend(title='Condition', bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0, fontsize=25, markerscale=3)
             plt.setp(ax.get_legend().get_texts(), fontsize='25') # for legend text

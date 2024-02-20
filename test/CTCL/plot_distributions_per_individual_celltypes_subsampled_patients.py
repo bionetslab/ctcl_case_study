@@ -22,11 +22,19 @@ if __name__ == '__main__':
     for i in celltypes_:
         for heterogeneity_measure in heterogeneity_measures:
             if heterogeneity_measure=='egophily':
+                if not(i in ['T-cells', 'Fibroblasts', 'Suprabasal keratinocytes']):
+                    continue
                 local_heterogeneity_measure=[f'{heterogeneity_measure}_{radius}' for radius in radii]
                 var_name=f'{heterogeneity_measure}_measure'
                 value_name=f'{heterogeneity_measure}_score'
                 suptitle=f'\n{heterogeneity_measure} ({i})'
             else:
+                if heterogeneity_measure=='entropy':
+                    if not(i in ['Macrophages', 'Basal keratinocytes', 'Endothelial cells', 'T-cells']):
+                        continue
+                elif heterogeneity_measure=='homophily':
+                    if not(i in ['T-cells', 'Basal keratinocytes']):
+                        continue
                 local_heterogeneity_measure=[f'local_{heterogeneity_measure}_{radius}' for radius in radii]
                 var_name=f'local_{heterogeneity_measure}_measure'
                 value_name=f'local_{heterogeneity_measure}_score'
@@ -57,11 +65,11 @@ if __name__ == '__main__':
                 ax.set_xlabel("radius\n")
                 ax.set_ylabel("-log10(p_value_adjusted)\n")
                 ax.set_xticklabels(radii) # , size=20
-            fig.suptitle(suptitle, weight='bold', fontsize=80, y=1.02)
+            fig.suptitle(suptitle, weight='bold', fontsize=15, y=1.001)
             plt.xlabel('radius') # fontsize=25, labelpad=20
             plt.ylabel(f'{heterogeneity_measure} score') # fontsize=25, labelpad=20
             plt.tight_layout(pad=1.08, h_pad=1.08, w_pad=1.08)
-            plt.savefig(f'{i}_{heterogeneity_measure}_subsampled_patients.jpg', format='jpg', bbox_inches='tight')
+            plt.savefig(f'{i}_{heterogeneity_measure}_subsampled_patients.pdf', format='pdf', bbox_inches='tight')
             plt.show()
             data_heterogeneity_measure=pd.concat(data_heterogeneity_measure, axis=0)
             

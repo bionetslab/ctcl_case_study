@@ -22,10 +22,12 @@ if __name__ == '__main__':
     radii=[1, 2, 3, 4, 5]
     for heterogeneity_measure in heterogeneity_measures:
         if heterogeneity_measure=='egophily':
+            plot_title=f'{heterogeneity_measure} (all celltypes)'
             local_heterogeneity_measure=[f'{heterogeneity_measure}_{radius}' for radius in radii]
             var_name=f'{heterogeneity_measure}_measure'
             value_name=f'{heterogeneity_measure}_score'
         else:
+            plot_title=f'local {heterogeneity_measure} (all celltypes)'
             local_heterogeneity_measure=[f'local_{heterogeneity_measure}_{radius}' for radius in radii]
             var_name=f'local_{heterogeneity_measure}_measure'
             value_name=f'local_{heterogeneity_measure}_score'
@@ -46,7 +48,7 @@ if __name__ == '__main__':
                 if float(p_)<0.05:
                     pvals.append('%.2E' % Decimal(p_))
                 else:
-                    pvals.append('$X$')
+                    pvals.append('$ns$')
                 
         pairs_pvals_dict=dict(zip(pairs, pvals))
         fig, axes = plt.subplots(figsize=(20,10))
@@ -67,8 +69,8 @@ if __name__ == '__main__':
         sns.set(font_scale = 1.2)
         sns.set_style("white")
         ax = sns.violinplot(**args, cut=0)
-        text = "$X$: non-significant"
-        txt=plt.text(.885, .7, text, ha='left', va='top', transform=plt.gcf().transFigure, fontsize=22, bbox=dict(boxstyle='square', fc='0.9', ec='0.9'))
+        # text = "$X$: non-significant"
+        # txt=plt.text(.885, .7, text, ha='left', va='top', transform=plt.gcf().transFigure, fontsize=22, bbox=dict(boxstyle='square', fc='0.9', ec='0.9'))
         ax.set_xticklabels(radii, size=20)
         annot = Annotator(ax, pairs, **args)
         annot.configure(text_format='simple', loc='inside', verbose=2, fontsize=25)
@@ -76,7 +78,7 @@ if __name__ == '__main__':
         annot.annotate()
         plt.xlabel('radius', fontsize=25, labelpad=20)
         plt.ylabel(f'{heterogeneity_measure} score', fontsize=25, labelpad=20)
-        plt.title(f'Local {heterogeneity_measure} (all celltypes)', fontsize=25, pad=20)
+        plt.title(plot_title, fontsize=25, pad=20)
         plt.legend(title='Condition', bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0)
         plt.setp(ax.get_legend().get_texts(), fontsize='25') # for legend text
         plt.setp(ax.get_legend().get_title(), fontsize='25') # for legend title
@@ -87,7 +89,7 @@ if __name__ == '__main__':
         for j in ax.get_yticks():
             xticks.append(round(j,1))
         ax.set_yticklabels(xticks, size = 20)
-        plt.savefig(f'all_celltypes_{heterogeneity_measure}_with_varying_radius.jpg', format='jpg', bbox_inches='tight')
+        plt.savefig(f'all_celltypes_{heterogeneity_measure}_with_varying_radius.pdf', format='pdf', bbox_inches='tight')
         fig.tight_layout()
         plt.show()
             

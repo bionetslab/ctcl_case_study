@@ -32,12 +32,24 @@ if __name__ == '__main__':
             plt.subplots_adjust(hspace=10, wspace=10)
             plt_count=-1
             row=-1
+            flag=0
             for radius in radii:
                 row+=1
                 if heterogeneity_measure=='egophily':
+                    if not(i in ['T-cells', 'Fibroblasts', 'Suprabasal keratinocytes']):
+                        flag=1
+                        continue
                     local_heterogeneity_measure=f'{heterogeneity_measure}_{radius}'
                     suptitle=f'\n{heterogeneity_measure} ({i})'
                 else:
+                    if heterogeneity_measure=='entropy':
+                        if not(i in ['Macrophages', 'Basal keratinocytes', 'Endothelial cells', 'T-cells']):
+                            flag=1
+                            continue
+                    elif heterogeneity_measure=='homophily':
+                        if not(i in ['T-cells', 'Basal keratinocytes']):
+                            flag=1
+                            continue
                     local_heterogeneity_measure=f'local_{heterogeneity_measure}_{radius}'
                     suptitle=f'\nlocal {heterogeneity_measure} ({i})'
                 col=-1
@@ -51,6 +63,15 @@ if __name__ == '__main__':
                         df=p_values_cell_type_shuffled_labels[p_values_cell_type_shuffled_labels['cell_type']==i][p_values_cell_type_shuffled_labels['condition_1']==dis_comb[0]][p_values_cell_type_shuffled_labels['condition_2']==dis_comb[1]][p_values_cell_type_shuffled_labels['score']==local_heterogeneity_measure]
                         p=float(p_values_cell_type[p_values_cell_type['cell_type']==i][p_values_cell_type['condition_1']==dis_comb[0]][p_values_cell_type['condition_2']==dis_comb[1]][p_values_cell_type['score']==local_heterogeneity_measure]['p_value_adj'].values[0])
                     df['minus_log10_p_value_adj'] = -np.log10(df['p_value_adj'])
+                    df=df.sort_values(by=['minus_log10_p_value_adj'])
+                    df_=df.copy()
+                    # =================== Family-wise error correction (FWER) section ===================
+                    percentile=0.95
+                    scaling_ratio=1-percentile
+                    no_of_elements_to_be_dropped=int(round(scaling_ratio*len(df),1))
+                    # df = df.iloc[no_of_elements_to_be_dropped:]
+                    df[df.minus_log10_p_value_adj > np.percentile(df.minus_log10_p_value_adj,5)]
+                    # ===================================================================================
                     ax=sns.histplot(ax=axes[row, col], data=df, x="minus_log10_p_value_adj", kde=True)
                     ax.axvline(x=p, color='red')
                     # This will add title to subplot:
@@ -59,11 +80,13 @@ if __name__ == '__main__':
                     ax.set_xlabel("-log10(p_value_adjusted)\n", fontsize=50) 
                     # This will add label to y-axis:
                     ax.set_ylabel(f"$radius={radius}$", fontsize=50)
+            if flag==1:
+                continue
             fig.suptitle(suptitle, weight='bold', fontsize=80, y=1.02)
             plt.xlabel('radius') # fontsize=25, labelpad=20
             plt.ylabel(f'{heterogeneity_measure} score') # fontsize=25, labelpad=20
             plt.tight_layout(pad=1.08, h_pad=1.08, w_pad=1.08)
-            plt.savefig(f'{i}_{heterogeneity_measure}_shuffled_labels.jpg', format='jpg', bbox_inches='tight')
+            plt.savefig(f'{i}_{heterogeneity_measure}_shuffled_labels.pdf', format='pdf', bbox_inches='tight')
             plt.show()
     
     
