@@ -1,0 +1,4 @@
+,condition_1,condition_2,score,statistic,p_value,p_value_adj
+0,T-Cell Lymphoma,Psoriasis,sq_ne_zscore,756481.0,0.707833850348311,2.1235015510449333
+1,T-Cell Lymphoma,Eczema,sq_ne_zscore,680230.0,0.18879963766317698,0.5663989129895309
+2,Psoriasis,Eczema,sq_ne_zscore,853716.0,0.41292937800065443,1.2387881340019633

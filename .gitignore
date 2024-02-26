@@ -164,4 +164,3 @@ cython_debug/
 .virtual_documents/
 .ipynb_checkpoints/
 .DS_Store
-.git

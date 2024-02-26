@@ -1,0 +1,100 @@
+,condition_1,condition_2,score,celltypes,statistic,p_value,p_value_adj
+0,T-Cell Lymphoma,Psoriasis,degree_centrality,Melanocytes,322.0,0.10243217772386698,3.3802618648876104
+1,T-Cell Lymphoma,Psoriasis,degree_centrality,Smooth muscle cells,300.0,0.25819835941037816,8.52054586054248
+2,T-Cell Lymphoma,Psoriasis,degree_centrality,Unknown,302.0,0.3897582619680309,12.862022644945018
+3,T-Cell Lymphoma,Psoriasis,degree_centrality,Langerhans cells,272.0,0.6233595356671733,20.57086467701672
+4,T-Cell Lymphoma,Psoriasis,degree_centrality,T-cells,329.0,0.14553666810089563,4.8027100473295565
+5,T-Cell Lymphoma,Psoriasis,degree_centrality,Fibroblasts,315.0,0.2514886301531659,8.299124795054475
+6,T-Cell Lymphoma,Psoriasis,degree_centrality,B-cells,314.0,0.2607210961046498,8.603796171453443
+7,T-Cell Lymphoma,Psoriasis,degree_centrality,Macrophages,160.0,0.040921543701362924,1.3504109421449766
+8,T-Cell Lymphoma,Psoriasis,degree_centrality,Basal keratinocytes,299.0,0.4272549894438956,14.099414651648555
+9,T-Cell Lymphoma,Psoriasis,degree_centrality,Endothelial cells,240.0,0.8282064440001347,27.330812652004443
+10,T-Cell Lymphoma,Psoriasis,degree_centrality,Suprabasal keratinocytes,323.0,0.0977184373155155,3.224708431412011
+11,T-Cell Lymphoma,Psoriasis,average_clustering,Melanocytes,260.0,0.8282120143814183,27.330996474586804
+12,T-Cell Lymphoma,Psoriasis,average_clustering,Smooth muscle cells,248.0,0.9726678961900564,32.09804057427186
+13,T-Cell Lymphoma,Psoriasis,average_clustering,Unknown,218.0,0.33188730533225697,10.95228107596448
+14,T-Cell Lymphoma,Psoriasis,average_clustering,Langerhans cells,202.0,0.27793208250989443,9.171758722826516
+15,T-Cell Lymphoma,Psoriasis,average_clustering,T-cells,283.0,0.6591737034876037,21.752732215090923
+16,T-Cell Lymphoma,Psoriasis,average_clustering,Fibroblasts,280.0,0.7077377131967695,23.355344535493394
+17,T-Cell Lymphoma,Psoriasis,average_clustering,B-cells,351.0,0.05230210203645797,1.7259693672031131
+18,T-Cell Lymphoma,Psoriasis,average_clustering,Macrophages,199.0,0.24870468992498762,8.207254767524592
+19,T-Cell Lymphoma,Psoriasis,average_clustering,Basal keratinocytes,335.0,0.1123326125214414,3.7069762132075663
+20,T-Cell Lymphoma,Psoriasis,average_clustering,Endothelial cells,354.0,0.018069812563357247,0.5963038145907892
+21,T-Cell Lymphoma,Psoriasis,average_clustering,Suprabasal keratinocytes,239.0,0.8104566987637252,26.745071059202928
+22,T-Cell Lymphoma,Psoriasis,closeness_centrality,Melanocytes,333.0,0.059506457393908856,1.9637130939989922
+23,T-Cell Lymphoma,Psoriasis,closeness_centrality,Smooth muscle cells,311.0,0.16699707002433717,5.510903310803126
+24,T-Cell Lymphoma,Psoriasis,closeness_centrality,Unknown,300.0,0.4145284972982055,13.679440410840781
+25,T-Cell Lymphoma,Psoriasis,closeness_centrality,Langerhans cells,275.0,0.5757390449173081,18.99938848227117
+26,T-Cell Lymphoma,Psoriasis,closeness_centrality,T-cells,326.0,0.16473516911059038,5.436260580649483
+27,T-Cell Lymphoma,Psoriasis,closeness_centrality,Fibroblasts,338.0,0.09813695309056737,3.2385194519887235
+28,T-Cell Lymphoma,Psoriasis,closeness_centrality,B-cells,318.0,0.22516833779793355,7.430555147331807
+29,T-Cell Lymphoma,Psoriasis,closeness_centrality,Macrophages,164.0,0.050824616773770086,1.6772123535344128
+30,T-Cell Lymphoma,Psoriasis,closeness_centrality,Basal keratinocytes,307.0,0.33188730533225697,10.95228107596448
+31,T-Cell Lymphoma,Psoriasis,closeness_centrality,Endothelial cells,240.0,0.8282064440001347,27.330812652004443
+32,T-Cell Lymphoma,Psoriasis,closeness_centrality,Suprabasal keratinocytes,319.0,0.11766493734301339,3.8829429323194415
+33,T-Cell Lymphoma,Eczema,degree_centrality,Melanocytes,301.0,0.08604839608714113,2.8395970708756577
+34,T-Cell Lymphoma,Eczema,degree_centrality,Smooth muscle cells,345.0,0.005303655512164833,0.17502063190143952
+35,T-Cell Lymphoma,Eczema,degree_centrality,Unknown,311.0,0.10495610887823381,3.463551592981716
+36,T-Cell Lymphoma,Eczema,degree_centrality,Langerhans cells,238.0,0.8550967534607166,28.218192864203647
+37,T-Cell Lymphoma,Eczema,degree_centrality,T-cells,370.0,0.0026331530987118014,0.08689405225748945
+38,T-Cell Lymphoma,Eczema,degree_centrality,Fibroblasts,368.0,0.003070294786730068,0.10131972796209225
+39,T-Cell Lymphoma,Eczema,degree_centrality,B-cells,316.0,0.08207495836588108,2.708473626074076
+40,T-Cell Lymphoma,Eczema,degree_centrality,Macrophages,277.0,0.2575337358398482,8.49861328271499
+41,T-Cell Lymphoma,Eczema,degree_centrality,Basal keratinocytes,252.0,0.8142326965950385,26.86967898763627
+42,T-Cell Lymphoma,Eczema,degree_centrality,Endothelial cells,91.0,0.00074524416020532,0.02459305728677556
+43,T-Cell Lymphoma,Eczema,degree_centrality,Suprabasal keratinocytes,346.0,0.004918295148215493,0.16230373989111127
+44,T-Cell Lymphoma,Eczema,average_clustering,Melanocytes,210.0,0.6349223086646061,20.952436185932
+45,T-Cell Lymphoma,Eczema,average_clustering,Smooth muscle cells,245.0,0.7240405011700659,23.893336538612175
+46,T-Cell Lymphoma,Eczema,average_clustering,Unknown,201.0,0.34728091149844165,11.460270079448573
+47,T-Cell Lymphoma,Eczema,average_clustering,Langerhans cells,211.0,0.6523781434283309,21.528478733134918
+48,T-Cell Lymphoma,Eczema,average_clustering,T-cells,183.0,0.17293895359148737,5.706985468519083
+49,T-Cell Lymphoma,Eczema,average_clustering,Fibroblasts,242.0,1.0,33.0
+50,T-Cell Lymphoma,Eczema,average_clustering,B-cells,254.0,0.7779719191378374,25.673073331548633
+51,T-Cell Lymphoma,Eczema,average_clustering,Macrophages,230.0,1.0,33.0
+52,T-Cell Lymphoma,Eczema,average_clustering,Basal keratinocytes,248.0,0.8878845766803175,29.300191030450478
+53,T-Cell Lymphoma,Eczema,average_clustering,Endothelial cells,175.0,0.18449761667238818,6.08842135018881
+54,T-Cell Lymphoma,Eczema,average_clustering,Suprabasal keratinocytes,214.0,0.7058665706751424,23.2935968322797
+55,T-Cell Lymphoma,Eczema,closeness_centrality,Melanocytes,291.0,0.140716287599524,4.643637490784292
+56,T-Cell Lymphoma,Eczema,closeness_centrality,Smooth muscle cells,353.0,0.002856417287266896,0.09426177047980756
+57,T-Cell Lymphoma,Eczema,closeness_centrality,Unknown,311.0,0.10495610887823381,3.463551592981716
+58,T-Cell Lymphoma,Eczema,closeness_centrality,Langerhans cells,243.0,0.7608494708312427,25.108032537431008
+59,T-Cell Lymphoma,Eczema,closeness_centrality,T-cells,373.0,0.002083281090605933,0.06874827598999579
+60,T-Cell Lymphoma,Eczema,closeness_centrality,Fibroblasts,346.0,0.014538359324946305,0.47976585772322805
+61,T-Cell Lymphoma,Eczema,closeness_centrality,B-cells,310.0,0.11008970884332092,3.6329603918295903
+62,T-Cell Lymphoma,Eczema,closeness_centrality,Macrophages,287.0,0.16890464298591468,5.573853218535184
+63,T-Cell Lymphoma,Eczema,closeness_centrality,Basal keratinocytes,257.0,0.7244980441857846,23.908435458130892
+64,T-Cell Lymphoma,Eczema,closeness_centrality,Endothelial cells,90.0,0.0006819904644825624,0.02250568532792456
+65,T-Cell Lymphoma,Eczema,closeness_centrality,Suprabasal keratinocytes,339.0,0.008244427041938299,0.27206609238396384
+66,Psoriasis,Eczema,degree_centrality,Melanocytes,297.0,0.8526500911757777,28.137453008800666
+67,Psoriasis,Eczema,degree_centrality,Smooth muscle cells,379.0,0.06037852377658893,1.9924912846274347
+68,Psoriasis,Eczema,degree_centrality,Unknown,319.0,0.5223255076619273,17.236741752843603
+69,Psoriasis,Eczema,degree_centrality,Langerhans cells,284.0,0.9506323342980048,31.370867031834155
+70,Psoriasis,Eczema,degree_centrality,T-cells,378.0,0.06325686343591062,2.0874764933850503
+71,Psoriasis,Eczema,degree_centrality,Fibroblasts,376.0,0.06935402398615084,2.288682791542978
+72,Psoriasis,Eczema,degree_centrality,B-cells,338.0,0.30212892624113963,9.970254565957609
+73,Psoriasis,Eczema,degree_centrality,Macrophages,436.0,0.0022554044876772397,0.0744283480933489
+74,Psoriasis,Eczema,degree_centrality,Basal keratinocytes,257.0,0.5358325366152676,17.68247370830383
+75,Psoriasis,Eczema,degree_centrality,Endothelial cells,106.0,0.00018734077875110264,0.006182245698786387
+76,Psoriasis,Eczema,degree_centrality,Suprabasal keratinocytes,379.0,0.06037852377658893,1.9924912846274347
+77,Psoriasis,Eczema,average_clustering,Melanocytes,224.0,0.19354366517540622,6.386940950788405
+78,Psoriasis,Eczema,average_clustering,Smooth muscle cells,316.0,0.563363980394146,18.591011353006817
+79,Psoriasis,Eczema,average_clustering,Unknown,266.0,0.6647321388663945,21.936160582591018
+80,Psoriasis,Eczema,average_clustering,Langerhans cells,292.0,0.9342091217624057,30.82890101815939
+81,Psoriasis,Eczema,average_clustering,T-cells,197.0,0.06325686343591062,2.0874764933850503
+82,Psoriasis,Eczema,average_clustering,Fibroblasts,266.0,0.6647321388663945,21.936160582591018
+83,Psoriasis,Eczema,average_clustering,B-cells,197.0,0.06325686343591062,2.0874764933850503
+84,Psoriasis,Eczema,average_clustering,Macrophages,325.0,0.44511145053926726,14.68867786779582
+85,Psoriasis,Eczema,average_clustering,Basal keratinocytes,226.0,0.20806932078640417,6.866287585951337
+86,Psoriasis,Eczema,average_clustering,Endothelial cells,116.0,0.0004169423361280684,0.013759097092226256
+87,Psoriasis,Eczema,average_clustering,Suprabasal keratinocytes,264.0,0.6350263239877817,20.955868691596795
+88,Psoriasis,Eczema,closeness_centrality,Melanocytes,260.0,0.5773808702960059,19.053568719768197
+89,Psoriasis,Eczema,closeness_centrality,Smooth muscle cells,380.0,0.05760960410933568,1.9011169356080775
+90,Psoriasis,Eczema,closeness_centrality,Unknown,322.0,0.48288028057020904,15.935049258816898
+91,Psoriasis,Eczema,closeness_centrality,Langerhans cells,284.0,0.9506323342980048,31.370867031834155
+92,Psoriasis,Eczema,closeness_centrality,T-cells,370.0,0.0905923830563098,2.9895486408582235
+93,Psoriasis,Eczema,closeness_centrality,Fibroblasts,321.0,0.4958462002606573,16.36292460860169
+94,Psoriasis,Eczema,closeness_centrality,B-cells,330.0,0.3860635805028645,12.740098156594527
+95,Psoriasis,Eczema,closeness_centrality,Macrophages,434.0,0.0025860568682222764,0.08533987665133512
+96,Psoriasis,Eczema,closeness_centrality,Basal keratinocytes,249.0,0.43290643043315513,14.28591220429412
+97,Psoriasis,Eczema,closeness_centrality,Endothelial cells,104.0,0.0001588697778139084,0.0052427026678589774
+98,Psoriasis,Eczema,closeness_centrality,Suprabasal keratinocytes,375.0,0.07257900615022346,2.3951072029573743
