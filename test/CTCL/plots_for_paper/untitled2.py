@@ -1,17 +1,9 @@
 import pandas as pd
-import scipy.stats as stats
 import os
-import itertools as itt
-from IPython.display import set_matplotlib_formats
 import seaborn as sns
 sns.set_theme(style="whitegrid")
 import matplotlib.pyplot as plt
 import numpy as np
-import itertools
-from statannotations.Annotator import Annotator
-from decimal import Decimal
-from _plot_distributions_per_individual_celltypes_ import _plot_distributions_per_individual_celltypes_
-from _plot_tcells_nhood_enrichment_ import _plot_tcells_nhood_enrichment_
 import scanpy as sc
 import random
 
@@ -58,50 +50,40 @@ if __name__ == '__main__':
     df_by_patient_ids['condition']=condition
     
     # =========== Read in spatial data: ===========
+    list_of_filenames=[]
     adatas={}
     for filename in os.listdir('../data'):
         filename = os.fsdecode(filename)
-        print(f'Reading file {filename}...')
         if filename.endswith('.h5ad'):
+            print(f'Reading file {filename}...')
+            list_of_filenames.append(filename)
             adata = sc.read_h5ad('../data/'+filename)
             adatas[filename]=adata
             prop_iodide=adata.uns['spatial']['images']['Propidium iodide']
-            segmentation=adata.uns['spatial']['segmentation']
-            x_coords=np.nonzero(adata.uns['spatial']['segmentation'])[0]
-            y_coords=np.nonzero(adata.uns['spatial']['segmentation'])[1]
-            coords=merge(x_coords, y_coords)
-            res = list(map(segmentation.__getitem__, coords))
             fig, axes = plt.subplots(figsize=(10,10))
-            axes.imshow(prop_iodide, cmap='gray')
+            ax=axes.imshow(prop_iodide, cmap='gray')
+            ax.axes.get_xaxis().set_visible(False)
+            ax.axes.get_yaxis().set_visible(False)
             mapping=dict(zip(list(adata.obs['cell_id']), list(adata.obs['celltype'])))
-            adata_df=pd.DataFrame()
-            adata_df['x']=x_coords
-            adata_df['y']=y_coords
-            adata_df['celltype']=[mapping.get(item,item) for item in res]
+            # Prepare spatial data:
+            spatial_data=pd.DataFrame(adata.obsm['spatial'])
+            spatial_data=spatial_data.rename(columns={0:'x' , 1:'y'})
+            spatial_data['celltype']=list(adata.obs['celltype'])
             
             # ========== Subsample n cells per sample (i.e., section of tissue) for generation of scatter plot: ==========
-            delta_sample=random.sample(coords, 10000)
-            res = list(map(segmentation.__getitem__, delta_sample))
-            mapping=dict(zip(list(adata.obs['cell_id']), list(adata.obs['celltype'])))
-            df = pd.DataFrame(delta_sample, columns =['x', 'y'])
-            df['celltype']=[mapping.get(item,item) for item in res]
-            
-            
             
             xlabel='x'
             ylabel='y'
             # ax = sns.scatterplot(data=adata_df, x="x", y="y", hue="celltype", palette='Set3', s=30)
-            ax = sns.scatterplot(data=df, x="y", y="x", hue="celltype", palette='Set3', s=30)
-            ax.set(xlabel=xlabel, ylabel=ylabel, title=f'Cell types')
+            ax = sns.scatterplot(data=spatial_data, x="y", y="x", hue="celltype", palette='Set3', s=20)
+            ax.set(xlabel=None, ylabel=None, title='Cell types')
             ax.invert_yaxis()
-            ax.tick_params(left=False, bottom=False)
             sns.move_legend(
                 ax, "upper right",
                 bbox_to_anchor=(1.03, -0.08), ncol=3, title=None, frameon=False,
             )
-            
-            
-            plt.savefig(f'{adata.uns["Group"][0]}_{filename}.pdf', format='pdf', bbox_inches='tight')
+            ax.grid(False) # Turns off grid.
+            plt.savefig(f'{adata.uns["Group"][0]}_{filename}(patient_id {adata.uns["patient_id"][0]}).pdf', format='pdf', bbox_inches='tight')
             plt.show()
             plt.close()
             
