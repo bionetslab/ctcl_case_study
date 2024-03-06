@@ -12,7 +12,6 @@ from decimal import Decimal
 
 if __name__ == '__main__':
     p_values_cell_type_subsampled_patientwise=pd.read_csv(os.path.join('results', 'p_values_cell_type_subsampled_patientwise.csv'))    
-    sample_results=pd.read_csv(os.path.join('results', 'sample_results.csv'))
     celltypes_=list(np.unique(p_values_cell_type_subsampled_patientwise['cell_type']))
     heterogeneity_measures=['entropy', 'homophily', 'egophily']
     conditions_=list(set(np.unique(p_values_cell_type_subsampled_patientwise.condition_1)).union(set(np.unique(p_values_cell_type_subsampled_patientwise.condition_2))))
@@ -58,12 +57,15 @@ if __name__ == '__main__':
                 data_heterogeneity_measure.append(data_disease_combinations)
                 df=data_disease_combinations.copy()
                 df=df[['score', 'p_value_adj']]
-                df['minus_log10_p_value_adj'] = -np.log10(df['p_value_adj'])
-                args = dict(ax=axes[row], x='score', y='minus_log10_p_value_adj', data=df)
+                # df['minus_log10_p_value_adj'] = -np.log10(df['p_value_adj'])
+                # args = dict(ax=axes[row], x='score', y='minus_log10_p_value_adj', data=df)
+                args = dict(ax=axes[row], x='score', y='p_value_adj', data=df)
                 ax = sns.boxplot(**args)
-                ax.set_title(f'')
+                title=str(j)
+                ax.set_title(f'{title}')
                 ax.set_xlabel("radius\n")
-                ax.set_ylabel("-log10(p_value_adjusted)\n")
+                # ax.set_ylabel("-log10(p_value_adjusted)\n")
+                ax.set_ylabel("p_value_adjusted\n")
                 ax.set_xticklabels(radii) # , size=20
             fig.suptitle(suptitle, weight='bold', fontsize=15, y=1.001)
             plt.xlabel('radius') # fontsize=25, labelpad=20

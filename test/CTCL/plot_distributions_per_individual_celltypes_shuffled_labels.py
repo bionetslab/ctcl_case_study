@@ -12,6 +12,7 @@ import itertools
 from statannotations.Annotator import Annotator
 from decimal import Decimal
 import numpy as np
+from decimal import Decimal
 
 if __name__ == '__main__':
     p_values_cell_type=pd.read_csv(os.path.join('results', 'p_values_cell_type.csv'))
@@ -57,13 +58,18 @@ if __name__ == '__main__':
                     plt_count+=1
                     col+=1
                     if len(p_values_cell_type[p_values_cell_type['cell_type']==i][p_values_cell_type['condition_1']==dis_comb[0]][p_values_cell_type['condition_2']==dis_comb[1]][p_values_cell_type['score']==local_heterogeneity_measure]['p_value_adj'])==0:
-                        df=p_values_cell_type_shuffled_labels[p_values_cell_type_shuffled_labels['cell_type']==i][p_values_cell_type_shuffled_labels['condition_1']==dis_comb[1]][p_values_cell_type_shuffled_labels['condition_2']==dis_comb[0]][p_values_cell_type_shuffled_labels['score']==local_heterogeneity_measure]
                         p=float(p_values_cell_type[p_values_cell_type['cell_type']==i][p_values_cell_type['condition_1']==dis_comb[1]][p_values_cell_type['condition_2']==dis_comb[0]][p_values_cell_type['score']==local_heterogeneity_measure]['p_value_adj'].values[0])
                     else:
-                        df=p_values_cell_type_shuffled_labels[p_values_cell_type_shuffled_labels['cell_type']==i][p_values_cell_type_shuffled_labels['condition_1']==dis_comb[0]][p_values_cell_type_shuffled_labels['condition_2']==dis_comb[1]][p_values_cell_type_shuffled_labels['score']==local_heterogeneity_measure]
                         p=float(p_values_cell_type[p_values_cell_type['cell_type']==i][p_values_cell_type['condition_1']==dis_comb[0]][p_values_cell_type['condition_2']==dis_comb[1]][p_values_cell_type['score']==local_heterogeneity_measure]['p_value_adj'].values[0])
+                    df=p_values_cell_type_shuffled_labels[p_values_cell_type_shuffled_labels['cell_type']==i][p_values_cell_type_shuffled_labels['condition_1']==dis_comb[1]][p_values_cell_type_shuffled_labels['condition_2']==dis_comb[0]][p_values_cell_type_shuffled_labels['score']==local_heterogeneity_measure]
+                    if len(df)==0: # The (condition_1, condition_2) column pair values are just filled (because the snytzetic data contains pairs in alphabetical order, i.e., condition_1 value always smaller than condition_2 value alphabetically.)
+                        df=p_values_cell_type_shuffled_labels[p_values_cell_type_shuffled_labels['cell_type']==i][p_values_cell_type_shuffled_labels['condition_1']==dis_comb[0]][p_values_cell_type_shuffled_labels['condition_2']==dis_comb[1]][p_values_cell_type_shuffled_labels['score']==local_heterogeneity_measure]
                     df['minus_log10_p_value_adj'] = -np.log10(df['p_value_adj'])
-                    df=df.sort_values(by=['minus_log10_p_value_adj'])
+                    df['minus_log10_p_value'] = -np.log10(df['p_value'])
+                    # Sort by adjusted p-values:
+                    # df=df.sort_values(by=['minus_log10_p_value_adj'])
+                    # Sort by non-adjusted p-values:
+                    df=df.sort_values(by=['minus_log10_p_value'])
                     df_=df.copy()
                     # =================== Family-wise error correction (FWER) section ===================
                     percentile=0.95
@@ -73,11 +79,16 @@ if __name__ == '__main__':
                     df[df.minus_log10_p_value_adj > np.percentile(df.minus_log10_p_value_adj,5)]
                     # ===================================================================================
                     ax=sns.histplot(ax=axes[row, col], data=df, x="minus_log10_p_value_adj", kde=True)
-                    ax.axvline(x=p, color='red')
+                    # ax.axvline(x=p, color='red')
+                    text_str=str('%.2E' % Decimal(p))                  
+                    # Show texts
+                    # ax.text(0.1, 0.5, 'p-value of actual data={text_str}', horizontalalignment='center', verticalalignment='center', transform=ax.transAxes)
+                    ax.text(0.74, 0.92, '$p_{actual}$='+text_str, transform=ax.transAxes, fontsize=30)
+                    
                     # This will add title to subplot:
                     ax.set_title(str(dis_comb), fontsize=60)
                     # This will add label to x-axis:
-                    ax.set_xlabel("-log10(p_value_adjusted)\n", fontsize=50) 
+                    ax.set_xlabel("-log10($p_{shuffled}$)\n", fontsize=50) 
                     # This will add label to y-axis:
                     ax.set_ylabel(f"$radius={radius}$", fontsize=50)
             if flag==1:

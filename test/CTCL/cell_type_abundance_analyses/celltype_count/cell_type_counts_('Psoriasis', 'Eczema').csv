@@ -1,0 +1,529 @@
+,celltype,value,category
+0,Endothelial cells,250,Psoriasis
+1,Endothelial cells,847,Psoriasis
+2,Endothelial cells,373,Psoriasis
+3,Endothelial cells,442,Psoriasis
+4,Endothelial cells,237,Psoriasis
+5,Endothelial cells,521,Psoriasis
+6,Endothelial cells,299,Psoriasis
+7,Endothelial cells,312,Psoriasis
+8,Endothelial cells,865,Psoriasis
+9,Endothelial cells,312,Psoriasis
+10,Endothelial cells,190,Psoriasis
+11,Endothelial cells,166,Psoriasis
+12,Endothelial cells,208,Psoriasis
+13,Endothelial cells,262,Psoriasis
+14,Endothelial cells,469,Psoriasis
+15,Endothelial cells,141,Psoriasis
+16,Endothelial cells,609,Psoriasis
+17,Endothelial cells,770,Psoriasis
+18,Endothelial cells,554,Psoriasis
+19,Endothelial cells,477,Psoriasis
+20,Endothelial cells,371,Psoriasis
+21,Endothelial cells,342,Psoriasis
+22,Endothelial cells,114,Psoriasis
+23,Endothelial cells,547,Psoriasis
+24,Endothelial cells,635,Psoriasis
+25,Endothelial cells,753,Eczema
+26,Endothelial cells,754,Eczema
+27,Endothelial cells,470,Eczema
+28,Endothelial cells,1302,Eczema
+29,Endothelial cells,770,Eczema
+30,Endothelial cells,1066,Eczema
+31,Endothelial cells,560,Eczema
+32,Endothelial cells,699,Eczema
+33,Endothelial cells,1354,Eczema
+34,Endothelial cells,136,Eczema
+35,Endothelial cells,85,Eczema
+36,Endothelial cells,427,Eczema
+37,Endothelial cells,291,Eczema
+38,Endothelial cells,437,Eczema
+39,Endothelial cells,141,Eczema
+40,Endothelial cells,564,Eczema
+41,Endothelial cells,238,Eczema
+42,Endothelial cells,609,Eczema
+43,Endothelial cells,533,Eczema
+44,Endothelial cells,827,Eczema
+45,Endothelial cells,135,Eczema
+46,Endothelial cells,364,Eczema
+47,Endothelial cells,673,Eczema
+48,T-cells,121,Psoriasis
+49,T-cells,154,Psoriasis
+50,T-cells,656,Psoriasis
+51,T-cells,321,Psoriasis
+52,T-cells,249,Psoriasis
+53,T-cells,389,Psoriasis
+54,T-cells,284,Psoriasis
+55,T-cells,284,Psoriasis
+56,T-cells,830,Psoriasis
+57,T-cells,251,Psoriasis
+58,T-cells,571,Psoriasis
+59,T-cells,404,Psoriasis
+60,T-cells,426,Psoriasis
+61,T-cells,258,Psoriasis
+62,T-cells,785,Psoriasis
+63,T-cells,477,Psoriasis
+64,T-cells,249,Psoriasis
+65,T-cells,304,Psoriasis
+66,T-cells,426,Psoriasis
+67,T-cells,537,Psoriasis
+68,T-cells,343,Psoriasis
+69,T-cells,385,Psoriasis
+70,T-cells,261,Psoriasis
+71,T-cells,407,Psoriasis
+72,T-cells,468,Psoriasis
+73,T-cells,105,Eczema
+74,T-cells,63,Eczema
+75,T-cells,137,Eczema
+76,T-cells,476,Eczema
+77,T-cells,69,Eczema
+78,T-cells,250,Eczema
+79,T-cells,430,Eczema
+80,T-cells,39,Eczema
+81,T-cells,184,Eczema
+82,T-cells,132,Eczema
+83,T-cells,174,Eczema
+84,T-cells,106,Eczema
+85,T-cells,172,Eczema
+86,T-cells,99,Eczema
+87,T-cells,86,Eczema
+88,T-cells,261,Eczema
+89,T-cells,549,Eczema
+90,T-cells,364,Eczema
+91,T-cells,181,Eczema
+92,T-cells,639,Eczema
+93,T-cells,27,Eczema
+94,T-cells,210,Eczema
+95,T-cells,563,Eczema
+96,B-cells,255,Psoriasis
+97,B-cells,167,Psoriasis
+98,B-cells,325,Psoriasis
+99,B-cells,208,Psoriasis
+100,B-cells,73,Psoriasis
+101,B-cells,233,Psoriasis
+102,B-cells,254,Psoriasis
+103,B-cells,259,Psoriasis
+104,B-cells,428,Psoriasis
+105,B-cells,125,Psoriasis
+106,B-cells,177,Psoriasis
+107,B-cells,265,Psoriasis
+108,B-cells,487,Psoriasis
+109,B-cells,167,Psoriasis
+110,B-cells,342,Psoriasis
+111,B-cells,254,Psoriasis
+112,B-cells,114,Psoriasis
+113,B-cells,480,Psoriasis
+114,B-cells,194,Psoriasis
+115,B-cells,234,Psoriasis
+116,B-cells,152,Psoriasis
+117,B-cells,235,Psoriasis
+118,B-cells,198,Psoriasis
+119,B-cells,278,Psoriasis
+120,B-cells,174,Psoriasis
+121,B-cells,85,Eczema
+122,B-cells,48,Eczema
+123,B-cells,133,Eczema
+124,B-cells,265,Eczema
+125,B-cells,54,Eczema
+126,B-cells,147,Eczema
+127,B-cells,397,Eczema
+128,B-cells,62,Eczema
+129,B-cells,124,Eczema
+130,B-cells,144,Eczema
+131,B-cells,86,Eczema
+132,B-cells,39,Eczema
+133,B-cells,416,Eczema
+134,B-cells,69,Eczema
+135,B-cells,233,Eczema
+136,B-cells,113,Eczema
+137,B-cells,300,Eczema
+138,B-cells,233,Eczema
+139,B-cells,116,Eczema
+140,B-cells,284,Eczema
+141,B-cells,30,Eczema
+142,B-cells,189,Eczema
+143,B-cells,255,Eczema
+144,Macrophages,960,Psoriasis
+145,Macrophages,174,Psoriasis
+146,Macrophages,422,Psoriasis
+147,Macrophages,184,Psoriasis
+148,Macrophages,692,Psoriasis
+149,Macrophages,105,Psoriasis
+150,Macrophages,43,Psoriasis
+151,Macrophages,641,Psoriasis
+152,Macrophages,323,Psoriasis
+153,Macrophages,1203,Psoriasis
+154,Macrophages,1309,Psoriasis
+155,Macrophages,1129,Psoriasis
+156,Macrophages,391,Psoriasis
+157,Macrophages,56,Psoriasis
+158,Macrophages,217,Psoriasis
+159,Macrophages,1126,Psoriasis
+160,Macrophages,87,Psoriasis
+161,Macrophages,68,Psoriasis
+162,Macrophages,211,Psoriasis
+163,Macrophages,317,Psoriasis
+164,Macrophages,145,Psoriasis
+165,Macrophages,496,Psoriasis
+166,Macrophages,286,Psoriasis
+167,Macrophages,100,Psoriasis
+168,Macrophages,126,Psoriasis
+169,Macrophages,33,Eczema
+170,Macrophages,39,Eczema
+171,Macrophages,73,Eczema
+172,Macrophages,127,Eczema
+173,Macrophages,26,Eczema
+174,Macrophages,176,Eczema
+175,Macrophages,136,Eczema
+176,Macrophages,12,Eczema
+177,Macrophages,263,Eczema
+178,Macrophages,53,Eczema
+179,Macrophages,187,Eczema
+180,Macrophages,59,Eczema
+181,Macrophages,80,Eczema
+182,Macrophages,78,Eczema
+183,Macrophages,52,Eczema
+184,Macrophages,213,Eczema
+185,Macrophages,72,Eczema
+186,Macrophages,108,Eczema
+187,Macrophages,111,Eczema
+188,Macrophages,159,Eczema
+189,Macrophages,9,Eczema
+190,Macrophages,49,Eczema
+191,Macrophages,196,Eczema
+192,Smooth muscle cells,244,Psoriasis
+193,Smooth muscle cells,184,Psoriasis
+194,Smooth muscle cells,144,Psoriasis
+195,Smooth muscle cells,91,Psoriasis
+196,Smooth muscle cells,215,Psoriasis
+197,Smooth muscle cells,172,Psoriasis
+198,Smooth muscle cells,236,Psoriasis
+199,Smooth muscle cells,253,Psoriasis
+200,Smooth muscle cells,236,Psoriasis
+201,Smooth muscle cells,186,Psoriasis
+202,Smooth muscle cells,103,Psoriasis
+203,Smooth muscle cells,160,Psoriasis
+204,Smooth muscle cells,213,Psoriasis
+205,Smooth muscle cells,445,Psoriasis
+206,Smooth muscle cells,221,Psoriasis
+207,Smooth muscle cells,105,Psoriasis
+208,Smooth muscle cells,89,Psoriasis
+209,Smooth muscle cells,116,Psoriasis
+210,Smooth muscle cells,143,Psoriasis
+211,Smooth muscle cells,165,Psoriasis
+212,Smooth muscle cells,129,Psoriasis
+213,Smooth muscle cells,84,Psoriasis
+214,Smooth muscle cells,31,Psoriasis
+215,Smooth muscle cells,212,Psoriasis
+216,Smooth muscle cells,113,Psoriasis
+217,Smooth muscle cells,23,Eczema
+218,Smooth muscle cells,60,Eczema
+219,Smooth muscle cells,85,Eczema
+220,Smooth muscle cells,230,Eczema
+221,Smooth muscle cells,82,Eczema
+222,Smooth muscle cells,185,Eczema
+223,Smooth muscle cells,102,Eczema
+224,Smooth muscle cells,43,Eczema
+225,Smooth muscle cells,107,Eczema
+226,Smooth muscle cells,86,Eczema
+227,Smooth muscle cells,18,Eczema
+228,Smooth muscle cells,68,Eczema
+229,Smooth muscle cells,63,Eczema
+230,Smooth muscle cells,59,Eczema
+231,Smooth muscle cells,29,Eczema
+232,Smooth muscle cells,82,Eczema
+233,Smooth muscle cells,90,Eczema
+234,Smooth muscle cells,129,Eczema
+235,Smooth muscle cells,104,Eczema
+236,Smooth muscle cells,256,Eczema
+237,Smooth muscle cells,3,Eczema
+238,Smooth muscle cells,129,Eczema
+239,Smooth muscle cells,200,Eczema
+240,Basal keratinocytes,79,Psoriasis
+241,Basal keratinocytes,131,Psoriasis
+242,Basal keratinocytes,63,Psoriasis
+243,Basal keratinocytes,48,Psoriasis
+244,Basal keratinocytes,251,Psoriasis
+245,Basal keratinocytes,100,Psoriasis
+246,Basal keratinocytes,336,Psoriasis
+247,Basal keratinocytes,107,Psoriasis
+248,Basal keratinocytes,153,Psoriasis
+249,Basal keratinocytes,98,Psoriasis
+250,Basal keratinocytes,47,Psoriasis
+251,Basal keratinocytes,47,Psoriasis
+252,Basal keratinocytes,109,Psoriasis
+253,Basal keratinocytes,159,Psoriasis
+254,Basal keratinocytes,105,Psoriasis
+255,Basal keratinocytes,40,Psoriasis
+256,Basal keratinocytes,65,Psoriasis
+257,Basal keratinocytes,102,Psoriasis
+258,Basal keratinocytes,76,Psoriasis
+259,Basal keratinocytes,81,Psoriasis
+260,Basal keratinocytes,119,Psoriasis
+261,Basal keratinocytes,48,Psoriasis
+262,Basal keratinocytes,150,Psoriasis
+263,Basal keratinocytes,252,Psoriasis
+264,Basal keratinocytes,71,Psoriasis
+265,Basal keratinocytes,32,Eczema
+266,Basal keratinocytes,50,Eczema
+267,Basal keratinocytes,72,Eczema
+268,Basal keratinocytes,202,Eczema
+269,Basal keratinocytes,34,Eczema
+270,Basal keratinocytes,142,Eczema
+271,Basal keratinocytes,90,Eczema
+272,Basal keratinocytes,33,Eczema
+273,Basal keratinocytes,77,Eczema
+274,Basal keratinocytes,75,Eczema
+275,Basal keratinocytes,60,Eczema
+276,Basal keratinocytes,55,Eczema
+277,Basal keratinocytes,40,Eczema
+278,Basal keratinocytes,58,Eczema
+279,Basal keratinocytes,20,Eczema
+280,Basal keratinocytes,40,Eczema
+281,Basal keratinocytes,327,Eczema
+282,Basal keratinocytes,79,Eczema
+283,Basal keratinocytes,77,Eczema
+284,Basal keratinocytes,222,Eczema
+285,Basal keratinocytes,9,Eczema
+286,Basal keratinocytes,71,Eczema
+287,Basal keratinocytes,123,Eczema
+288,Suprabasal keratinocytes,31,Psoriasis
+289,Suprabasal keratinocytes,139,Psoriasis
+290,Suprabasal keratinocytes,44,Psoriasis
+291,Suprabasal keratinocytes,35,Psoriasis
+292,Suprabasal keratinocytes,103,Psoriasis
+293,Suprabasal keratinocytes,61,Psoriasis
+294,Suprabasal keratinocytes,231,Psoriasis
+295,Suprabasal keratinocytes,65,Psoriasis
+296,Suprabasal keratinocytes,80,Psoriasis
+297,Suprabasal keratinocytes,63,Psoriasis
+298,Suprabasal keratinocytes,60,Psoriasis
+299,Suprabasal keratinocytes,80,Psoriasis
+300,Suprabasal keratinocytes,58,Psoriasis
+301,Suprabasal keratinocytes,90,Psoriasis
+302,Suprabasal keratinocytes,66,Psoriasis
+303,Suprabasal keratinocytes,77,Psoriasis
+304,Suprabasal keratinocytes,16,Psoriasis
+305,Suprabasal keratinocytes,39,Psoriasis
+306,Suprabasal keratinocytes,49,Psoriasis
+307,Suprabasal keratinocytes,45,Psoriasis
+308,Suprabasal keratinocytes,54,Psoriasis
+309,Suprabasal keratinocytes,45,Psoriasis
+310,Suprabasal keratinocytes,171,Psoriasis
+311,Suprabasal keratinocytes,59,Psoriasis
+312,Suprabasal keratinocytes,26,Psoriasis
+313,Suprabasal keratinocytes,9,Eczema
+314,Suprabasal keratinocytes,18,Eczema
+315,Suprabasal keratinocytes,20,Eczema
+316,Suprabasal keratinocytes,67,Eczema
+317,Suprabasal keratinocytes,11,Eczema
+318,Suprabasal keratinocytes,42,Eczema
+319,Suprabasal keratinocytes,30,Eczema
+320,Suprabasal keratinocytes,8,Eczema
+321,Suprabasal keratinocytes,23,Eczema
+322,Suprabasal keratinocytes,38,Eczema
+323,Suprabasal keratinocytes,53,Eczema
+324,Suprabasal keratinocytes,30,Eczema
+325,Suprabasal keratinocytes,16,Eczema
+326,Suprabasal keratinocytes,47,Eczema
+327,Suprabasal keratinocytes,8,Eczema
+328,Suprabasal keratinocytes,20,Eczema
+329,Suprabasal keratinocytes,150,Eczema
+330,Suprabasal keratinocytes,31,Eczema
+331,Suprabasal keratinocytes,35,Eczema
+332,Suprabasal keratinocytes,84,Eczema
+333,Suprabasal keratinocytes,8,Eczema
+334,Suprabasal keratinocytes,33,Eczema
+335,Suprabasal keratinocytes,45,Eczema
+336,Fibroblasts,7,Psoriasis
+337,Fibroblasts,29,Psoriasis
+338,Fibroblasts,49,Psoriasis
+339,Fibroblasts,34,Psoriasis
+340,Fibroblasts,35,Psoriasis
+341,Fibroblasts,36,Psoriasis
+342,Fibroblasts,18,Psoriasis
+343,Fibroblasts,97,Psoriasis
+344,Fibroblasts,71,Psoriasis
+345,Fibroblasts,30,Psoriasis
+346,Fibroblasts,61,Psoriasis
+347,Fibroblasts,59,Psoriasis
+348,Fibroblasts,52,Psoriasis
+349,Fibroblasts,99,Psoriasis
+350,Fibroblasts,81,Psoriasis
+351,Fibroblasts,49,Psoriasis
+352,Fibroblasts,14,Psoriasis
+353,Fibroblasts,23,Psoriasis
+354,Fibroblasts,38,Psoriasis
+355,Fibroblasts,70,Psoriasis
+356,Fibroblasts,45,Psoriasis
+357,Fibroblasts,52,Psoriasis
+358,Fibroblasts,56,Psoriasis
+359,Fibroblasts,34,Psoriasis
+360,Fibroblasts,32,Psoriasis
+361,Fibroblasts,10,Eczema
+362,Fibroblasts,14,Eczema
+363,Fibroblasts,14,Eczema
+364,Fibroblasts,44,Eczema
+365,Fibroblasts,10,Eczema
+366,Fibroblasts,45,Eczema
+367,Fibroblasts,28,Eczema
+368,Fibroblasts,6,Eczema
+369,Fibroblasts,37,Eczema
+370,Fibroblasts,22,Eczema
+371,Fibroblasts,26,Eczema
+372,Fibroblasts,26,Eczema
+373,Fibroblasts,16,Eczema
+374,Fibroblasts,32,Eczema
+375,Fibroblasts,9,Eczema
+376,Fibroblasts,29,Eczema
+377,Fibroblasts,63,Eczema
+378,Fibroblasts,26,Eczema
+379,Fibroblasts,21,Eczema
+380,Fibroblasts,59,Eczema
+381,Fibroblasts,3,Eczema
+382,Fibroblasts,15,Eczema
+383,Fibroblasts,47,Eczema
+384,Langerhans cells,37,Psoriasis
+385,Langerhans cells,95,Psoriasis
+386,Langerhans cells,58,Psoriasis
+387,Langerhans cells,22,Psoriasis
+388,Langerhans cells,66,Psoriasis
+389,Langerhans cells,82,Psoriasis
+390,Langerhans cells,82,Psoriasis
+391,Langerhans cells,183,Psoriasis
+392,Langerhans cells,115,Psoriasis
+393,Langerhans cells,57,Psoriasis
+394,Langerhans cells,82,Psoriasis
+395,Langerhans cells,53,Psoriasis
+396,Langerhans cells,85,Psoriasis
+397,Langerhans cells,259,Psoriasis
+398,Langerhans cells,142,Psoriasis
+399,Langerhans cells,74,Psoriasis
+400,Langerhans cells,39,Psoriasis
+401,Langerhans cells,26,Psoriasis
+402,Langerhans cells,92,Psoriasis
+403,Langerhans cells,69,Psoriasis
+404,Langerhans cells,90,Psoriasis
+405,Langerhans cells,29,Psoriasis
+406,Langerhans cells,26,Psoriasis
+407,Langerhans cells,54,Psoriasis
+408,Langerhans cells,73,Psoriasis
+409,Langerhans cells,13,Eczema
+410,Langerhans cells,30,Eczema
+411,Langerhans cells,48,Eczema
+412,Langerhans cells,136,Eczema
+413,Langerhans cells,7,Eczema
+414,Langerhans cells,145,Eczema
+415,Langerhans cells,49,Eczema
+416,Langerhans cells,5,Eczema
+417,Langerhans cells,129,Eczema
+418,Langerhans cells,41,Eczema
+419,Langerhans cells,7,Eczema
+420,Langerhans cells,52,Eczema
+421,Langerhans cells,23,Eczema
+422,Langerhans cells,26,Eczema
+423,Langerhans cells,13,Eczema
+424,Langerhans cells,80,Eczema
+425,Langerhans cells,43,Eczema
+426,Langerhans cells,95,Eczema
+427,Langerhans cells,59,Eczema
+428,Langerhans cells,167,Eczema
+429,Langerhans cells,7,Eczema
+430,Langerhans cells,53,Eczema
+431,Langerhans cells,94,Eczema
+432,Melanocytes,73,Psoriasis
+433,Melanocytes,70,Psoriasis
+434,Melanocytes,63,Psoriasis
+435,Melanocytes,30,Psoriasis
+436,Melanocytes,97,Psoriasis
+437,Melanocytes,76,Psoriasis
+438,Melanocytes,105,Psoriasis
+439,Melanocytes,162,Psoriasis
+440,Melanocytes,102,Psoriasis
+441,Melanocytes,86,Psoriasis
+442,Melanocytes,72,Psoriasis
+443,Melanocytes,73,Psoriasis
+444,Melanocytes,101,Psoriasis
+445,Melanocytes,266,Psoriasis
+446,Melanocytes,113,Psoriasis
+447,Melanocytes,87,Psoriasis
+448,Melanocytes,44,Psoriasis
+449,Melanocytes,70,Psoriasis
+450,Melanocytes,67,Psoriasis
+451,Melanocytes,56,Psoriasis
+452,Melanocytes,76,Psoriasis
+453,Melanocytes,45,Psoriasis
+454,Melanocytes,90,Psoriasis
+455,Melanocytes,122,Psoriasis
+456,Melanocytes,55,Psoriasis
+457,Melanocytes,19,Eczema
+458,Melanocytes,41,Eczema
+459,Melanocytes,26,Eczema
+460,Melanocytes,106,Eczema
+461,Melanocytes,65,Eczema
+462,Melanocytes,117,Eczema
+463,Melanocytes,53,Eczema
+464,Melanocytes,23,Eczema
+465,Melanocytes,96,Eczema
+466,Melanocytes,71,Eczema
+467,Melanocytes,40,Eczema
+468,Melanocytes,25,Eczema
+469,Melanocytes,31,Eczema
+470,Melanocytes,38,Eczema
+471,Melanocytes,14,Eczema
+472,Melanocytes,76,Eczema
+473,Melanocytes,197,Eczema
+474,Melanocytes,62,Eczema
+475,Melanocytes,54,Eczema
+476,Melanocytes,121,Eczema
+477,Melanocytes,13,Eczema
+478,Melanocytes,55,Eczema
+479,Melanocytes,84,Eczema
+480,Unknown,228,Psoriasis
+481,Unknown,493,Psoriasis
+482,Unknown,259,Psoriasis
+483,Unknown,182,Psoriasis
+484,Unknown,421,Psoriasis
+485,Unknown,262,Psoriasis
+486,Unknown,145,Psoriasis
+487,Unknown,453,Psoriasis
+488,Unknown,514,Psoriasis
+489,Unknown,405,Psoriasis
+490,Unknown,310,Psoriasis
+491,Unknown,232,Psoriasis
+492,Unknown,354,Psoriasis
+493,Unknown,723,Psoriasis
+494,Unknown,388,Psoriasis
+495,Unknown,244,Psoriasis
+496,Unknown,173,Psoriasis
+497,Unknown,218,Psoriasis
+498,Unknown,336,Psoriasis
+499,Unknown,345,Psoriasis
+500,Unknown,312,Psoriasis
+501,Unknown,234,Psoriasis
+502,Unknown,650,Psoriasis
+503,Unknown,351,Psoriasis
+504,Unknown,246,Psoriasis
+505,Unknown,109,Eczema
+506,Unknown,102,Eczema
+507,Unknown,155,Eczema
+508,Unknown,415,Eczema
+509,Unknown,66,Eczema
+510,Unknown,377,Eczema
+511,Unknown,218,Eczema
+512,Unknown,67,Eczema
+513,Unknown,322,Eczema
+514,Unknown,173,Eczema
+515,Unknown,232,Eczema
+516,Unknown,128,Eczema
+517,Unknown,146,Eczema
+518,Unknown,164,Eczema
+519,Unknown,58,Eczema
+520,Unknown,246,Eczema
+521,Unknown,1051,Eczema
+522,Unknown,239,Eczema
+523,Unknown,196,Eczema
+524,Unknown,459,Eczema
+525,Unknown,91,Eczema
+526,Unknown,145,Eczema
+527,Unknown,388,Eczema

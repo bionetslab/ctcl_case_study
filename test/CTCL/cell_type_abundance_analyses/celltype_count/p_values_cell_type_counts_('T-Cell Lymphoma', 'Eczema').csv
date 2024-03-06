@@ -1,0 +1,12 @@
+,celltype,condition_1,condition_2,U,p
+0,Suprabasal keratinocytes,T-Cell Lymphoma,Eczema,363.0,0.0012477380685455238
+1,Smooth muscle cells,T-Cell Lymphoma,Eczema,353.0,0.0028490668041443075
+2,Fibroblasts,T-Cell Lymphoma,Eczema,366.5,0.0034268563651611646
+3,T-cells,T-Cell Lymphoma,Eczema,330.5,0.03756009608501832
+4,Macrophages,T-Cell Lymphoma,Eczema,315.0,0.03963713791015999
+5,Melanocytes,T-Cell Lymphoma,Eczema,303.5,0.07545384603155099
+6,Endothelial cells,T-Cell Lymphoma,Eczema,164.0,0.1107267086969934
+7,Unknown,T-Cell Lymphoma,Eczema,307.5,0.12377939549175336
+8,B-cells,T-Cell Lymphoma,Eczema,301.0,0.16563496168599323
+9,Langerhans cells,T-Cell Lymphoma,Eczema,282.0,0.2097094968885398
+10,Basal keratinocytes,T-Cell Lymphoma,Eczema,292.5,0.23528875344891242

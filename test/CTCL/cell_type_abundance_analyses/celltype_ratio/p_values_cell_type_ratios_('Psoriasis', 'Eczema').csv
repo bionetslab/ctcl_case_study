@@ -1,0 +1,12 @@
+,celltype,condition_1,condition_2,U,p
+0,Endothelial cells,Psoriasis,Eczema,110.0,0.0002592448482830749
+1,Macrophages,Psoriasis,Eczema,436.0,0.0022554044876772397
+2,T-cells,Psoriasis,Eczema,394.0,0.028699996346172194
+3,Suprabasal keratinocytes,Psoriasis,Eczema,381.0,0.05494707903254775
+4,Fibroblasts,Psoriasis,Eczema,380.0,0.05760960410933568
+5,Smooth muscle cells,Psoriasis,Eczema,373.0,0.07939729508770017
+6,B-cells,Psoriasis,Eczema,336.0,0.3218791834841994
+7,Basal keratinocytes,Psoriasis,Eczema,258.0,0.5495132498037176
+8,Unknown,Psoriasis,Eczema,311.0,0.6350263239877817
+9,Melanocytes,Psoriasis,Eczema,282.0,0.9178138636243465
+10,Langerhans cells,Psoriasis,Eczema,285.0,0.9670765439062068

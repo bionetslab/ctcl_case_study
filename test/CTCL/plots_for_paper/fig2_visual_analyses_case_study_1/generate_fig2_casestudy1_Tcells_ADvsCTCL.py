@@ -41,27 +41,27 @@ if __name__ == '__main__':
         subplot_axis_id.grid(False)
         subplot_axis_id.axis('off')
         
-        # # Prepare spatial data:
-        # spatial_data=pd.DataFrame(adata.obsm['spatial'])
-        # spatial_data=spatial_data.rename(columns={0:'x' , 1:'y'})
-        # spatial_data['celltype']=list(adata.obs['celltype'])
-        # # # ^^^ Plot for all celltypes in same scatter plot. (Comment out when generating plots separately per {celltype} vs 'Others'): ^^^
-        # # # Plot segmented data:
-        # # title=f'Segmented tissue (all cell types)'
-        # # savefig_name=f'{adata.uns["Group"][0]}_{filename}(patient_id {adata.uns["patient_id"][0]}).pdf'
-        # # _generate_scatter_subplot_in_mosaic_(prop_iodide, spatial_data, 'y', 'x', 'celltype', subplot_axis_id, title, savefig_name)
-        # # # ^^^
+        # Prepare spatial data:
+        spatial_data=pd.DataFrame(adata.obsm['spatial'])
+        spatial_data=spatial_data.rename(columns={0:'x' , 1:'y'})
+        spatial_data['celltype']=list(adata.obs['celltype'])
+        # # ^^^ Plot for all celltypes in same scatter plot. (Comment out when generating plots separately per {celltype} vs 'Others'): ^^^
+        # # Plot segmented data:
+        # title=f'Segmented tissue (all cell types)'
+        # savefig_name=f'{adata.uns["Group"][0]}_{filename}(patient_id {adata.uns["patient_id"][0]}).pdf'
+        # _generate_scatter_subplot_in_mosaic_(prop_iodide, spatial_data, 'y', 'x', 'celltype', subplot_axis_id, title, savefig_name)
+        # # ^^^
         
-        # celltype_of_interest='T-cells'
-        # spatial_data_filtered_by_cell_type=spatial_data[spatial_data['celltype']==celltype_of_interest]
-        # spatial_data_other_celltypes=spatial_data[spatial_data['celltype']!=celltype_of_interest]
-        # spatial_data_other_celltypes['celltype']='Other'
-        # spatial_data_filtered_by_cell_type=pd.concat([spatial_data_filtered_by_cell_type, spatial_data_other_celltypes], axis=0)
-        # palette = {f"{celltype_of_interest}":"red", "Other":"#e6f8d1"}
-        # ncol=2
-        # title=f'Segmented tissue ({celltype_of_interest})'
-        # savefig_name=f'{adata.uns["Group"][0]}_{filename}(patient_id {adata.uns["patient_id"][0]})_{celltype_of_interest}.svg'
-        # _generate_scatter_subplot_in_mosaic_(prop_iodide, spatial_data_filtered_by_cell_type, 'y', 'x', 'celltype', subplot_axis_id, title, savefig_name, palette, ncol)
+        celltype_of_interest='T-cells'
+        spatial_data_filtered_by_cell_type=spatial_data[spatial_data['celltype']==celltype_of_interest]
+        spatial_data_other_celltypes=spatial_data[spatial_data['celltype']!=celltype_of_interest]
+        spatial_data_other_celltypes['celltype']='Other'
+        spatial_data_filtered_by_cell_type=pd.concat([spatial_data_filtered_by_cell_type, spatial_data_other_celltypes], axis=0)
+        palette = {f"{celltype_of_interest}":"red", "Other":"#e6f8d1"}
+        ncol=2
+        title=f'Segmented tissue ({celltype_of_interest})'
+        savefig_name=f'{adata.uns["Group"][0]}_{filename}(patient_id {adata.uns["patient_id"][0]})_{celltype_of_interest}.svg'
+        _generate_scatter_subplot_in_mosaic_(prop_iodide, spatial_data_filtered_by_cell_type, 'y', 'x', 'celltype', subplot_axis_id, title, savefig_name, palette, ncol)
     
     # ========== Generate, save and show final plot (fig1): ==========
     plt.savefig('fig2_caseStudy1_Tcells_ADvsCTCL.pdf', format='pdf', bbox_inches='tight')
