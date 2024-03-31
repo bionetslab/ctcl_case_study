@@ -5,22 +5,25 @@ import itertools
 from statannotations.Annotator import Annotator
 from decimal import Decimal
 
-def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc, title_prefix):
+def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=None, title_prefix=None, plot_title=None, title_loc=None, xlabel=None, palette=None):
     disease_combinations=list(itertools.combinations(conditions, 2))
     if heterogeneity_measure=='egophily':
-        plot_title=f'{heterogeneity_measure} ({celltype})'
         local_heterogeneity_measure=[f'{heterogeneity_measure}_{radius}' for radius in radii]
         var_name=f'{heterogeneity_measure}_measure'
         value_name=f'{heterogeneity_measure}_score'
+        ylabel='Egophily'
     else:
-        plot_title=f'local {heterogeneity_measure} ({celltype})'
         local_heterogeneity_measure=[f'local_{heterogeneity_measure}_{radius}' for radius in radii]
         var_name=f'local_{heterogeneity_measure}_measure'
         value_name=f'local_{heterogeneity_measure}_score'
+        ylabel=f'Local {heterogeneity_measure}'
     columns=local_heterogeneity_measure+['condition']
     data_=cell_results[cell_results['cell_type']==celltype][columns]
     data=data_.melt('condition', var_name=var_name, value_name=value_name)
-    args = dict(x=var_name, y=value_name, data=data, hue="condition", hue_order=list(conditions), order=local_heterogeneity_measure)
+    if palette:
+        args = dict(x=var_name, y=value_name, data=data, hue="condition", hue_order=list(conditions), order=local_heterogeneity_measure, palette=palette)
+    else:
+        args = dict(x=var_name, y=value_name, data=data, hue="condition", hue_order=list(conditions), order=local_heterogeneity_measure)
     pairs=[]
     pvals=[]
     for j in local_heterogeneity_measure:
@@ -34,6 +37,7 @@ def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_resul
                 pvals.append('%.2E' % Decimal(p_))
             else:
                 pvals.append('$ns$')
+        xticklabels=[f'$r={radius}$' for radius in radii]
     pairs_pvals_dict=dict(zip(pairs, pvals))
     fig, axes = plt.subplots(figsize=(20,10))
     sns.set(font_scale = 1.2)
@@ -54,21 +58,29 @@ def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_resul
     sns.set_style("white")
     ax = sns.violinplot(ax=subplot_axis_id, **args, cut=0)
     if title_prefix:
-        plot_title=r"$\bf{" + title_prefix + "}$" + plot_title
-    ax.set_title(plot_title, ) # fontsize=25, pad=20
-    ax.set_xlabel('radius', ) # fontsize=25, labelpad=20
-    ax.set_ylabel(f'{heterogeneity_measure} score', ) # fontsize=25, labelpad=20
-    ax.set_xticklabels(radii, ) # size=20
+        if plot_title:
+            plot_title=r"$\bf{" + title_prefix + "}$" + plot_title
+        else:
+            plot_title=r"$\bf{" + title_prefix + "}$"
+    ax.set_title(plot_title, loc=title_loc, fontsize=25) # fontsize=25, pad=20
+    ax.set_xlabel(xlabel, fontsize=25) # fontsize=25, labelpad=20
+    ax.set_ylabel(ylabel, fontsize=25, labelpad=5) # fontsize=25, labelpad=20
+    ax.set_xticklabels(xticklabels, size=20) # size=20
     annot = Annotator(ax, pairs, **args)
-    annot.configure(text_format='simple', loc='inside', verbose=2, ) # fontsize=25
+    annot.configure(text_format='simple', loc='inside', verbose=2, fontsize=20) # fontsize=25
     annot.set_custom_annotations(pvals_corrected)
     annot.annotate()
     # ax.legend(title='Condition', bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0)
-    ax.legend(title=None, loc=legend_loc, borderaxespad=0)
-    xticks=[]
+    # ax.legend(title=None, loc=legend_loc, borderaxespad=0, fontsize=20)
+    ax.get_legend().set_visible(False)
+    # ax.legend.remove()
+    yticks=[]
     for j in ax.get_yticks():
-        xticks.append(round(j,1))
-    ax.set_yticklabels(xticks, ) # size = 20
+        yticks.append(round(j,1))
+    ax.set_yticklabels(yticks, size = 20) # size = 20
+    ax.tick_params(axis='x', which='major', labelsize=20)
+    ax.grid(False)
+    
     
     
     

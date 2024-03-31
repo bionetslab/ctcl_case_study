@@ -1,8 +1,10 @@
 import os
 import pandas as pd
 import scanpy as sc
+import math
 
 def _prepare_spatial_data_for_celltype_assignment_(path_to_anndata_files):
+    sex_lookup={'m': 'Male', 'f': 'Female'}
     anndata_allConditions_df=[]
     anndata_allConditions_metadata=[]
     for filename in os.listdir('../data'):
@@ -19,9 +21,10 @@ def _prepare_spatial_data_for_celltype_assignment_(path_to_anndata_files):
             metadata_df['patient_label']=list(adata.obsm['patient_label'])
             metadata_df['sample_id']=sample_id
             metadata_df['condition']=adata.uns['Group'][0]
-            # _patientNumber_=list(anndata_allConditions.obsm['patient_number'])
-            # patientNumber=list(np.unique(anndata_allConditions.obsm['patient_number']))
-            # CellIndexNumber=list(anndata_allConditions.obsm['cell_index_number_within_patient'])
+            metadata_df['age']=int(adata.uns['Age'][0])
+            metadata_df['sex']=sex_lookup[adata.uns['Sex'][0]]
+            metadata_df['x']=list(pd.DataFrame(adata.obsm['spatial'])[0])
+            metadata_df['y']=list(pd.DataFrame(adata.obsm['spatial'])[1])
             anndata_allConditions_df.append(adata_df)
             anndata_allConditions_metadata.append(metadata_df)
     anndata_allConditions_df=pd.concat(anndata_allConditions_df, axis=0)
@@ -30,13 +33,48 @@ def _prepare_spatial_data_for_celltype_assignment_(path_to_anndata_files):
     anndata_allConditions_metadata=anndata_allConditions_metadata.reset_index(drop=True)
     return anndata_allConditions_df, anndata_allConditions_metadata
 
-def _save_celltype_assignment_results_to_csv_(clustering_results, anndata_allConditions_metadata):
-    _celltype_=[]
-    for i in clustering_results:
-        l_=[i]*len(clustering_results[i])
-        _celltype_.append(l_)
-    _celltype_ = [x for xs in _celltype_ for x in xs]
-    clustered_cells_df=anndata_allConditions_metadata
-    clustered_cells_df['cell_type']=_celltype_
-    return clustered_cells_df
+def _save_celltype_assignment_results_to_csv_(clustering_results, anndata_allConditions_metadata, adata_df):
+    df=[]
+    df_metadata=[]
     
+    for celltype, cell_indices_list in clustering_results.items():
+        celltypes=[celltype]*len(cell_indices_list)
+        df_=adata_df.loc[cell_indices_list]
+        df_metadata_=anndata_allConditions_metadata.loc[cell_indices_list]
+        df_['celltype']=celltypes
+        df_metadata_['celltype']=celltypes
+        df.append(df_)
+        df_metadata.append(df_metadata_)
+    df=pd.concat(df, axis=0)
+    df.sort_index(inplace=True)
+    df_metadata=pd.concat(df_metadata, axis=0)
+    df_metadata.sort_index(inplace=True)
+    return df, df_metadata
+
+def _bin_column_in_dataframe_(df, bin_dict, old_col_name, new_col_name):
+    df_=df.copy()
+    df_=df_.sort_values(by=[old_col_name])
+    old_column=list(df_[old_col_name])
+    old_col_unique=sorted(list(set(df_.age)))
+    age_bins={}
+    for age in old_col_unique:
+        bin=math.ceil((age-19)/10)
+        age_bins[age]=bin_dict[bin]
+    binned_column=[age_bins.get(item,item) for item in old_column]
+    df_[new_col_name]=binned_column
+    return df_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

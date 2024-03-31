@@ -67,7 +67,7 @@ if __name__ == '__main__':
                 p_values_cell_type['cell_type'].append(cell_type)
                 p_values_cell_type['statistic'].append(statistic)
                 p_values_cell_type['p_value'].append(p_value)
-                p_values_cell_type['p_value_adj'].append(p_value * 3 * len(cell_types) * 5)
+                p_values_cell_type['p_value_adj'].append(p_value * 3 * len(cell_types) * 3 * 5)
     p_values_global = pd.DataFrame(data=p_values_global)
     p_values_cell_type = pd.DataFrame(data=p_values_cell_type)
     p_values_global.to_csv(os.path.join('results', 'p_values_global.csv'))

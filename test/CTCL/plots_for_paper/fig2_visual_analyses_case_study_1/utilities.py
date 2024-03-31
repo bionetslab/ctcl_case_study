@@ -54,24 +54,25 @@ def _generate_scatter_subplot_in_mosaic_(background_image, scatter_plot_data, x,
     )
     ax.grid(False) # Turns off grid.
 
-def _generate_scatter_subplot_(background_image, scatter_plot_data, x, y, celltype_column_name, subplot_axis_id, title, savefig_name, palette='Set3', ncol=3):
+def _generate_scatter_subplot_(background_image, scatter_plot_data, x, y, celltype_column_name, subplot_axis_id, title, savefig_name, ncol=3):
     # ax=isns.imgplot(background_image, cmap='gray', ax=subplot_axis_id)
     ax=subplot_axis_id.imshow(background_image, cmap='gray')
     # ax. margins(x=0)
     ax.axes.get_xaxis().set_visible(False)
     ax.axes.get_yaxis().set_visible(False)
-    ax = sns.scatterplot(ax=subplot_axis_id, data=scatter_plot_data, x=x, y=y, hue=celltype_column_name, palette=palette, s=10)
+    ax = sns.scatterplot(ax=subplot_axis_id, data=scatter_plot_data, x=x, y=y, hue=celltype_column_name, s=75)
     ax.set(xlabel=None, ylabel=None)
     ax.set_title(title, fontsize=15)
     ax.invert_yaxis()
-    sns.move_legend(
-        ax,
-        "lower center",
-        # bbox_to_anchor=(0.00, 0.00),
-        ncol=3,
-        title=None,
-        frameon=True,
-    )
+    # sns.move_legend(
+    #     ax,
+    #     "lower center",
+    #     # bbox_to_anchor=(0.00, 0.00),
+    #     ncol=3,
+    #     title=None,
+    #     frameon=True,
+    # )
+    ax.get_legend().set_visible(False)
     ax.grid(False) # Turns off grid.
 
 

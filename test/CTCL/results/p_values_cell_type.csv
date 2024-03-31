@@ -1,496 +1,496 @@
 ,condition_1,condition_2,score,cell_type,statistic,p_value,p_value_adj
-0,T-Cell Lymphoma,Psoriasis,local_homophily_1,Melanocytes,2518103.0,1.0419351299502882e-10,1.7191929644179753e-08
-1,T-Cell Lymphoma,Psoriasis,local_homophily_1,Unknown,30982026.0,8.70586705498517e-28,1.4364680640725533e-25
-2,T-Cell Lymphoma,Psoriasis,local_homophily_1,Langerhans cells,1431223.0,0.3283226529257952,54.173237732756206
-3,T-Cell Lymphoma,Psoriasis,local_homophily_1,T-cells,53546570.0,9.030239987437218e-96,1.489989597927141e-93
-4,T-Cell Lymphoma,Psoriasis,local_homophily_1,Basal keratinocytes,2942798.0,0.8706258892486088,143.65327172602045
-5,T-Cell Lymphoma,Psoriasis,local_homophily_1,Fibroblasts,1107381.0,3.575982828287834e-16,5.900371666674926e-14
-6,T-Cell Lymphoma,Psoriasis,local_homophily_1,Macrophages,13810372.5,4.16127282912021e-147,6.866100168048346e-145
-7,T-Cell Lymphoma,Psoriasis,local_homophily_1,B-cells,19140223.0,1.7855075819217396e-30,2.9460875101708706e-28
-8,T-Cell Lymphoma,Psoriasis,local_homophily_1,Smooth muscle cells,7929678.0,0.00014543858569807873,0.02399736664018299
-9,T-Cell Lymphoma,Psoriasis,local_homophily_1,Endothelial cells,41840587.0,0.7713252091087073,127.2686595029367
-10,T-Cell Lymphoma,Psoriasis,local_homophily_1,Suprabasal keratinocytes,1707701.0,0.05144354350103134,8.488184677670173
-11,T-Cell Lymphoma,Psoriasis,local_homophily_2,Melanocytes,2803545.0,1.0230311787058316e-41,1.688001444864622e-39
-12,T-Cell Lymphoma,Psoriasis,local_homophily_2,Unknown,34083390.5,9.313180164735267e-113,1.5366747271813189e-110
-13,T-Cell Lymphoma,Psoriasis,local_homophily_2,Langerhans cells,1696675.5,3.211113568160824e-25,5.29833738746536e-23
-14,T-Cell Lymphoma,Psoriasis,local_homophily_2,T-cells,56766379.5,4.89028056739013e-187,8.068962936193715e-185
-15,T-Cell Lymphoma,Psoriasis,local_homophily_2,Basal keratinocytes,3422037.0,2.687779906024151e-23,4.434836844939849e-21
-16,T-Cell Lymphoma,Psoriasis,local_homophily_2,Fibroblasts,1034405.5,4.874984641364932e-06,0.0008043724658252138
-17,T-Cell Lymphoma,Psoriasis,local_homophily_2,Macrophages,19575308.5,0.33597635868495523,55.43609918301762
-18,T-Cell Lymphoma,Psoriasis,local_homophily_2,B-cells,20166439.0,2.5281710755942266e-65,4.1714822747304736e-63
-19,T-Cell Lymphoma,Psoriasis,local_homophily_2,Smooth muscle cells,8720243.0,6.940368031092355e-32,1.1451607251302385e-29
-20,T-Cell Lymphoma,Psoriasis,local_homophily_2,Endothelial cells,44898382.0,9.966637983439607e-19,1.6444952672675351e-16
-21,T-Cell Lymphoma,Psoriasis,local_homophily_2,Suprabasal keratinocytes,1738067.5,0.003807919669764538,0.6283067455111488
-22,T-Cell Lymphoma,Psoriasis,local_homophily_3,Melanocytes,2777335.5,6.073988728598207e-38,1.0022081402187042e-35
-23,T-Cell Lymphoma,Psoriasis,local_homophily_3,Unknown,33955940.0,4.23272797224031e-108,6.984001154196512e-106
-24,T-Cell Lymphoma,Psoriasis,local_homophily_3,Langerhans cells,1704956.5,1.4243626211324018e-26,2.3501983248684626e-24
-25,T-Cell Lymphoma,Psoriasis,local_homophily_3,T-cells,55933963.5,2.1853763419914042e-160,3.6058709642858166e-158
-26,T-Cell Lymphoma,Psoriasis,local_homophily_3,Basal keratinocytes,3432035.0,3.3928313688133514e-24,5.59817175854203e-22
-27,T-Cell Lymphoma,Psoriasis,local_homophily_3,Fibroblasts,984698.0,0.028855750911510682,4.761198900399262
-28,T-Cell Lymphoma,Psoriasis,local_homophily_3,Macrophages,19653063.0,0.18588483553363433,30.670997863049664
-29,T-Cell Lymphoma,Psoriasis,local_homophily_3,B-cells,19891835.0,1.3084297158500144e-54,2.1589090311525238e-52
-30,T-Cell Lymphoma,Psoriasis,local_homophily_3,Smooth muscle cells,8646028.0,3.6894704694258797e-28,6.087626274552701e-26
-31,T-Cell Lymphoma,Psoriasis,local_homophily_3,Endothelial cells,44378770.5,1.5430978812088726e-13,2.54611150399464e-11
-32,T-Cell Lymphoma,Psoriasis,local_homophily_3,Suprabasal keratinocytes,1692457.0,0.14739109635124661,24.319530897955694
-33,T-Cell Lymphoma,Psoriasis,local_homophily_4,Melanocytes,2757995.0,2.814554335760518e-35,4.644014654004855e-33
-34,T-Cell Lymphoma,Psoriasis,local_homophily_4,Unknown,33690070.5,1.0500031890661775e-98,1.7325052619591927e-96
-35,T-Cell Lymphoma,Psoriasis,local_homophily_4,Langerhans cells,1698815.5,1.4475944889571745e-25,2.3885309067793378e-23
-36,T-Cell Lymphoma,Psoriasis,local_homophily_4,T-cells,55378705.0,9.271633331907434e-144,1.5298194997647267e-141
-37,T-Cell Lymphoma,Psoriasis,local_homophily_4,Basal keratinocytes,3459887.5,8.544375523971604e-27,1.4098219614553145e-24
-38,T-Cell Lymphoma,Psoriasis,local_homophily_4,Fibroblasts,957834.5,0.36986919607944746,61.028417353108836
-39,T-Cell Lymphoma,Psoriasis,local_homophily_4,Macrophages,19543620.0,0.4149920080051791,68.47368132085455
-40,T-Cell Lymphoma,Psoriasis,local_homophily_4,B-cells,19680108.0,5.095330369345924e-47,8.407295109420776e-45
-41,T-Cell Lymphoma,Psoriasis,local_homophily_4,Smooth muscle cells,8628852.0,2.481834792258176e-27,4.0950274072259904e-25
-42,T-Cell Lymphoma,Psoriasis,local_homophily_4,Endothelial cells,44067287.0,7.36989155810572e-11,1.2160321070874437e-08
-43,T-Cell Lymphoma,Psoriasis,local_homophily_4,Suprabasal keratinocytes,1661069.0,0.6494613948485585,107.16113015001216
-44,T-Cell Lymphoma,Psoriasis,local_homophily_5,Melanocytes,2723339.5,9.4348673311608e-31,1.556753109641532e-28
-45,T-Cell Lymphoma,Psoriasis,local_homophily_5,Unknown,33588235.5,3.1972425770737734e-95,5.275450252171726e-93
-46,T-Cell Lymphoma,Psoriasis,local_homophily_5,Langerhans cells,1694815.5,6.391505206531447e-25,1.0545983590776887e-22
-47,T-Cell Lymphoma,Psoriasis,local_homophily_5,T-cells,55059954.0,1.2503513035804438e-134,2.0630796509077323e-132
-48,T-Cell Lymphoma,Psoriasis,local_homophily_5,Basal keratinocytes,3456923.0,1.6402771749189343e-26,2.706457338616242e-24
-49,T-Cell Lymphoma,Psoriasis,local_homophily_5,Fibroblasts,947854.0,0.676005565574721,111.54091831982896
-50,T-Cell Lymphoma,Psoriasis,local_homophily_5,Macrophages,19397142.5,0.8921179308980612,147.19945859818012
-51,T-Cell Lymphoma,Psoriasis,local_homophily_5,B-cells,19595770.0,3.7005742185007895e-44,6.105947460526303e-42
-52,T-Cell Lymphoma,Psoriasis,local_homophily_5,Smooth muscle cells,8572034.5,1.0991502396985512e-24,1.8135978955026096e-22
-53,T-Cell Lymphoma,Psoriasis,local_homophily_5,Endothelial cells,43764440.5,1.4565250773912349e-08,2.4032663776955375e-06
-54,T-Cell Lymphoma,Psoriasis,local_homophily_5,Suprabasal keratinocytes,1646383.5,0.9914950945977439,163.59669060862774
-55,T-Cell Lymphoma,Psoriasis,local_entropy_1,Melanocytes,2331457.0,0.08032457942821172,13.253555605654935
-56,T-Cell Lymphoma,Psoriasis,local_entropy_1,Unknown,29601471.0,1.0904660850060087e-08,1.7992690402599146e-06
-57,T-Cell Lymphoma,Psoriasis,local_entropy_1,Langerhans cells,1526221.0,1.4080641654103303e-05,0.0023233058729270452
-58,T-Cell Lymphoma,Psoriasis,local_entropy_1,T-cells,46988652.0,0.00041164655639112945,0.06792168180453637
-59,T-Cell Lymphoma,Psoriasis,local_entropy_1,Basal keratinocytes,3130523.5,6.298343859012838e-05,0.010392267367371184
-60,T-Cell Lymphoma,Psoriasis,local_entropy_1,Fibroblasts,875977.5,0.0023986696710764496,0.3957804957276142
-61,T-Cell Lymphoma,Psoriasis,local_entropy_1,Macrophages,26335759.0,1.3466725363772732e-229,2.222009685022501e-227
-62,T-Cell Lymphoma,Psoriasis,local_entropy_1,B-cells,17388120.0,0.06715959672373402,11.081333459416115
-63,T-Cell Lymphoma,Psoriasis,local_entropy_1,Smooth muscle cells,8130351.0,6.115746980867153e-09,1.0090982518430804e-06
-64,T-Cell Lymphoma,Psoriasis,local_entropy_1,Endothelial cells,45244169.5,1.0388222813832765e-22,1.7140567642824062e-20
-65,T-Cell Lymphoma,Psoriasis,local_entropy_1,Suprabasal keratinocytes,1719777.0,0.02041409181405946,3.368325149319811
-66,T-Cell Lymphoma,Psoriasis,local_entropy_2,Melanocytes,2452543.0,1.8551057577999759e-06,0.00030609245003699605
-67,T-Cell Lymphoma,Psoriasis,local_entropy_2,Unknown,31339556.5,1.7529326817397052e-34,2.8923389248705137e-32
-68,T-Cell Lymphoma,Psoriasis,local_entropy_2,Langerhans cells,1533132.0,4.676612677465967e-06,0.0007716410917818846
-69,T-Cell Lymphoma,Psoriasis,local_entropy_2,T-cells,50169990.5,1.6713493542908452e-32,2.7577264345798944e-30
-70,T-Cell Lymphoma,Psoriasis,local_entropy_2,Basal keratinocytes,3313164.0,1.1508094851394362e-14,1.89883565048007e-12
-71,T-Cell Lymphoma,Psoriasis,local_entropy_2,Fibroblasts,898414.0,0.05072034048494723,8.368856180016293
-72,T-Cell Lymphoma,Psoriasis,local_entropy_2,Macrophages,27447165.0,1.9472171869897387e-307,3.212908358533069e-305
-73,T-Cell Lymphoma,Psoriasis,local_entropy_2,B-cells,18382773.5,3.2313906705753383e-13,5.331794606449309e-11
-74,T-Cell Lymphoma,Psoriasis,local_entropy_2,Smooth muscle cells,8455986.0,1.0170142481829276e-19,1.6780735095018304e-17
-75,T-Cell Lymphoma,Psoriasis,local_entropy_2,Endothelial cells,46018453.5,5.38187063929931e-33,8.880086554843861e-31
-76,T-Cell Lymphoma,Psoriasis,local_entropy_2,Suprabasal keratinocytes,1815172.5,9.494109553017426e-08,1.5665280762478753e-05
-77,T-Cell Lymphoma,Psoriasis,local_entropy_3,Melanocytes,2501736.0,2.0140161135311744e-09,3.3231265873264374e-07
-78,T-Cell Lymphoma,Psoriasis,local_entropy_3,Unknown,32219992.0,1.4069534205482537e-54,2.3214731439046186e-52
-79,T-Cell Lymphoma,Psoriasis,local_entropy_3,Langerhans cells,1510600.0,0.00015671430341142773,0.025857860062885575
-80,T-Cell Lymphoma,Psoriasis,local_entropy_3,T-cells,51838626.0,2.3581908810951926e-59,3.8910149538070676e-57
-81,T-Cell Lymphoma,Psoriasis,local_entropy_3,Basal keratinocytes,3334578.0,3.393373265382285e-16,5.599065887880771e-14
-82,T-Cell Lymphoma,Psoriasis,local_entropy_3,Fibroblasts,932918.5,0.7652923413109733,126.2732363163106
-83,T-Cell Lymphoma,Psoriasis,local_entropy_3,Macrophages,27789771.5,0.0,0.0
-84,T-Cell Lymphoma,Psoriasis,local_entropy_3,B-cells,18727684.0,4.456285696224064e-20,7.352871398769704e-18
-85,T-Cell Lymphoma,Psoriasis,local_entropy_3,Smooth muscle cells,8505911.0,8.769027927058432e-22,1.4468896079646412e-19
-86,T-Cell Lymphoma,Psoriasis,local_entropy_3,Endothelial cells,46241789.5,2.4057317662933398e-36,3.9694574143840105e-34
-87,T-Cell Lymphoma,Psoriasis,local_entropy_3,Suprabasal keratinocytes,1842134.0,6.008070462834846e-10,9.913316263677497e-08
-88,T-Cell Lymphoma,Psoriasis,local_entropy_4,Melanocytes,2577398.0,3.131871329874218e-15,5.16758769429246e-13
-89,T-Cell Lymphoma,Psoriasis,local_entropy_4,Unknown,32694064.5,2.312213250983384e-67,3.815151864122583e-65
-90,T-Cell Lymphoma,Psoriasis,local_entropy_4,Langerhans cells,1521800.5,2.951673470672008e-05,0.004870261226608813
-91,T-Cell Lymphoma,Psoriasis,local_entropy_4,T-cells,52767867.5,6.764718624299428e-78,1.1161785730094056e-75
-92,T-Cell Lymphoma,Psoriasis,local_entropy_4,Basal keratinocytes,3334615.5,3.3719414647959556e-16,5.5637034169133275e-14
-93,T-Cell Lymphoma,Psoriasis,local_entropy_4,Fibroblasts,939225.0,0.9968421380515963,164.47895277851336
-94,T-Cell Lymphoma,Psoriasis,local_entropy_4,Macrophages,28145361.0,0.0,0.0
-95,T-Cell Lymphoma,Psoriasis,local_entropy_4,B-cells,18786474.5,2.120576015655612e-21,3.49895042583176e-19
-96,T-Cell Lymphoma,Psoriasis,local_entropy_4,Smooth muscle cells,8582463.0,3.680763011725944e-25,6.073258969347808e-23
-97,T-Cell Lymphoma,Psoriasis,local_entropy_4,Endothelial cells,45911131.5,1.9091444088828567e-31,3.150088274656714e-29
-98,T-Cell Lymphoma,Psoriasis,local_entropy_4,Suprabasal keratinocytes,1892850.5,6.3498288820094625e-15,1.0477217655315613e-12
-99,T-Cell Lymphoma,Psoriasis,local_entropy_5,Melanocytes,2615544.0,9.7593658392992e-19,1.6102953634843679e-16
-100,T-Cell Lymphoma,Psoriasis,local_entropy_5,Unknown,33061894.0,3.1389035813410616e-78,5.1791909092127505e-76
-101,T-Cell Lymphoma,Psoriasis,local_entropy_5,Langerhans cells,1504044.0,0.0003884406267371527,0.0640927034116302
-102,T-Cell Lymphoma,Psoriasis,local_entropy_5,T-cells,52713882.0,9.502172504874551e-77,1.567858463304301e-74
-103,T-Cell Lymphoma,Psoriasis,local_entropy_5,Basal keratinocytes,3359436.0,4.481908276172494e-18,7.395148655684615e-16
-104,T-Cell Lymphoma,Psoriasis,local_entropy_5,Fibroblasts,947102.0,0.7025770276102763,115.92520955569557
-105,T-Cell Lymphoma,Psoriasis,local_entropy_5,Macrophages,28528054.0,0.0,0.0
-106,T-Cell Lymphoma,Psoriasis,local_entropy_5,B-cells,18699686.0,1.832725131234224e-19,3.02399646653647e-17
-107,T-Cell Lymphoma,Psoriasis,local_entropy_5,Smooth muscle cells,8685117.0,4.314519046263134e-30,7.118956426334172e-28
-108,T-Cell Lymphoma,Psoriasis,local_entropy_5,Endothelial cells,45422319.5,7.0720109840384e-25,1.166881812366336e-22
-109,T-Cell Lymphoma,Psoriasis,local_entropy_5,Suprabasal keratinocytes,1933974.0,9.075566701353183e-20,1.4974685057232753e-17
-110,T-Cell Lymphoma,Psoriasis,egophily_1,Melanocytes,2475244.0,5.845245907496329e-08,9.644655747368945e-06
-111,T-Cell Lymphoma,Psoriasis,egophily_1,Unknown,28197133.0,0.667474906103384,110.13335950705837
-112,T-Cell Lymphoma,Psoriasis,egophily_1,Langerhans cells,1309678.5,0.0006502866365859524,0.10729729503668214
-113,T-Cell Lymphoma,Psoriasis,egophily_1,T-cells,50482462.0,3.5407443227496657e-37,5.842228132536948e-35
-114,T-Cell Lymphoma,Psoriasis,egophily_1,Basal keratinocytes,2729067.5,2.05182227183834e-05,0.0033855067485332605
-115,T-Cell Lymphoma,Psoriasis,egophily_1,Fibroblasts,1189046.0,4.411123517286445e-34,7.278353803522635e-32
-116,T-Cell Lymphoma,Psoriasis,egophily_1,Macrophages,9033986.5,0.0,0.0
-117,T-Cell Lymphoma,Psoriasis,egophily_1,B-cells,18470213.0,5.561570017885143e-15,9.176590529510486e-13
-118,T-Cell Lymphoma,Psoriasis,egophily_1,Smooth muscle cells,7647617.0,0.3441280525912618,56.7811286775582
-119,T-Cell Lymphoma,Psoriasis,egophily_1,Endothelial cells,39101220.5,1.5502100992203905e-13,2.5578466637136442e-11
-120,T-Cell Lymphoma,Psoriasis,egophily_1,Suprabasal keratinocytes,1770717.0,6.500949348755982e-05,0.01072656642544737
-121,T-Cell Lymphoma,Psoriasis,egophily_2,Melanocytes,2525030.5,4.629244504316399e-11,7.63825343212206e-09
-122,T-Cell Lymphoma,Psoriasis,egophily_2,Unknown,27967899.5,0.6640167237481345,109.56275941844218
-123,T-Cell Lymphoma,Psoriasis,egophily_2,Langerhans cells,1309389.0,0.0007957209563146749,0.13129395779192138
-124,T-Cell Lymphoma,Psoriasis,egophily_2,T-cells,53484326.5,5.545483827491589e-94,9.15004831536112e-92
-125,T-Cell Lymphoma,Psoriasis,egophily_2,Basal keratinocytes,2696864.5,1.1712845815420924e-06,0.00019326195595444523
-126,T-Cell Lymphoma,Psoriasis,egophily_2,Fibroblasts,1339319.0,3.042702191386239e-82,5.020458615787294e-80
-127,T-Cell Lymphoma,Psoriasis,egophily_2,Macrophages,6454154.5,0.0,0.0
-128,T-Cell Lymphoma,Psoriasis,egophily_2,B-cells,19553374.0,8.902464557579871e-43,1.4689066520006786e-40
-129,T-Cell Lymphoma,Psoriasis,egophily_2,Smooth muscle cells,7729599.5,0.07771206616555114,12.822490917315935
-130,T-Cell Lymphoma,Psoriasis,egophily_2,Endothelial cells,39163603.5,6.414954125046703e-13,1.0584674306327058e-10
-131,T-Cell Lymphoma,Psoriasis,egophily_2,Suprabasal keratinocytes,1871584.0,1.0200103085753624e-12,1.683017009149348e-10
-132,T-Cell Lymphoma,Psoriasis,egophily_3,Melanocytes,2577174.0,3.26074051537583e-15,5.38022185037012e-13
-133,T-Cell Lymphoma,Psoriasis,egophily_3,Unknown,28332055.0,0.3496299369115101,57.68893959039917
-134,T-Cell Lymphoma,Psoriasis,egophily_3,Langerhans cells,1246354.0,2.3235338910366197e-08,3.8338309202104224e-06
-135,T-Cell Lymphoma,Psoriasis,egophily_3,T-cells,55170789.0,8.909370626600411e-138,1.470046153389068e-135
-136,T-Cell Lymphoma,Psoriasis,egophily_3,Basal keratinocytes,2660534.0,2.1438599818371714e-08,3.5373689700313323e-06
-137,T-Cell Lymphoma,Psoriasis,egophily_3,Fibroblasts,1385499.5,9.750590323658734e-102,1.6088474034036912e-99
-138,T-Cell Lymphoma,Psoriasis,egophily_3,Macrophages,5755139.5,0.0,0.0
-139,T-Cell Lymphoma,Psoriasis,egophily_3,B-cells,20357655.5,2.2768670900280046e-73,3.756830698546208e-71
-140,T-Cell Lymphoma,Psoriasis,egophily_3,Smooth muscle cells,7688105.0,0.17856603278696948,29.463395409849966
-141,T-Cell Lymphoma,Psoriasis,egophily_3,Endothelial cells,39349935.0,2.5569750622189417e-11,4.219008852661253e-09
-142,T-Cell Lymphoma,Psoriasis,egophily_3,Suprabasal keratinocytes,2002720.5,1.6876618354204453e-29,2.7846420284437347e-27
-143,T-Cell Lymphoma,Psoriasis,egophily_4,Melanocytes,2700310.5,6.348434373773798e-28,1.0474916716726765e-25
-144,T-Cell Lymphoma,Psoriasis,egophily_4,Unknown,28522712.5,0.09846088426549118,16.246045903806046
-145,T-Cell Lymphoma,Psoriasis,egophily_4,Langerhans cells,1235187.0,2.2120732039166576e-09,3.649920786462485e-07
-146,T-Cell Lymphoma,Psoriasis,egophily_4,T-cells,56401303.0,4.2679648115084025e-175,7.042141938988865e-173
-147,T-Cell Lymphoma,Psoriasis,egophily_4,Basal keratinocytes,2627512.0,3.5236323805722444e-10,5.813993427944203e-08
-148,T-Cell Lymphoma,Psoriasis,egophily_4,Fibroblasts,1400264.0,1.9486018353517442e-108,3.215193028330378e-106
-149,T-Cell Lymphoma,Psoriasis,egophily_4,Macrophages,5471110.5,0.0,0.0
-150,T-Cell Lymphoma,Psoriasis,egophily_4,B-cells,20932874.5,2.000714370251319e-100,3.301178710914676e-98
-151,T-Cell Lymphoma,Psoriasis,egophily_4,Smooth muscle cells,7774915.0,0.026392424060878356,4.354749970044929
-152,T-Cell Lymphoma,Psoriasis,egophily_4,Endothelial cells,39701845.0,1.296207636371836e-08,2.138742600013529e-06
-153,T-Cell Lymphoma,Psoriasis,egophily_4,Suprabasal keratinocytes,2058178.5,7.824487588330757e-39,1.291040452074575e-36
-154,T-Cell Lymphoma,Psoriasis,egophily_5,Melanocytes,2764758.0,3.375738959021993e-36,5.5699692823862885e-34
-155,T-Cell Lymphoma,Psoriasis,egophily_5,Unknown,28952023.0,0.0010869349139742785,0.17934426080575594
-156,T-Cell Lymphoma,Psoriasis,egophily_5,Langerhans cells,1213854.5,1.612002743544062e-11,2.6598045268477023e-09
-157,T-Cell Lymphoma,Psoriasis,egophily_5,T-cells,57618077.5,1.9195599925971598e-216,3.167273987785313e-214
-158,T-Cell Lymphoma,Psoriasis,egophily_5,Basal keratinocytes,2654321.5,1.0250700130594346e-08,1.691365521548067e-06
-159,T-Cell Lymphoma,Psoriasis,egophily_5,Fibroblasts,1390918.5,3.665242037857284e-104,6.047649362464519e-102
-160,T-Cell Lymphoma,Psoriasis,egophily_5,Macrophages,5388314.5,0.0,0.0
-161,T-Cell Lymphoma,Psoriasis,egophily_5,B-cells,21405288.0,7.10919618220481e-126,1.1730173700637937e-123
-162,T-Cell Lymphoma,Psoriasis,egophily_5,Smooth muscle cells,7790239.5,0.017554743533857636,2.89653268308651
-163,T-Cell Lymphoma,Psoriasis,egophily_5,Endothelial cells,40064264.0,2.957447172331156e-06,0.00048797878343464075
-164,T-Cell Lymphoma,Psoriasis,egophily_5,Suprabasal keratinocytes,2093432.5,1.8463933036717563e-45,3.0465489510583977e-43
-165,T-Cell Lymphoma,Eczema,local_homophily_1,Melanocytes,1513391.5,0.10339205600757488,17.059689241249853
-166,T-Cell Lymphoma,Eczema,local_homophily_1,Unknown,18286148.0,0.6468541919570984,106.73094167292122
-167,T-Cell Lymphoma,Eczema,local_homophily_1,Langerhans cells,880758.0,0.010912791660763746,1.8006106240260178
-168,T-Cell Lymphoma,Eczema,local_homophily_1,T-cells,28593736.5,2.67274021164245e-58,4.410021349210043e-56
-169,T-Cell Lymphoma,Eczema,local_homophily_1,Basal keratinocytes,2015673.0,0.26926718490251056,44.42908550891424
-170,T-Cell Lymphoma,Eczema,local_homophily_1,Fibroblasts,517025.5,0.009647610602310945,1.591855749381306
-171,T-Cell Lymphoma,Eczema,local_homophily_1,Macrophages,4223535.5,0.18903121768150444,31.190150917448236
-172,T-Cell Lymphoma,Eczema,local_homophily_1,B-cells,10981393.0,0.047364748827991146,7.81518355661854
-173,T-Cell Lymphoma,Eczema,local_homophily_1,Smooth muscle cells,4025702.5,0.12647852926040415,20.868957327966683
-174,T-Cell Lymphoma,Eczema,local_homophily_1,Endothelial cells,32784839.0,0.0,0.0
-175,T-Cell Lymphoma,Eczema,local_homophily_1,Suprabasal keratinocytes,844272.5,5.244656870337092e-06,0.0008653683836056202
-176,T-Cell Lymphoma,Eczema,local_homophily_2,Melanocytes,1593246.5,1.3413609034915683e-05,0.002213245490761088
-177,T-Cell Lymphoma,Eczema,local_homophily_2,Unknown,20345278.5,1.8340357051175217e-24,3.026158913443911e-22
-178,T-Cell Lymphoma,Eczema,local_homophily_2,Langerhans cells,972903.0,0.05099144363609569,8.413588199955788
-179,T-Cell Lymphoma,Eczema,local_homophily_2,T-cells,28331608.5,7.425546861620394e-51,1.2252152321673649e-48
-180,T-Cell Lymphoma,Eczema,local_homophily_2,Basal keratinocytes,2330984.0,1.8744390390196848e-13,3.09282441438248e-11
-181,T-Cell Lymphoma,Eczema,local_homophily_2,Fibroblasts,464712.5,0.17460982661790037,28.81062139195356
-182,T-Cell Lymphoma,Eczema,local_homophily_2,Macrophages,4237089.5,0.12855287112405864,21.211223735469673
-183,T-Cell Lymphoma,Eczema,local_homophily_2,B-cells,11673824.5,2.671728757455644e-13,4.408352449801812e-11
-184,T-Cell Lymphoma,Eczema,local_homophily_2,Smooth muscle cells,4171551.0,9.814420002271244e-05,0.01619379300374755
-185,T-Cell Lymphoma,Eczema,local_homophily_2,Endothelial cells,35786591.5,0.0,0.0
-186,T-Cell Lymphoma,Eczema,local_homophily_2,Suprabasal keratinocytes,865366.0,1.495214203514414e-08,2.4671034357987833e-06
-187,T-Cell Lymphoma,Eczema,local_homophily_3,Melanocytes,1553720.5,0.0027138291394189144,0.4477818080041208
-188,T-Cell Lymphoma,Eczema,local_homophily_3,Unknown,20044042.5,5.270445146853514e-18,8.696234492308297e-16
-189,T-Cell Lymphoma,Eczema,local_homophily_3,Langerhans cells,954666.5,0.28600290889191515,47.190479967166
-190,T-Cell Lymphoma,Eczema,local_homophily_3,T-cells,27714152.5,9.844705400770439e-36,1.6243763911271227e-33
-191,T-Cell Lymphoma,Eczema,local_homophily_3,Basal keratinocytes,2278846.0,2.530761933326031e-09,4.1757571899879504e-07
-192,T-Cell Lymphoma,Eczema,local_homophily_3,Fibroblasts,440181.5,0.001382270527148357,0.2280746369794789
-193,T-Cell Lymphoma,Eczema,local_homophily_3,Macrophages,4125974.5,0.8240372414167024,135.96614483375592
-194,T-Cell Lymphoma,Eczema,local_homophily_3,B-cells,11444102.5,3.0073803137915005e-08,4.962177517755976e-06
-195,T-Cell Lymphoma,Eczema,local_homophily_3,Smooth muscle cells,4041463.5,0.07554954797828779,12.465675416417486
-196,T-Cell Lymphoma,Eczema,local_homophily_3,Endothelial cells,35199677.5,0.0,0.0
-197,T-Cell Lymphoma,Eczema,local_homophily_3,Suprabasal keratinocytes,837185.0,3.613884945167777e-05,0.005962910159526833
-198,T-Cell Lymphoma,Eczema,local_homophily_4,Melanocytes,1519927.0,0.06575387251595052,10.849388965131837
-199,T-Cell Lymphoma,Eczema,local_homophily_4,Unknown,19713690.0,4.023090486874114e-12,6.638099303342287e-10
-200,T-Cell Lymphoma,Eczema,local_homophily_4,Langerhans cells,944333.0,0.5716150308261233,94.31648008631035
-201,T-Cell Lymphoma,Eczema,local_homophily_4,T-cells,27295163.5,4.9204623832629104e-27,8.118762932383802e-25
-202,T-Cell Lymphoma,Eczema,local_homophily_4,Basal keratinocytes,2241674.5,6.949343593907507e-07,0.00011466416929947385
-203,T-Cell Lymphoma,Eczema,local_homophily_4,Fibroblasts,422118.0,5.268522192791172e-06,0.0008693061618105433
-204,T-Cell Lymphoma,Eczema,local_homophily_4,Macrophages,4061458.5,0.2172334304424487,35.843516023004035
-205,T-Cell Lymphoma,Eczema,local_homophily_4,B-cells,11301966.5,8.728239110088176e-06,0.0014401594531645492
-206,T-Cell Lymphoma,Eczema,local_homophily_4,Smooth muscle cells,3992981.5,0.3232707402589595,53.33967214272832
-207,T-Cell Lymphoma,Eczema,local_homophily_4,Endothelial cells,34647522.5,0.0,0.0
-208,T-Cell Lymphoma,Eczema,local_homophily_4,Suprabasal keratinocytes,821223.0,0.0011001786176200567,0.18152947190730934
-209,T-Cell Lymphoma,Eczema,local_homophily_5,Melanocytes,1494410.5,0.3343033077522858,55.16004577912716
-210,T-Cell Lymphoma,Eczema,local_homophily_5,Unknown,19604743.5,1.8645396589664457e-10,3.076490437294635e-08
-211,T-Cell Lymphoma,Eczema,local_homophily_5,Langerhans cells,936481.0,0.853393193638153,140.80987695029523
-212,T-Cell Lymphoma,Eczema,local_homophily_5,T-cells,27033241.0,3.085467784224356e-22,5.091021843970188e-20
-213,T-Cell Lymphoma,Eczema,local_homophily_5,Basal keratinocytes,2215945.0,1.929581318141886e-05,0.0031838091749341116
-214,T-Cell Lymphoma,Eczema,local_homophily_5,Fibroblasts,414207.0,2.640702418460226e-07,4.357158990459373e-05
-215,T-Cell Lymphoma,Eczema,local_homophily_5,Macrophages,4028600.0,0.08027119781821335,13.244747640005201
-216,T-Cell Lymphoma,Eczema,local_homophily_5,B-cells,11191333.5,0.00032492427464895634,0.0536125053170778
-217,T-Cell Lymphoma,Eczema,local_homophily_5,Smooth muscle cells,3934653.5,0.9696092035401459,159.9855185841241
-218,T-Cell Lymphoma,Eczema,local_homophily_5,Endothelial cells,34129414.0,0.0,0.0
-219,T-Cell Lymphoma,Eczema,local_homophily_5,Suprabasal keratinocytes,811553.0,0.006178634129876983,1.0194746314297023
-220,T-Cell Lymphoma,Eczema,local_entropy_1,Melanocytes,1578622.5,0.00011408762122934183,0.0188244575028414
-221,T-Cell Lymphoma,Eczema,local_entropy_1,Unknown,21036607.5,2.4828971800482526e-43,4.096780347079617e-41
-222,T-Cell Lymphoma,Eczema,local_entropy_1,Langerhans cells,1024270.0,8.502229921728672e-06,0.001402867937085231
-223,T-Cell Lymphoma,Eczema,local_entropy_1,T-cells,24936279.0,0.255830147121336,42.211974275020445
-224,T-Cell Lymphoma,Eczema,local_entropy_1,Basal keratinocytes,2309606.5,1.0686599031384222e-11,1.7632888401783966e-09
-225,T-Cell Lymphoma,Eczema,local_entropy_1,Fibroblasts,500156.0,0.19219791264291142,31.712655586080384
-226,T-Cell Lymphoma,Eczema,local_entropy_1,Macrophages,4381170.5,0.00015371135330249466,0.02536237329491162
-227,T-Cell Lymphoma,Eczema,local_entropy_1,B-cells,11693129.0,8.171172487644071e-14,1.3482434604612719e-11
-228,T-Cell Lymphoma,Eczema,local_entropy_1,Smooth muscle cells,4274802.5,2.3290944781941227e-08,3.8430058890203025e-06
-229,T-Cell Lymphoma,Eczema,local_entropy_1,Endothelial cells,72033717.0,0.0,0.0
-230,T-Cell Lymphoma,Eczema,local_entropy_1,Suprabasal keratinocytes,780583.0,0.29033071499795104,47.90456797466192
-231,T-Cell Lymphoma,Eczema,local_entropy_2,Melanocytes,1709323.0,7.953237117399563e-17,1.3122841243709279e-14
-232,T-Cell Lymphoma,Eczema,local_entropy_2,Unknown,22083931.5,2.907193324956017e-82,4.796868986177427e-80
-233,T-Cell Lymphoma,Eczema,local_entropy_2,Langerhans cells,1079602.5,1.0234296755012777e-12,1.6886589645771082e-10
-234,T-Cell Lymphoma,Eczema,local_entropy_2,T-cells,26662142.5,2.783532781648244e-16,4.5928290897196024e-14
-235,T-Cell Lymphoma,Eczema,local_entropy_2,Basal keratinocytes,2513986.5,1.4081636288317915e-34,2.3234699875724558e-32
-236,T-Cell Lymphoma,Eczema,local_entropy_2,Fibroblasts,509873.5,0.0422303955248588,6.968015261601702
-237,T-Cell Lymphoma,Eczema,local_entropy_2,Macrophages,4854723.5,3.9026090953346165e-29,6.439305007302117e-27
-238,T-Cell Lymphoma,Eczema,local_entropy_2,B-cells,12111950.0,1.2129570369782731e-26,2.0013791110141507e-24
-239,T-Cell Lymphoma,Eczema,local_entropy_2,Smooth muscle cells,4493018.0,6.910131217568805e-20,1.140171650898853e-17
-240,T-Cell Lymphoma,Eczema,local_entropy_2,Endothelial cells,73407339.5,0.0,0.0
-241,T-Cell Lymphoma,Eczema,local_entropy_2,Suprabasal keratinocytes,849658.5,1.5196884176567005e-06,0.0002507485889133556
-242,T-Cell Lymphoma,Eczema,local_entropy_3,Melanocytes,1775412.0,3.0697126088280065e-26,5.065025804566211e-24
-243,T-Cell Lymphoma,Eczema,local_entropy_3,Unknown,22854012.0,4.449706414990327e-119,7.34201558473404e-117
-244,T-Cell Lymphoma,Eczema,local_entropy_3,Langerhans cells,1101783.5,2.33951275012245e-16,3.8601960377020426e-14
-245,T-Cell Lymphoma,Eczema,local_entropy_3,T-cells,27423872.0,1.4260378904132346e-29,2.3529625191818374e-27
-246,T-Cell Lymphoma,Eczema,local_entropy_3,Basal keratinocytes,2619452.5,1.823935814778448e-51,3.0094940943844393e-49
-247,T-Cell Lymphoma,Eczema,local_entropy_3,Fibroblasts,535265.5,8.263072875304913e-05,0.013634070244253109
-248,T-Cell Lymphoma,Eczema,local_entropy_3,Macrophages,5005997.5,5.5783995233506784e-42,9.20435921352862e-40
-249,T-Cell Lymphoma,Eczema,local_entropy_3,B-cells,12529879.5,6.162604316685509e-44,1.016829712253109e-41
-250,T-Cell Lymphoma,Eczema,local_entropy_3,Smooth muscle cells,4669597.0,3.385622657993497e-33,5.5862773856892685e-31
-251,T-Cell Lymphoma,Eczema,local_entropy_3,Endothelial cells,73979876.0,0.0,0.0
-252,T-Cell Lymphoma,Eczema,local_entropy_3,Suprabasal keratinocytes,882700.5,4.00289803690362e-11,6.604781760890974e-09
-253,T-Cell Lymphoma,Eczema,local_entropy_4,Melanocytes,1842067.0,5.690435850824413e-38,9.389219153860282e-36
-254,T-Cell Lymphoma,Eczema,local_entropy_4,Unknown,23318616.5,1.2648415680928339e-144,2.086988587353176e-142
-255,T-Cell Lymphoma,Eczema,local_entropy_4,Langerhans cells,1123064.0,2.570029630622491e-20,4.2405488905271104e-18
-256,T-Cell Lymphoma,Eczema,local_entropy_4,T-cells,28125493.0,1.6764004821093803e-45,2.766060795480478e-43
-257,T-Cell Lymphoma,Eczema,local_entropy_4,Basal keratinocytes,2706821.0,4.493789552867147e-68,7.414752762230792e-66
-258,T-Cell Lymphoma,Eczema,local_entropy_4,Fibroblasts,551286.0,2.7648838931590855e-07,4.562058423712491e-05
-259,T-Cell Lymphoma,Eczema,local_entropy_4,Macrophages,5114665.5,1.046378144425985e-52,1.7265239383028754e-50
-260,T-Cell Lymphoma,Eczema,local_entropy_4,B-cells,12675774.0,5.004570786005724e-51,8.257541796909445e-49
-261,T-Cell Lymphoma,Eczema,local_entropy_4,Smooth muscle cells,4815316.0,7.267963350768753e-47,1.199213952876844e-44
-262,T-Cell Lymphoma,Eczema,local_entropy_4,Endothelial cells,74565892.5,0.0,0.0
-263,T-Cell Lymphoma,Eczema,local_entropy_4,Suprabasal keratinocytes,918031.0,1.54582887838063e-17,2.5506176493280397e-15
-264,T-Cell Lymphoma,Eczema,local_entropy_5,Melanocytes,1892206.0,2.78774669569538e-48,4.5997820478973775e-46
-265,T-Cell Lymphoma,Eczema,local_entropy_5,Unknown,23723370.0,6.31128890704108e-169,1.041362669661778e-166
-266,T-Cell Lymphoma,Eczema,local_entropy_5,Langerhans cells,1131936.0,4.2092490026143506e-22,6.945260854313678e-20
-267,T-Cell Lymphoma,Eczema,local_entropy_5,T-cells,28420324.0,2.9679443613693865e-53,4.8971081962594886e-51
-268,T-Cell Lymphoma,Eczema,local_entropy_5,Basal keratinocytes,2778496.0,1.793620987096202e-83,2.9594746287087328e-81
-269,T-Cell Lymphoma,Eczema,local_entropy_5,Fibroblasts,561719.0,3.1864531845201735e-09,5.257647754458286e-07
-270,T-Cell Lymphoma,Eczema,local_entropy_5,Macrophages,5250028.0,7.974549902348228e-68,1.3158007338874578e-65
-271,T-Cell Lymphoma,Eczema,local_entropy_5,B-cells,12893776.0,1.2230333158318068e-62,2.0180049711224813e-60
-272,T-Cell Lymphoma,Eczema,local_entropy_5,Smooth muscle cells,4919239.0,4.2417071670523426e-58,6.998816825636366e-56
-273,T-Cell Lymphoma,Eczema,local_entropy_5,Endothelial cells,75206749.0,0.0,0.0
-274,T-Cell Lymphoma,Eczema,local_entropy_5,Suprabasal keratinocytes,947724.0,3.783781131379492e-24,6.243238866776162e-22
-275,T-Cell Lymphoma,Eczema,egophily_1,Melanocytes,1563818.0,0.0006835120577194222,0.11277948952370467
-276,T-Cell Lymphoma,Eczema,egophily_1,Unknown,17679819.0,0.00030470640530580955,0.05027655687545858
-277,T-Cell Lymphoma,Eczema,egophily_1,Langerhans cells,854054.0,0.00010075338862159794,0.016624309122563664
-278,T-Cell Lymphoma,Eczema,egophily_1,T-cells,30252954.0,2.155854572102296e-116,3.557160043968788e-114
-279,T-Cell Lymphoma,Eczema,egophily_1,Basal keratinocytes,1989075.5,0.06609769391665472,10.90611949624803
-280,T-Cell Lymphoma,Eczema,egophily_1,Fibroblasts,633496.0,2.110450817078583e-30,3.482243848179662e-28
-281,T-Cell Lymphoma,Eczema,egophily_1,Macrophages,4517353.5,2.3167999983840825e-09,3.822719997333736e-07
-282,T-Cell Lymphoma,Eczema,egophily_1,B-cells,10994769.5,0.036403381439605295,6.006557937534874
-283,T-Cell Lymphoma,Eczema,egophily_1,Smooth muscle cells,4279743.0,1.0767268798024882e-08,1.7765993516741056e-06
-284,T-Cell Lymphoma,Eczema,egophily_1,Endothelial cells,30296679.5,0.0,0.0
-285,T-Cell Lymphoma,Eczema,egophily_1,Suprabasal keratinocytes,874835.5,3.32733389836282e-10,5.490100932298653e-08
-286,T-Cell Lymphoma,Eczema,egophily_2,Melanocytes,1652062.5,1.8501758090478155e-10,3.0527900849288955e-08
-287,T-Cell Lymphoma,Eczema,egophily_2,Unknown,17769912.5,0.00173922809620711,0.28697263587417315
-288,T-Cell Lymphoma,Eczema,egophily_2,Langerhans cells,849818.0,5.7672425510436835e-05,0.009515950209222078
-289,T-Cell Lymphoma,Eczema,egophily_2,T-cells,33062313.0,3.669205856790679e-258,6.054189663704621e-256
-290,T-Cell Lymphoma,Eczema,egophily_2,Basal keratinocytes,1959088.0,0.008908339998215444,1.4698760997055482
-291,T-Cell Lymphoma,Eczema,egophily_2,Fibroblasts,731720.0,6.091608997068195e-78,1.0051154845162522e-75
-292,T-Cell Lymphoma,Eczema,egophily_2,Macrophages,4734712.0,1.104549832458687e-20,1.8225072235568336e-18
-293,T-Cell Lymphoma,Eczema,egophily_2,B-cells,11390171.0,2.947956101566305e-07,4.864127567584404e-05
-294,T-Cell Lymphoma,Eczema,egophily_2,Smooth muscle cells,4536669.5,7.30246835357488e-23,1.2049072783398553e-20
-295,T-Cell Lymphoma,Eczema,egophily_2,Endothelial cells,25847587.0,0.0,0.0
-296,T-Cell Lymphoma,Eczema,egophily_2,Suprabasal keratinocytes,975479.5,2.230560734491086e-31,3.680425211910292e-29
-297,T-Cell Lymphoma,Eczema,egophily_3,Melanocytes,1808021.0,1.0578972519904113e-31,1.7455304657841786e-29
-298,T-Cell Lymphoma,Eczema,egophily_3,Unknown,17902835.5,0.014581492099240534,2.405946196374688
-299,T-Cell Lymphoma,Eczema,egophily_3,Langerhans cells,836932.5,3.4092156148796988e-06,0.0005625205764551503
-300,T-Cell Lymphoma,Eczema,egophily_3,T-cells,34901199.0,0.0,0.0
-301,T-Cell Lymphoma,Eczema,egophily_3,Basal keratinocytes,1981190.0,0.04320760720423211,7.129255188698298
-302,T-Cell Lymphoma,Eczema,egophily_3,Fibroblasts,755933.0,2.3127597835034267e-93,3.816053642780654e-91
-303,T-Cell Lymphoma,Eczema,egophily_3,Macrophages,4963432.5,4.0106632073051307e-38,6.617594292053466e-36
-304,T-Cell Lymphoma,Eczema,egophily_3,B-cells,11828318.0,1.8979203232340326e-17,3.1315685333361535e-15
-305,T-Cell Lymphoma,Eczema,egophily_3,Smooth muscle cells,4685268.0,1.489394342626979e-34,2.4575006653345154e-32
-306,T-Cell Lymphoma,Eczema,egophily_3,Endothelial cells,23950423.0,0.0,0.0
-307,T-Cell Lymphoma,Eczema,egophily_3,Suprabasal keratinocytes,1087236.0,3.017802771049544e-70,4.979374572231748e-68
-308,T-Cell Lymphoma,Eczema,egophily_4,Melanocytes,1877761.0,3.507676339362127e-45,5.787665959947509e-43
-309,T-Cell Lymphoma,Eczema,egophily_4,Unknown,17971709.5,0.03699214532998734,6.103703979447911
-310,T-Cell Lymphoma,Eczema,egophily_4,Langerhans cells,803662.5,3.8988281263119547e-10,6.433066408414725e-08
-311,T-Cell Lymphoma,Eczema,egophily_4,T-cells,35918031.5,0.0,0.0
-312,T-Cell Lymphoma,Eczema,egophily_4,Basal keratinocytes,1920963.5,0.00027638415656858873,0.04560338583381714
-313,T-Cell Lymphoma,Eczema,egophily_4,Fibroblasts,771526.0,4.322269863376677e-104,7.131745274571518e-102
-314,T-Cell Lymphoma,Eczema,egophily_4,Macrophages,5017265.0,4.919091881566667e-43,8.116501604585001e-41
-315,T-Cell Lymphoma,Eczema,egophily_4,B-cells,12211720.5,2.296077045709916e-30,3.7885271254213614e-28
-316,T-Cell Lymphoma,Eczema,egophily_4,Smooth muscle cells,4893651.0,3.213680314311732e-55,5.302572518614358e-53
-317,T-Cell Lymphoma,Eczema,egophily_4,Endothelial cells,22821952.5,0.0,0.0
-318,T-Cell Lymphoma,Eczema,egophily_4,Suprabasal keratinocytes,1121575.5,2.1362978995279893e-85,3.524891534221182e-83
-319,T-Cell Lymphoma,Eczema,egophily_5,Melanocytes,1910621.0,2.1758979025058964e-52,3.590231539134729e-50
-320,T-Cell Lymphoma,Eczema,egophily_5,Unknown,18223425.0,0.43413512152677325,71.6322950519176
-321,T-Cell Lymphoma,Eczema,egophily_5,Langerhans cells,794005.5,1.739273746440126e-11,2.869801681626208e-09
-322,T-Cell Lymphoma,Eczema,egophily_5,T-cells,36791881.5,0.0,0.0
-323,T-Cell Lymphoma,Eczema,egophily_5,Basal keratinocytes,1952708.0,0.00534809177503303,0.88243514288045
-324,T-Cell Lymphoma,Eczema,egophily_5,Fibroblasts,780871.0,8.289202861320076e-111,1.3677184721178126e-108
-325,T-Cell Lymphoma,Eczema,egophily_5,Macrophages,5110617.0,2.764473226094781e-52,4.561380823056389e-50
-326,T-Cell Lymphoma,Eczema,egophily_5,B-cells,12488776.0,4.88342630336485e-42,8.057653400552003e-40
-327,T-Cell Lymphoma,Eczema,egophily_5,Smooth muscle cells,5031488.5,1.2633357852955247e-71,2.084504045737616e-69
-328,T-Cell Lymphoma,Eczema,egophily_5,Endothelial cells,21943218.5,0.0,0.0
-329,T-Cell Lymphoma,Eczema,egophily_5,Suprabasal keratinocytes,1149527.0,7.600629194381454e-99,1.25410381707294e-96
-330,Psoriasis,Eczema,local_homophily_1,Melanocytes,1446541.0,5.064785354514457e-05,0.008356895834948853
-331,Psoriasis,Eczema,local_homophily_1,Unknown,20965422.0,1.2777589993216694e-27,2.1083023488807546e-25
-332,Psoriasis,Eczema,local_homophily_1,Langerhans cells,1216524.0,0.00021644877220989333,0.0357140474146324
-333,Psoriasis,Eczema,local_homophily_1,T-cells,26006981.5,0.5645980258023509,93.15867425738789
-334,Psoriasis,Eczema,local_homophily_1,Basal keratinocytes,2753051.5,0.1577905137417115,26.035434767382398
-335,Psoriasis,Eczema,local_homophily_1,Fibroblasts,317102.0,0.0004440102431911837,0.07326169012654532
-336,Psoriasis,Eczema,local_homophily_1,Macrophages,16276502.5,2.2412771631624167e-116,3.6981073192179875e-114
-337,Psoriasis,Eczema,local_homophily_1,B-cells,10516072.0,1.704539701800433e-15,2.8124905079707147e-13
-338,Psoriasis,Eczema,local_homophily_1,Smooth muscle cells,4683185.5,0.13785536971363455,22.7461360027497
-339,Psoriasis,Eczema,local_homophily_1,Endothelial cells,41411465.0,0.0,0.0
-340,Psoriasis,Eczema,local_homophily_1,Suprabasal keratinocytes,789205.0,0.00398046904397136,0.6567773922552744
-341,Psoriasis,Eczema,local_homophily_2,Melanocytes,1382299.0,1.036072527629633e-09,1.7095196705888943e-07
-342,Psoriasis,Eczema,local_homophily_2,Unknown,21144011.0,5.115077792572776e-24,8.439878357745081e-22
-343,Psoriasis,Eczema,local_homophily_2,Langerhans cells,1133541.0,1.5033210778724734e-11,2.480479778489581e-09
-344,Psoriasis,Eczema,local_homophily_2,T-cells,24516636.5,1.8561009291999172e-10,3.062566533179863e-08
-345,Psoriasis,Eczema,local_homophily_2,Basal keratinocytes,2735510.0,0.07613349754814497,12.56202709544392
-346,Psoriasis,Eczema,local_homophily_2,Fibroblasts,306653.5,7.185468590988721e-06,0.001185602317513139
-347,Psoriasis,Eczema,local_homophily_2,Macrophages,13076267.0,0.0004092725639505281,0.06752997305183714
-348,Psoriasis,Eczema,local_homophily_2,B-cells,10661591.5,5.69749653590237e-12,9.400869284238913e-10
-349,Psoriasis,Eczema,local_homophily_2,Smooth muscle cells,4449523.5,2.4181484895645655e-06,0.00039899450077815333
-350,Psoriasis,Eczema,local_homophily_2,Endothelial cells,41379684.5,0.0,0.0
-351,Psoriasis,Eczema,local_homophily_2,Suprabasal keratinocytes,808197.5,9.114534395713626e-05,0.015038981752927482
-352,Psoriasis,Eczema,local_homophily_3,Melanocytes,1361234.0,1.1429781507053514e-11,1.88591394866383e-09
-353,Psoriasis,Eczema,local_homophily_3,Unknown,21015181.0,1.6167508283763673e-26,2.667638866821006e-24
-354,Psoriasis,Eczema,local_homophily_3,Langerhans cells,1112223.5,4.751670574576488e-14,7.840256448051204e-12
-355,Psoriasis,Eczema,local_homophily_3,T-cells,24452515.0,3.5376666481042044e-11,5.837149969371938e-09
-356,Psoriasis,Eczema,local_homophily_3,Basal keratinocytes,2649936.5,0.00035648110331513755,0.0588193820469977
-357,Psoriasis,Eczema,local_homophily_3,Fibroblasts,307909.5,1.2707674013516312e-05,0.0020967662122301917
-358,Psoriasis,Eczema,local_homophily_3,Macrophages,12721033.5,0.16607206881052572,27.401891353736744
-359,Psoriasis,Eczema,local_homophily_3,B-cells,10623646.5,8.003760844626868e-13,1.3206205393634332e-10
-360,Psoriasis,Eczema,local_homophily_3,Smooth muscle cells,4360751.5,2.764675605136451e-09,4.5617147484751437e-07
-361,Psoriasis,Eczema,local_homophily_3,Endothelial cells,41240227.5,0.0,0.0
-362,Psoriasis,Eczema,local_homophily_3,Suprabasal keratinocytes,800737.5,0.0004705349455871429,0.07763826602187858
-363,Psoriasis,Eczema,local_homophily_4,Melanocytes,1344005.5,2.0383845344847357e-13,3.363334481899814e-11
-364,Psoriasis,Eczema,local_homophily_4,Unknown,20835448.0,3.185922553178204e-30,5.256772212744036e-28
-365,Psoriasis,Eczema,local_homophily_4,Langerhans cells,1106666.0,9.574831321003374e-15,1.5798471679655567e-12
-366,Psoriasis,Eczema,local_homophily_4,T-cells,24286005.5,3.5938076321516576e-13,5.929782593050234e-11
-367,Psoriasis,Eczema,local_homophily_4,Basal keratinocytes,2583058.0,6.537566663388597e-07,0.00010786984994591185
-368,Psoriasis,Eczema,local_homophily_4,Fibroblasts,304005.0,2.0589215602791335e-06,0.000339722057446057
-369,Psoriasis,Eczema,local_homophily_4,Macrophages,12564149.0,0.6629704977781019,109.39013213338681
-370,Psoriasis,Eczema,local_homophily_4,B-cells,10591890.5,1.4631298554257196e-13,2.4141642614524376e-11
-371,Psoriasis,Eczema,local_homophily_4,Smooth muscle cells,4297888.5,9.356566145918638e-12,1.5438334140765753e-09
-372,Psoriasis,Eczema,local_homophily_4,Endothelial cells,40843275.5,0.0,0.0
-373,Psoriasis,Eczema,local_homophily_4,Suprabasal keratinocytes,801098.5,0.00043624909853830294,0.07198110125881999
-374,Psoriasis,Eczema,local_homophily_5,Melanocytes,1334881.0,2.13346887203976e-14,3.520223638865604e-12
-375,Psoriasis,Eczema,local_homophily_5,Unknown,20722100.5,1.0868896304341255e-32,1.793367890216307e-30
-376,Psoriasis,Eczema,local_homophily_5,Langerhans cells,1103148.0,3.398845871539097e-15,5.60809568803951e-13
-377,Psoriasis,Eczema,local_homophily_5,T-cells,24187012.5,1.930684542569428e-14,3.185629495239556e-12
-378,Psoriasis,Eczema,local_homophily_5,Basal keratinocytes,2547699.5,1.0839195888125744e-08,1.7884673215407478e-06
-379,Psoriasis,Eczema,local_homophily_5,Fibroblasts,301693.0,6.557497585580833e-07,0.00010819871016208373
-380,Psoriasis,Eczema,local_homophily_5,Macrophages,12507343.0,0.9265784001404322,152.88543602317134
-381,Psoriasis,Eczema,local_homophily_5,B-cells,10519229.0,2.4663526885019644e-15,4.0694819360282417e-13
-382,Psoriasis,Eczema,local_homophily_5,Smooth muscle cells,4250146.5,7.568284151886565e-14,1.2487668850612833e-11
-383,Psoriasis,Eczema,local_homophily_5,Endothelial cells,40497007.5,0.0,0.0
-384,Psoriasis,Eczema,local_homophily_5,Suprabasal keratinocytes,794172.5,0.0017428649561200596,0.2875727177598098
-385,Psoriasis,Eczema,local_entropy_1,Melanocytes,1642262.5,0.019538624200608187,3.2238729931003505
-386,Psoriasis,Eczema,local_entropy_1,Unknown,25615312.5,2.899832391285385e-19,4.7847234456208857e-17
-387,Psoriasis,Eczema,local_entropy_1,Langerhans cells,1332234.0,0.5312381419615873,87.6542934236619
-388,Psoriasis,Eczema,local_entropy_1,T-cells,25695591.0,0.07379129783218616,12.175564142310716
-389,Psoriasis,Eczema,local_entropy_1,Basal keratinocytes,2984268.5,0.0005496634060622615,0.09069446200027315
-390,Psoriasis,Eczema,local_entropy_1,Fibroblasts,387353.5,0.0006179741694036568,0.10196573795160338
-391,Psoriasis,Eczema,local_entropy_1,Macrophages,8881134.0,5.997329832727258e-106,9.895594223999976e-104
-392,Psoriasis,Eczema,local_entropy_1,B-cells,12440562.0,2.3757516402409776e-09,3.919990206397613e-07
-393,Psoriasis,Eczema,local_entropy_1,Smooth muscle cells,4852330.5,0.3853990156508593,63.59083758239179
-394,Psoriasis,Eczema,local_entropy_1,Endothelial cells,86843333.0,4.891012589259718e-292,8.070170772278535e-290
-395,Psoriasis,Eczema,local_entropy_1,Suprabasal keratinocytes,726282.5,0.5116463054837441,84.42164040481778
-396,Psoriasis,Eczema,local_entropy_2,Melanocytes,1702851.0,1.729739304920841e-05,0.0028540698531193875
-397,Psoriasis,Eczema,local_entropy_2,Unknown,25606889.5,4.3413901207364875e-19,7.163293699215205e-17
-398,Psoriasis,Eczema,local_entropy_2,Langerhans cells,1401737.5,0.0013555684646391637,0.223668796665462
-399,Psoriasis,Eczema,local_entropy_2,T-cells,25861501.0,0.25397941029039695,41.906602697915496
-400,Psoriasis,Eczema,local_entropy_2,Basal keratinocytes,3106733.0,1.733254874220034e-09,2.859870542463056e-07
-401,Psoriasis,Eczema,local_entropy_2,Fibroblasts,383844.0,0.00211795881588649,0.34946320462127084
-402,Psoriasis,Eczema,local_entropy_2,Macrophages,9564982.0,3.602249494985116e-70,5.943711666725442e-68
-403,Psoriasis,Eczema,local_entropy_2,B-cells,12216374.5,1.4030349372766877e-05,0.0023150076465065345
-404,Psoriasis,Eczema,local_entropy_2,Smooth muscle cells,4948251.5,0.028104694221959225,4.637274546623272
-405,Psoriasis,Eczema,local_entropy_2,Endothelial cells,87953221.5,0.0,0.0
-406,Psoriasis,Eczema,local_entropy_2,Suprabasal keratinocytes,753611.0,0.3849349245010414,63.51426254267183
-407,Psoriasis,Eczema,local_entropy_3,Melanocytes,1740482.0,3.424820556921501e-08,5.6509539189204755e-06
-408,Psoriasis,Eczema,local_entropy_3,Unknown,25893443.5,3.3089470775409006e-24,5.459762677942485e-22
-409,Psoriasis,Eczema,local_entropy_3,Langerhans cells,1449960.5,5.936248424264354e-07,9.794809900036184e-05
-410,Psoriasis,Eczema,local_entropy_3,T-cells,25818823.0,0.19129054458532868,31.56293985657923
-411,Psoriasis,Eczema,local_entropy_3,Basal keratinocytes,3231444.0,5.64209768369968e-18,9.309461178104471e-16
-412,Psoriasis,Eczema,local_entropy_3,Fibroblasts,388586.5,0.00040358174133041787,0.06659098731951894
-413,Psoriasis,Eczema,local_entropy_3,Macrophages,9886173.5,5.383081896601412e-56,8.88208512939233e-54
-414,Psoriasis,Eczema,local_entropy_3,B-cells,12413357.0,8.107235098705916e-09,1.3376937912864762e-06
-415,Psoriasis,Eczema,local_entropy_3,Smooth muscle cells,5143637.5,9.427332900269464e-07,0.00015555099285444613
-416,Psoriasis,Eczema,local_entropy_3,Endothelial cells,88534442.0,0.0,0.0
-417,Psoriasis,Eczema,local_entropy_3,Suprabasal keratinocytes,772610.5,0.05380492661620226,8.877812891673372
-418,Psoriasis,Eczema,local_entropy_4,Melanocytes,1759829.0,7.948294310737708e-10,1.3114685612717216e-07
-419,Psoriasis,Eczema,local_entropy_4,Unknown,26152937.0,2.1403521270379373e-29,3.531581009612596e-27
-420,Psoriasis,Eczema,local_entropy_4,Langerhans cells,1466156.0,2.2161464421727905e-08,3.6566416295851045e-06
-421,Psoriasis,Eczema,local_entropy_4,T-cells,26079966.0,0.7711883616405171,127.24607967068533
-422,Psoriasis,Eczema,local_entropy_4,Basal keratinocytes,3345642.0,2.5221564961608287e-28,4.161558218665367e-26
-423,Psoriasis,Eczema,local_entropy_4,Fibroblasts,398451.5,6.666111324859908e-06,0.001099908368601885
-424,Psoriasis,Eczema,local_entropy_4,Macrophages,10040421.0,9.066642173979429e-50,1.4959959587066057e-47
-425,Psoriasis,Eczema,local_entropy_4,B-cells,12529796.0,3.9147841727394903e-11,6.4593938850201594e-09
-426,Psoriasis,Eczema,local_entropy_4,Smooth muscle cells,5271599.0,2.4495350535372392e-11,4.041732838336445e-09
-427,Psoriasis,Eczema,local_entropy_4,Endothelial cells,90008758.5,0.0,0.0
-428,Psoriasis,Eczema,local_entropy_4,Suprabasal keratinocytes,785603.0,0.007978690652865647,1.3164839577228318
-429,Psoriasis,Eczema,local_entropy_5,Melanocytes,1790156.0,1.0038480049613137e-12,1.6563492081861676e-10
-430,Psoriasis,Eczema,local_entropy_5,Unknown,26467350.0,2.1653318743225754e-36,3.5727975926322493e-34
-431,Psoriasis,Eczema,local_entropy_5,Langerhans cells,1494900.0,2.7237847666864857e-11,4.494244865032701e-09
-432,Psoriasis,Eczema,local_entropy_5,T-cells,26466895.5,0.22456265173020984,37.05283753548463
-433,Psoriasis,Eczema,local_entropy_5,Basal keratinocytes,3418901.5,2.87462712761839e-36,4.743134760570344e-34
-434,Psoriasis,Eczema,local_entropy_5,Fibroblasts,404317.0,3.801284657511522e-07,6.272119684894011e-05
-435,Psoriasis,Eczema,local_entropy_5,Macrophages,10189027.0,3.981341593383512e-44,6.569213629082795e-42
-436,Psoriasis,Eczema,local_entropy_5,B-cells,12809033.0,6.452392422515674e-18,1.0646447497150861e-15
-437,Psoriasis,Eczema,local_entropy_5,Smooth muscle cells,5341614.0,2.064648813674833e-14,3.4066705425634742e-12
-438,Psoriasis,Eczema,local_entropy_5,Endothelial cells,91627210.0,0.0,0.0
-439,Psoriasis,Eczema,local_entropy_5,Suprabasal keratinocytes,793913.0,0.0018307201828077543,0.30206883016327946
-440,Psoriasis,Eczema,egophily_1,Melanocytes,1519841.0,0.09465803241882455,15.618575349106052
-441,Psoriasis,Eczema,egophily_1,Unknown,22584330.0,6.916990188367221e-05,0.011413033810805915
-442,Psoriasis,Eczema,egophily_1,Langerhans cells,1294702.0,0.43477215992166396,71.73740638707454
-443,Psoriasis,Eczema,egophily_1,T-cells,29393683.5,1.0453235562535294e-36,1.7247838678183235e-34
-444,Psoriasis,Eczema,egophily_1,Basal keratinocytes,2929389.5,0.01997106423195573,3.2952255982726952
-445,Psoriasis,Eczema,egophily_1,Fibroblasts,370896.0,0.06367013409658959,10.505572125937281
-446,Psoriasis,Eczema,egophily_1,Macrophages,19918013.0,0.0,0.0
-447,Psoriasis,Eczema,egophily_1,B-cells,10991483.0,5.8305744279083905e-06,0.0009620447806048844
-448,Psoriasis,Eczema,egophily_1,Smooth muscle cells,5152234.5,3.8396839188702953e-07,6.335478466135987e-05
-449,Psoriasis,Eczema,egophily_1,Endothelial cells,42962669.5,0.0,0.0
-450,Psoriasis,Eczema,egophily_1,Suprabasal keratinocytes,792145.0,0.00208176306399408,0.34349090555902323
-451,Psoriasis,Eczema,egophily_2,Melanocytes,1582442.0,0.6961209262459311,114.85995283057864
-452,Psoriasis,Eczema,egophily_2,Unknown,22902973.5,0.009176290590108561,1.5140879473679125
-453,Psoriasis,Eczema,egophily_2,Langerhans cells,1291794.5,0.38092207898422825,62.85214303239766
-454,Psoriasis,Eczema,egophily_2,T-cells,30642921.5,2.672377922591162e-68,4.409423572275417e-66
-455,Psoriasis,Eczema,egophily_2,Basal keratinocytes,2923395.0,0.02982535348677164,4.921183325317321
-456,Psoriasis,Eczema,egophily_2,Fibroblasts,401816.0,1.2866499157001604e-06,0.00021229723609052649
-457,Psoriasis,Eczema,egophily_2,Macrophages,21546089.5,0.0,0.0
-458,Psoriasis,Eczema,egophily_2,B-cells,10877544.5,9.90822696239097e-08,1.6348574487945103e-05
-459,Psoriasis,Eczema,egophily_2,Smooth muscle cells,5416872.0,3.533927001632843e-18,5.83097955269419e-16
-460,Psoriasis,Eczema,egophily_2,Endothelial cells,37205671.0,0.0,0.0
-461,Psoriasis,Eczema,egophily_2,Suprabasal keratinocytes,838861.5,1.8208995219497388e-08,3.004484211217069e-06
-462,Psoriasis,Eczema,egophily_3,Melanocytes,1705927.5,1.0957592037167978e-05,0.0018080026861327164
-463,Psoriasis,Eczema,egophily_3,Unknown,22791581.5,0.0020683899384767337,0.341284339848661
-464,Psoriasis,Eczema,egophily_3,Langerhans cells,1338912.0,0.38274755337529265,63.15334630692328
-465,Psoriasis,Eczema,egophily_3,T-cells,31801064.5,5.940829903011788e-107,9.802369339969449e-105
-466,Psoriasis,Eczema,egophily_3,Basal keratinocytes,2991552.5,0.0003148918984846999,0.051957163249975485
-467,Psoriasis,Eczema,egophily_3,Fibroblasts,414663.5,1.1059499190975161e-09,1.8248173665109017e-07
-468,Psoriasis,Eczema,egophily_3,Macrophages,22112088.5,0.0,0.0
-469,Psoriasis,Eczema,egophily_3,B-cells,10972411.5,3.4493885995859628e-06,0.0005691491189316839
-470,Psoriasis,Eczema,egophily_3,Smooth muscle cells,5631727.5,1.8759276493403076e-31,3.0952806214115076e-29
-471,Psoriasis,Eczema,egophily_3,Endothelial cells,34542756.5,0.0,0.0
-472,Psoriasis,Eczema,egophily_3,Suprabasal keratinocytes,890122.5,2.2018311126558883e-17,3.633021335882216e-15
-473,Psoriasis,Eczema,egophily_4,Melanocytes,1673101.0,0.0008624161286254628,0.14229866122320137
-474,Psoriasis,Eczema,egophily_4,Unknown,22720989.0,0.0007214618179978969,0.119041199969653
-475,Psoriasis,Eczema,egophily_4,Langerhans cells,1305527.5,0.7144101192044805,117.87766966873929
-476,Psoriasis,Eczema,egophily_4,T-cells,32306573.5,1.3788436715540202e-126,2.2750920580641334e-124
-477,Psoriasis,Eczema,egophily_4,Basal keratinocytes,2950395.5,0.00617379534503104,1.0186762319301217
-478,Psoriasis,Eczema,egophily_4,Fibroblasts,430347.5,2.3693601629253187e-14,3.909444268826775e-12
-479,Psoriasis,Eczema,egophily_4,Macrophages,22282363.0,0.0,0.0
-480,Psoriasis,Eczema,egophily_4,B-cells,11155909.0,0.0009114835341309065,0.1503947831315996
-481,Psoriasis,Eczema,egophily_4,Smooth muscle cells,5835990.5,1.2627215821907796e-47,2.0834906106147865e-45
-482,Psoriasis,Eczema,egophily_4,Endothelial cells,32457997.0,0.0,0.0
-483,Psoriasis,Eczema,egophily_4,Suprabasal keratinocytes,898918.0,2.8989841323351736e-19,4.7833238183530356e-17
-484,Psoriasis,Eczema,egophily_5,Melanocytes,1654961.5,0.006081946716957637,1.00352120829801
-485,Psoriasis,Eczema,egophily_5,Unknown,22682349.0,0.00039099220357947316,0.06451371359061307
-486,Psoriasis,Eczema,egophily_5,Langerhans cells,1316080.5,0.979574086101771,161.62972420679222
-487,Psoriasis,Eczema,egophily_5,T-cells,32748811.0,3.8464434242558634e-145,6.346631650022174e-143
-488,Psoriasis,Eczema,egophily_5,Basal keratinocytes,2962110.0,0.002841749488316437,0.4688886655722121
-489,Psoriasis,Eczema,egophily_5,Fibroblasts,454478.5,1.6447622705014284e-23,2.7138577463273567e-21
-490,Psoriasis,Eczema,egophily_5,Macrophages,22357136.0,0.0,0.0
-491,Psoriasis,Eczema,egophily_5,B-cells,11204460.5,0.0030189368729616906,0.49812458403867893
-492,Psoriasis,Eczema,egophily_5,Smooth muscle cells,6005336.0,1.1686671973784569e-63,1.9283008756744538e-61
-493,Psoriasis,Eczema,egophily_5,Endothelial cells,30705752.5,0.0,0.0
-494,Psoriasis,Eczema,egophily_5,Suprabasal keratinocytes,908527.0,1.938927990240531e-21,3.1992311838968757e-19
+0,T-Cell Lymphoma,Psoriasis,local_homophily_1,Macrophages,13810372.5,4.16127282912021e-147,2.059830050414504e-144
+1,T-Cell Lymphoma,Psoriasis,local_homophily_1,Melanocytes,2518103.0,1.0419351299502882e-10,5.1575788932539266e-08
+2,T-Cell Lymphoma,Psoriasis,local_homophily_1,Basal keratinocytes,2942798.0,0.8706258892486088,430.9598151780614
+3,T-Cell Lymphoma,Psoriasis,local_homophily_1,Smooth muscle cells,7929678.0,0.00014543858569807873,0.07199209992054897
+4,T-Cell Lymphoma,Psoriasis,local_homophily_1,Fibroblasts,1107381.0,3.575982828287834e-16,1.7701115000024777e-13
+5,T-Cell Lymphoma,Psoriasis,local_homophily_1,Suprabasal keratinocytes,1707701.0,0.05144354350103134,25.464554033010515
+6,T-Cell Lymphoma,Psoriasis,local_homophily_1,Langerhans cells,1431223.0,0.3283226529257952,162.51971319826865
+7,T-Cell Lymphoma,Psoriasis,local_homophily_1,Unknown,30982026.0,8.70586705498517e-28,4.309404192217659e-25
+8,T-Cell Lymphoma,Psoriasis,local_homophily_1,Endothelial cells,41840587.0,0.7713252091087073,381.8059785088101
+9,T-Cell Lymphoma,Psoriasis,local_homophily_1,T-cells,53546570.0,9.030239987437218e-96,4.469968793781423e-93
+10,T-Cell Lymphoma,Psoriasis,local_homophily_1,B-cells,19140223.0,1.7855075819217396e-30,8.838262530512612e-28
+11,T-Cell Lymphoma,Psoriasis,local_homophily_2,Macrophages,19575308.5,0.33597635868495523,166.30829754905284
+12,T-Cell Lymphoma,Psoriasis,local_homophily_2,Melanocytes,2803545.0,1.0230311787058316e-41,5.064004334593866e-39
+13,T-Cell Lymphoma,Psoriasis,local_homophily_2,Basal keratinocytes,3422037.0,2.687779906024151e-23,1.3304510534819546e-20
+14,T-Cell Lymphoma,Psoriasis,local_homophily_2,Smooth muscle cells,8720243.0,6.940368031092355e-32,3.435482175390715e-29
+15,T-Cell Lymphoma,Psoriasis,local_homophily_2,Fibroblasts,1034405.5,4.874984641364932e-06,0.0024131173974756416
+16,T-Cell Lymphoma,Psoriasis,local_homophily_2,Suprabasal keratinocytes,1738067.5,0.003807919669764538,1.8849202365334463
+17,T-Cell Lymphoma,Psoriasis,local_homophily_2,Langerhans cells,1696675.5,3.211113568160824e-25,1.5895012162396078e-22
+18,T-Cell Lymphoma,Psoriasis,local_homophily_2,Unknown,34083390.5,9.313180164735267e-113,4.610024181543957e-110
+19,T-Cell Lymphoma,Psoriasis,local_homophily_2,Endothelial cells,44898382.0,9.966637983439607e-19,4.933485801802605e-16
+20,T-Cell Lymphoma,Psoriasis,local_homophily_2,T-cells,56766379.5,4.89028056739013e-187,2.420688880858114e-184
+21,T-Cell Lymphoma,Psoriasis,local_homophily_2,B-cells,20166439.0,2.5281710755942266e-65,1.251444682419142e-62
+22,T-Cell Lymphoma,Psoriasis,local_homophily_3,Macrophages,19653063.0,0.18588483553363433,92.01299358914898
+23,T-Cell Lymphoma,Psoriasis,local_homophily_3,Melanocytes,2777335.5,6.073988728598207e-38,3.0066244206561126e-35
+24,T-Cell Lymphoma,Psoriasis,local_homophily_3,Basal keratinocytes,3432035.0,3.3928313688133514e-24,1.679451527562609e-21
+25,T-Cell Lymphoma,Psoriasis,local_homophily_3,Smooth muscle cells,8646028.0,3.6894704694258797e-28,1.8262878823658104e-25
+26,T-Cell Lymphoma,Psoriasis,local_homophily_3,Fibroblasts,984698.0,0.028855750911510682,14.283596701197787
+27,T-Cell Lymphoma,Psoriasis,local_homophily_3,Suprabasal keratinocytes,1692457.0,0.14739109635124661,72.95859269386708
+28,T-Cell Lymphoma,Psoriasis,local_homophily_3,Langerhans cells,1704956.5,1.4243626211324018e-26,7.050594974605388e-24
+29,T-Cell Lymphoma,Psoriasis,local_homophily_3,Unknown,33955940.0,4.23272797224031e-108,2.0952003462589534e-105
+30,T-Cell Lymphoma,Psoriasis,local_homophily_3,Endothelial cells,44378770.5,1.5430978812088726e-13,7.638334511983918e-11
+31,T-Cell Lymphoma,Psoriasis,local_homophily_3,T-cells,55933963.5,2.1853763419914042e-160,1.081761289285745e-157
+32,T-Cell Lymphoma,Psoriasis,local_homophily_3,B-cells,19891835.0,1.3084297158500144e-54,6.476727093457571e-52
+33,T-Cell Lymphoma,Psoriasis,local_homophily_4,Macrophages,19543620.0,0.4149920080051791,205.42104396256366
+34,T-Cell Lymphoma,Psoriasis,local_homophily_4,Melanocytes,2757995.0,2.814554335760518e-35,1.3932043962014566e-32
+35,T-Cell Lymphoma,Psoriasis,local_homophily_4,Basal keratinocytes,3459887.5,8.544375523971604e-27,4.229465884365944e-24
+36,T-Cell Lymphoma,Psoriasis,local_homophily_4,Smooth muscle cells,8628852.0,2.481834792258176e-27,1.2285082221677973e-24
+37,T-Cell Lymphoma,Psoriasis,local_homophily_4,Fibroblasts,957834.5,0.36986919607944746,183.08525205932654
+38,T-Cell Lymphoma,Psoriasis,local_homophily_4,Suprabasal keratinocytes,1661069.0,0.6494613948485585,321.4833904500365
+39,T-Cell Lymphoma,Psoriasis,local_homophily_4,Langerhans cells,1698815.5,1.4475944889571745e-25,7.165592720338014e-23
+40,T-Cell Lymphoma,Psoriasis,local_homophily_4,Unknown,33690070.5,1.0500031890661775e-98,5.197515785877578e-96
+41,T-Cell Lymphoma,Psoriasis,local_homophily_4,Endothelial cells,44067287.0,7.36989155810572e-11,3.6480963212623315e-08
+42,T-Cell Lymphoma,Psoriasis,local_homophily_4,T-cells,55378705.0,9.271633331907434e-144,4.5894584992941797e-141
+43,T-Cell Lymphoma,Psoriasis,local_homophily_4,B-cells,19680108.0,5.095330369345924e-47,2.5221885328262327e-44
+44,T-Cell Lymphoma,Psoriasis,local_homophily_5,Macrophages,19397142.5,0.8921179308980612,441.59837579454035
+45,T-Cell Lymphoma,Psoriasis,local_homophily_5,Melanocytes,2723339.5,9.4348673311608e-31,4.670259328924596e-28
+46,T-Cell Lymphoma,Psoriasis,local_homophily_5,Basal keratinocytes,3456923.0,1.6402771749189343e-26,8.119372015848725e-24
+47,T-Cell Lymphoma,Psoriasis,local_homophily_5,Smooth muscle cells,8572034.5,1.0991502396985512e-24,5.440793686507829e-22
+48,T-Cell Lymphoma,Psoriasis,local_homophily_5,Fibroblasts,947854.0,0.676005565574721,334.6227549594869
+49,T-Cell Lymphoma,Psoriasis,local_homophily_5,Suprabasal keratinocytes,1646383.5,0.9914950945977439,490.7900718258833
+50,T-Cell Lymphoma,Psoriasis,local_homophily_5,Langerhans cells,1694815.5,6.391505206531447e-25,3.163795077233067e-22
+51,T-Cell Lymphoma,Psoriasis,local_homophily_5,Unknown,33588235.5,3.1972425770737734e-95,1.582635075651518e-92
+52,T-Cell Lymphoma,Psoriasis,local_homophily_5,Endothelial cells,43764440.5,1.4565250773912349e-08,7.209799133086612e-06
+53,T-Cell Lymphoma,Psoriasis,local_homophily_5,T-cells,55059954.0,1.2503513035804438e-134,6.189238952723197e-132
+54,T-Cell Lymphoma,Psoriasis,local_homophily_5,B-cells,19595770.0,3.7005742185007895e-44,1.8317842381578906e-41
+55,T-Cell Lymphoma,Psoriasis,local_entropy_1,Macrophages,26335759.0,1.3466725363772732e-229,6.666029055067502e-227
+56,T-Cell Lymphoma,Psoriasis,local_entropy_1,Melanocytes,2331457.0,0.08032457942821172,39.7606668169648
+57,T-Cell Lymphoma,Psoriasis,local_entropy_1,Basal keratinocytes,3130523.5,6.298343859012838e-05,0.031176802102113557
+58,T-Cell Lymphoma,Psoriasis,local_entropy_1,Smooth muscle cells,8130351.0,6.115746980867153e-09,3.027294755529241e-06
+59,T-Cell Lymphoma,Psoriasis,local_entropy_1,Fibroblasts,875977.5,0.0023986696710764496,1.1873414871828425
+60,T-Cell Lymphoma,Psoriasis,local_entropy_1,Suprabasal keratinocytes,1719777.0,0.02041409181405946,10.104975447959434
+61,T-Cell Lymphoma,Psoriasis,local_entropy_1,Langerhans cells,1526221.0,1.4080641654103303e-05,0.006969917618781136
+62,T-Cell Lymphoma,Psoriasis,local_entropy_1,Unknown,29601471.0,1.0904660850060087e-08,5.397807120779744e-06
+63,T-Cell Lymphoma,Psoriasis,local_entropy_1,Endothelial cells,45244169.5,1.0388222813832765e-22,5.142170292847219e-20
+64,T-Cell Lymphoma,Psoriasis,local_entropy_1,T-cells,46988652.0,0.00041164655639112945,0.20376504541360907
+65,T-Cell Lymphoma,Psoriasis,local_entropy_1,B-cells,17388120.0,0.06715959672373402,33.244000378248344
+66,T-Cell Lymphoma,Psoriasis,local_entropy_2,Macrophages,27447165.0,1.9472171869897387e-307,9.638725075599205e-305
+67,T-Cell Lymphoma,Psoriasis,local_entropy_2,Melanocytes,2452543.0,1.8551057577999759e-06,0.0009182773501109881
+68,T-Cell Lymphoma,Psoriasis,local_entropy_2,Basal keratinocytes,3313164.0,1.1508094851394362e-14,5.69650695144021e-12
+69,T-Cell Lymphoma,Psoriasis,local_entropy_2,Smooth muscle cells,8455986.0,1.0170142481829276e-19,5.0342205285054906e-17
+70,T-Cell Lymphoma,Psoriasis,local_entropy_2,Fibroblasts,898414.0,0.05072034048494723,25.106568540048883
+71,T-Cell Lymphoma,Psoriasis,local_entropy_2,Suprabasal keratinocytes,1815172.5,9.494109553017426e-08,4.6995842287436256e-05
+72,T-Cell Lymphoma,Psoriasis,local_entropy_2,Langerhans cells,1533132.0,4.676612677465967e-06,0.0023149232753456534
+73,T-Cell Lymphoma,Psoriasis,local_entropy_2,Unknown,31339556.5,1.7529326817397052e-34,8.677016774611541e-32
+74,T-Cell Lymphoma,Psoriasis,local_entropy_2,Endothelial cells,46018453.5,5.38187063929931e-33,2.6640259664531583e-30
+75,T-Cell Lymphoma,Psoriasis,local_entropy_2,T-cells,50169990.5,1.6713493542908452e-32,8.273179303739683e-30
+76,T-Cell Lymphoma,Psoriasis,local_entropy_2,B-cells,18382773.5,3.2313906705753383e-13,1.5995383819347926e-10
+77,T-Cell Lymphoma,Psoriasis,local_entropy_3,Macrophages,27789771.5,0.0,0.0
+78,T-Cell Lymphoma,Psoriasis,local_entropy_3,Melanocytes,2501736.0,2.0140161135311744e-09,9.969379761979313e-07
+79,T-Cell Lymphoma,Psoriasis,local_entropy_3,Basal keratinocytes,3334578.0,3.393373265382285e-16,1.679719766364231e-13
+80,T-Cell Lymphoma,Psoriasis,local_entropy_3,Smooth muscle cells,8505911.0,8.769027927058432e-22,4.340668823893925e-19
+81,T-Cell Lymphoma,Psoriasis,local_entropy_3,Fibroblasts,932918.5,0.7652923413109733,378.81970894893186
+82,T-Cell Lymphoma,Psoriasis,local_entropy_3,Suprabasal keratinocytes,1842134.0,6.008070462834846e-10,2.9739948791032494e-07
+83,T-Cell Lymphoma,Psoriasis,local_entropy_3,Langerhans cells,1510600.0,0.00015671430341142773,0.07757358018865672
+84,T-Cell Lymphoma,Psoriasis,local_entropy_3,Unknown,32219992.0,1.4069534205482537e-54,6.964419431713856e-52
+85,T-Cell Lymphoma,Psoriasis,local_entropy_3,Endothelial cells,46241789.5,2.4057317662933398e-36,1.190837224315203e-33
+86,T-Cell Lymphoma,Psoriasis,local_entropy_3,T-cells,51838626.0,2.3581908810951926e-59,1.1673044861421202e-56
+87,T-Cell Lymphoma,Psoriasis,local_entropy_3,B-cells,18727684.0,4.456285696224064e-20,2.2058614196309112e-17
+88,T-Cell Lymphoma,Psoriasis,local_entropy_4,Macrophages,28145361.0,0.0,0.0
+89,T-Cell Lymphoma,Psoriasis,local_entropy_4,Melanocytes,2577398.0,3.131871329874218e-15,1.5502763082877377e-12
+90,T-Cell Lymphoma,Psoriasis,local_entropy_4,Basal keratinocytes,3334615.5,3.3719414647959556e-16,1.6691110250739979e-13
+91,T-Cell Lymphoma,Psoriasis,local_entropy_4,Smooth muscle cells,8582463.0,3.680763011725944e-25,1.8219776908043423e-22
+92,T-Cell Lymphoma,Psoriasis,local_entropy_4,Fibroblasts,939225.0,0.9968421380515963,493.43685833554014
+93,T-Cell Lymphoma,Psoriasis,local_entropy_4,Suprabasal keratinocytes,1892850.5,6.3498288820094625e-15,3.1431652965946844e-12
+94,T-Cell Lymphoma,Psoriasis,local_entropy_4,Langerhans cells,1521800.5,2.951673470672008e-05,0.01461078367982644
+95,T-Cell Lymphoma,Psoriasis,local_entropy_4,Unknown,32694064.5,2.312213250983384e-67,1.1445455592367751e-64
+96,T-Cell Lymphoma,Psoriasis,local_entropy_4,Endothelial cells,45911131.5,1.9091444088828567e-31,9.450264823970141e-29
+97,T-Cell Lymphoma,Psoriasis,local_entropy_4,T-cells,52767867.5,6.764718624299428e-78,3.3485357190282173e-75
+98,T-Cell Lymphoma,Psoriasis,local_entropy_4,B-cells,18786474.5,2.120576015655612e-21,1.049685127749528e-18
+99,T-Cell Lymphoma,Psoriasis,local_entropy_5,Macrophages,28528054.0,0.0,0.0
+100,T-Cell Lymphoma,Psoriasis,local_entropy_5,Melanocytes,2615544.0,9.7593658392992e-19,4.830886090453104e-16
+101,T-Cell Lymphoma,Psoriasis,local_entropy_5,Basal keratinocytes,3359436.0,4.481908276172494e-18,2.2185445967053843e-15
+102,T-Cell Lymphoma,Psoriasis,local_entropy_5,Smooth muscle cells,8685117.0,4.314519046263134e-30,2.1356869279002516e-27
+103,T-Cell Lymphoma,Psoriasis,local_entropy_5,Fibroblasts,947102.0,0.7025770276102763,347.7756286670868
+104,T-Cell Lymphoma,Psoriasis,local_entropy_5,Suprabasal keratinocytes,1933974.0,9.075566701353183e-20,4.492405517169825e-17
+105,T-Cell Lymphoma,Psoriasis,local_entropy_5,Langerhans cells,1504044.0,0.0003884406267371527,0.19227811023489058
+106,T-Cell Lymphoma,Psoriasis,local_entropy_5,Unknown,33061894.0,3.1389035813410616e-78,1.5537572727638254e-75
+107,T-Cell Lymphoma,Psoriasis,local_entropy_5,Endothelial cells,45422319.5,7.0720109840384e-25,3.500645437099008e-22
+108,T-Cell Lymphoma,Psoriasis,local_entropy_5,T-cells,52713882.0,9.502172504874551e-77,4.703575389912904e-74
+109,T-Cell Lymphoma,Psoriasis,local_entropy_5,B-cells,18699686.0,1.832725131234224e-19,9.07198939960941e-17
+110,T-Cell Lymphoma,Psoriasis,egophily_1,Macrophages,9033986.5,0.0,0.0
+111,T-Cell Lymphoma,Psoriasis,egophily_1,Melanocytes,2475244.0,5.845245907496329e-08,2.8933967242106832e-05
+112,T-Cell Lymphoma,Psoriasis,egophily_1,Basal keratinocytes,2729067.5,2.05182227183834e-05,0.010156520245599782
+113,T-Cell Lymphoma,Psoriasis,egophily_1,Smooth muscle cells,7647617.0,0.3441280525912618,170.34338603267457
+114,T-Cell Lymphoma,Psoriasis,egophily_1,Fibroblasts,1189046.0,4.411123517286445e-34,2.1835061410567907e-31
+115,T-Cell Lymphoma,Psoriasis,egophily_1,Suprabasal keratinocytes,1770717.0,6.500949348755982e-05,0.03217969927634211
+116,T-Cell Lymphoma,Psoriasis,egophily_1,Langerhans cells,1309678.5,0.0006502866365859524,0.3218918851100465
+117,T-Cell Lymphoma,Psoriasis,egophily_1,Unknown,28197133.0,0.667474906103384,330.40007852117515
+118,T-Cell Lymphoma,Psoriasis,egophily_1,Endothelial cells,39101220.5,1.5502100992203905e-13,7.673539991140932e-11
+119,T-Cell Lymphoma,Psoriasis,egophily_1,T-cells,50482462.0,3.5407443227496657e-37,1.7526684397610843e-34
+120,T-Cell Lymphoma,Psoriasis,egophily_1,B-cells,18470213.0,5.561570017885143e-15,2.752977158853146e-12
+121,T-Cell Lymphoma,Psoriasis,egophily_2,Macrophages,6454154.5,0.0,0.0
+122,T-Cell Lymphoma,Psoriasis,egophily_2,Melanocytes,2525030.5,4.629244504316399e-11,2.2914760296366177e-08
+123,T-Cell Lymphoma,Psoriasis,egophily_2,Basal keratinocytes,2696864.5,1.1712845815420924e-06,0.0005797858678633356
+124,T-Cell Lymphoma,Psoriasis,egophily_2,Smooth muscle cells,7729599.5,0.07771206616555114,38.46747275194781
+125,T-Cell Lymphoma,Psoriasis,egophily_2,Fibroblasts,1339319.0,3.042702191386239e-82,1.5061375847361882e-79
+126,T-Cell Lymphoma,Psoriasis,egophily_2,Suprabasal keratinocytes,1871584.0,1.0200103085753624e-12,5.049051027448044e-10
+127,T-Cell Lymphoma,Psoriasis,egophily_2,Langerhans cells,1309389.0,0.0007957209563146749,0.3938818733757641
+128,T-Cell Lymphoma,Psoriasis,egophily_2,Unknown,27967899.5,0.6640167237481345,328.68827825532657
+129,T-Cell Lymphoma,Psoriasis,egophily_2,Endothelial cells,39163603.5,6.414954125046703e-13,3.1754022918981176e-10
+130,T-Cell Lymphoma,Psoriasis,egophily_2,T-cells,53484326.5,5.545483827491589e-94,2.7450144946083363e-91
+131,T-Cell Lymphoma,Psoriasis,egophily_2,B-cells,19553374.0,8.902464557579871e-43,4.406719956002036e-40
+132,T-Cell Lymphoma,Psoriasis,egophily_3,Macrophages,5755139.5,0.0,0.0
+133,T-Cell Lymphoma,Psoriasis,egophily_3,Melanocytes,2577174.0,3.26074051537583e-15,1.6140665551110362e-12
+134,T-Cell Lymphoma,Psoriasis,egophily_3,Basal keratinocytes,2660534.0,2.1438599818371714e-08,1.0612106910093997e-05
+135,T-Cell Lymphoma,Psoriasis,egophily_3,Smooth muscle cells,7688105.0,0.17856603278696948,88.39018622954988
+136,T-Cell Lymphoma,Psoriasis,egophily_3,Fibroblasts,1385499.5,9.750590323658734e-102,4.826542210211074e-99
+137,T-Cell Lymphoma,Psoriasis,egophily_3,Suprabasal keratinocytes,2002720.5,1.6876618354204453e-29,8.353926085331204e-27
+138,T-Cell Lymphoma,Psoriasis,egophily_3,Langerhans cells,1246354.0,2.3235338910366197e-08,1.1501492760631266e-05
+139,T-Cell Lymphoma,Psoriasis,egophily_3,Unknown,28332055.0,0.3496299369115101,173.06681877119752
+140,T-Cell Lymphoma,Psoriasis,egophily_3,Endothelial cells,39349935.0,2.5569750622189417e-11,1.2657026557983762e-08
+141,T-Cell Lymphoma,Psoriasis,egophily_3,T-cells,55170789.0,8.909370626600411e-138,4.4101384601672043e-135
+142,T-Cell Lymphoma,Psoriasis,egophily_3,B-cells,20357655.5,2.2768670900280046e-73,1.1270492095638624e-70
+143,T-Cell Lymphoma,Psoriasis,egophily_4,Macrophages,5471110.5,0.0,0.0
+144,T-Cell Lymphoma,Psoriasis,egophily_4,Melanocytes,2700310.5,6.348434373773798e-28,3.14247501501803e-25
+145,T-Cell Lymphoma,Psoriasis,egophily_4,Basal keratinocytes,2627512.0,3.5236323805722444e-10,1.744198028383261e-07
+146,T-Cell Lymphoma,Psoriasis,egophily_4,Smooth muscle cells,7774915.0,0.026392424060878356,13.064249910134787
+147,T-Cell Lymphoma,Psoriasis,egophily_4,Fibroblasts,1400264.0,1.9486018353517442e-108,9.645579084991134e-106
+148,T-Cell Lymphoma,Psoriasis,egophily_4,Suprabasal keratinocytes,2058178.5,7.824487588330757e-39,3.8731213562237246e-36
+149,T-Cell Lymphoma,Psoriasis,egophily_4,Langerhans cells,1235187.0,2.2120732039166576e-09,1.0949762359387456e-06
+150,T-Cell Lymphoma,Psoriasis,egophily_4,Unknown,28522712.5,0.09846088426549118,48.73813771141813
+151,T-Cell Lymphoma,Psoriasis,egophily_4,Endothelial cells,39701845.0,1.296207636371836e-08,6.416227800040588e-06
+152,T-Cell Lymphoma,Psoriasis,egophily_4,T-cells,56401303.0,4.2679648115084025e-175,2.1126425816966593e-172
+153,T-Cell Lymphoma,Psoriasis,egophily_4,B-cells,20932874.5,2.000714370251319e-100,9.903536132744029e-98
+154,T-Cell Lymphoma,Psoriasis,egophily_5,Macrophages,5388314.5,0.0,0.0
+155,T-Cell Lymphoma,Psoriasis,egophily_5,Melanocytes,2764758.0,3.375738959021993e-36,1.670990784715887e-33
+156,T-Cell Lymphoma,Psoriasis,egophily_5,Basal keratinocytes,2654321.5,1.0250700130594346e-08,5.0740965646442e-06
+157,T-Cell Lymphoma,Psoriasis,egophily_5,Smooth muscle cells,7790239.5,0.017554743533857636,8.68959804925953
+158,T-Cell Lymphoma,Psoriasis,egophily_5,Fibroblasts,1390918.5,3.665242037857284e-104,1.8142948087393556e-101
+159,T-Cell Lymphoma,Psoriasis,egophily_5,Suprabasal keratinocytes,2093432.5,1.8463933036717563e-45,9.139646853175193e-43
+160,T-Cell Lymphoma,Psoriasis,egophily_5,Langerhans cells,1213854.5,1.612002743544062e-11,7.979413580543107e-09
+161,T-Cell Lymphoma,Psoriasis,egophily_5,Unknown,28952023.0,0.0010869349139742785,0.5380327824172679
+162,T-Cell Lymphoma,Psoriasis,egophily_5,Endothelial cells,40064264.0,2.957447172331156e-06,0.0014639363503039225
+163,T-Cell Lymphoma,Psoriasis,egophily_5,T-cells,57618077.5,1.9195599925971598e-216,9.501821963355941e-214
+164,T-Cell Lymphoma,Psoriasis,egophily_5,B-cells,21405288.0,7.10919618220481e-126,3.5190521101913814e-123
+165,T-Cell Lymphoma,Eczema,local_homophily_1,Macrophages,4223535.5,0.18903121768150444,93.57045275234469
+166,T-Cell Lymphoma,Eczema,local_homophily_1,Melanocytes,1513391.5,0.10339205600757488,51.17906772374957
+167,T-Cell Lymphoma,Eczema,local_homophily_1,Basal keratinocytes,2015673.0,0.26926718490251056,133.28725652674274
+168,T-Cell Lymphoma,Eczema,local_homophily_1,Smooth muscle cells,4025702.5,0.12647852926040415,62.60687198390006
+169,T-Cell Lymphoma,Eczema,local_homophily_1,Fibroblasts,517025.5,0.009647610602310945,4.775567248143918
+170,T-Cell Lymphoma,Eczema,local_homophily_1,Suprabasal keratinocytes,844272.5,5.244656870337092e-06,0.0025961051508168603
+171,T-Cell Lymphoma,Eczema,local_homophily_1,Langerhans cells,880758.0,0.010912791660763746,5.401831872078054
+172,T-Cell Lymphoma,Eczema,local_homophily_1,Unknown,18286148.0,0.6468541919570984,320.1928250187637
+173,T-Cell Lymphoma,Eczema,local_homophily_1,Endothelial cells,32784839.0,0.0,0.0
+174,T-Cell Lymphoma,Eczema,local_homophily_1,T-cells,28593736.5,2.67274021164245e-58,1.3230064047630126e-55
+175,T-Cell Lymphoma,Eczema,local_homophily_1,B-cells,10981393.0,0.047364748827991146,23.44555066985562
+176,T-Cell Lymphoma,Eczema,local_homophily_2,Macrophages,4237089.5,0.12855287112405864,63.63367120640902
+177,T-Cell Lymphoma,Eczema,local_homophily_2,Melanocytes,1593246.5,1.3413609034915683e-05,0.006639736472283264
+178,T-Cell Lymphoma,Eczema,local_homophily_2,Basal keratinocytes,2330984.0,1.8744390390196848e-13,9.27847324314744e-11
+179,T-Cell Lymphoma,Eczema,local_homophily_2,Smooth muscle cells,4171551.0,9.814420002271244e-05,0.04858137901124265
+180,T-Cell Lymphoma,Eczema,local_homophily_2,Fibroblasts,464712.5,0.17460982661790037,86.43186417586068
+181,T-Cell Lymphoma,Eczema,local_homophily_2,Suprabasal keratinocytes,865366.0,1.495214203514414e-08,7.4013103073963496e-06
+182,T-Cell Lymphoma,Eczema,local_homophily_2,Langerhans cells,972903.0,0.05099144363609569,25.24076459986737
+183,T-Cell Lymphoma,Eczema,local_homophily_2,Unknown,20345278.5,1.8340357051175217e-24,9.078476740331733e-22
+184,T-Cell Lymphoma,Eczema,local_homophily_2,Endothelial cells,35786591.5,0.0,0.0
+185,T-Cell Lymphoma,Eczema,local_homophily_2,T-cells,28331608.5,7.425546861620394e-51,3.6756456965020945e-48
+186,T-Cell Lymphoma,Eczema,local_homophily_2,B-cells,11673824.5,2.671728757455644e-13,1.3225057349405437e-10
+187,T-Cell Lymphoma,Eczema,local_homophily_3,Macrophages,4125974.5,0.8240372414167024,407.89843450126773
+188,T-Cell Lymphoma,Eczema,local_homophily_3,Melanocytes,1553720.5,0.0027138291394189144,1.3433454240123628
+189,T-Cell Lymphoma,Eczema,local_homophily_3,Basal keratinocytes,2278846.0,2.530761933326031e-09,1.2527271569963853e-06
+190,T-Cell Lymphoma,Eczema,local_homophily_3,Smooth muscle cells,4041463.5,0.07554954797828779,37.397026249252455
+191,T-Cell Lymphoma,Eczema,local_homophily_3,Fibroblasts,440181.5,0.001382270527148357,0.6842239109384367
+192,T-Cell Lymphoma,Eczema,local_homophily_3,Suprabasal keratinocytes,837185.0,3.613884945167777e-05,0.0178887304785805
+193,T-Cell Lymphoma,Eczema,local_homophily_3,Langerhans cells,954666.5,0.28600290889191515,141.57143990149797
+194,T-Cell Lymphoma,Eczema,local_homophily_3,Unknown,20044042.5,5.270445146853514e-18,2.6088703476924896e-15
+195,T-Cell Lymphoma,Eczema,local_homophily_3,Endothelial cells,35199677.5,0.0,0.0
+196,T-Cell Lymphoma,Eczema,local_homophily_3,T-cells,27714152.5,9.844705400770439e-36,4.873129173381368e-33
+197,T-Cell Lymphoma,Eczema,local_homophily_3,B-cells,11444102.5,3.0073803137915005e-08,1.4886532553267926e-05
+198,T-Cell Lymphoma,Eczema,local_homophily_4,Macrophages,4061458.5,0.2172334304424487,107.53054806901211
+199,T-Cell Lymphoma,Eczema,local_homophily_4,Melanocytes,1519927.0,0.06575387251595052,32.54816689539551
+200,T-Cell Lymphoma,Eczema,local_homophily_4,Basal keratinocytes,2241674.5,6.949343593907507e-07,0.0003439925078984216
+201,T-Cell Lymphoma,Eczema,local_homophily_4,Smooth muscle cells,3992981.5,0.3232707402589595,160.01901642818495
+202,T-Cell Lymphoma,Eczema,local_homophily_4,Fibroblasts,422118.0,5.268522192791172e-06,0.0026079184854316297
+203,T-Cell Lymphoma,Eczema,local_homophily_4,Suprabasal keratinocytes,821223.0,0.0011001786176200567,0.5445884157219281
+204,T-Cell Lymphoma,Eczema,local_homophily_4,Langerhans cells,944333.0,0.5716150308261233,282.949440258931
+205,T-Cell Lymphoma,Eczema,local_homophily_4,Unknown,19713690.0,4.023090486874114e-12,1.991429791002686e-09
+206,T-Cell Lymphoma,Eczema,local_homophily_4,Endothelial cells,34647522.5,0.0,0.0
+207,T-Cell Lymphoma,Eczema,local_homophily_4,T-cells,27295163.5,4.9204623832629104e-27,2.435628879715141e-24
+208,T-Cell Lymphoma,Eczema,local_homophily_4,B-cells,11301966.5,8.728239110088176e-06,0.0043204783594936475
+209,T-Cell Lymphoma,Eczema,local_homophily_5,Macrophages,4028600.0,0.08027119781821335,39.7342429200156
+210,T-Cell Lymphoma,Eczema,local_homophily_5,Melanocytes,1494410.5,0.3343033077522858,165.48013733738145
+211,T-Cell Lymphoma,Eczema,local_homophily_5,Basal keratinocytes,2215945.0,1.929581318141886e-05,0.009551427524802335
+212,T-Cell Lymphoma,Eczema,local_homophily_5,Smooth muscle cells,3934653.5,0.9696092035401459,479.9565557523722
+213,T-Cell Lymphoma,Eczema,local_homophily_5,Fibroblasts,414207.0,2.640702418460226e-07,0.0001307147697137812
+214,T-Cell Lymphoma,Eczema,local_homophily_5,Suprabasal keratinocytes,811553.0,0.006178634129876983,3.0584238942891067
+215,T-Cell Lymphoma,Eczema,local_homophily_5,Langerhans cells,936481.0,0.853393193638153,422.42963085088576
+216,T-Cell Lymphoma,Eczema,local_homophily_5,Unknown,19604743.5,1.8645396589664457e-10,9.229471311883906e-08
+217,T-Cell Lymphoma,Eczema,local_homophily_5,Endothelial cells,34129414.0,0.0,0.0
+218,T-Cell Lymphoma,Eczema,local_homophily_5,T-cells,27033241.0,3.085467784224356e-22,1.5273065531910563e-19
+219,T-Cell Lymphoma,Eczema,local_homophily_5,B-cells,11191333.5,0.00032492427464895634,0.1608375159512334
+220,T-Cell Lymphoma,Eczema,local_entropy_1,Macrophages,4381170.5,0.00015371135330249466,0.07608711988473486
+221,T-Cell Lymphoma,Eczema,local_entropy_1,Melanocytes,1578622.5,0.00011408762122934183,0.0564733725085242
+222,T-Cell Lymphoma,Eczema,local_entropy_1,Basal keratinocytes,2309606.5,1.0686599031384222e-11,5.289866520535189e-09
+223,T-Cell Lymphoma,Eczema,local_entropy_1,Smooth muscle cells,4274802.5,2.3290944781941227e-08,1.1529017667060907e-05
+224,T-Cell Lymphoma,Eczema,local_entropy_1,Fibroblasts,500156.0,0.19219791264291142,95.13796675824116
+225,T-Cell Lymphoma,Eczema,local_entropy_1,Suprabasal keratinocytes,780583.0,0.29033071499795104,143.71370392398578
+226,T-Cell Lymphoma,Eczema,local_entropy_1,Langerhans cells,1024270.0,8.502229921728672e-06,0.004208603811255693
+227,T-Cell Lymphoma,Eczema,local_entropy_1,Unknown,21036607.5,2.4828971800482526e-43,1.229034104123885e-40
+228,T-Cell Lymphoma,Eczema,local_entropy_1,Endothelial cells,72033717.0,0.0,0.0
+229,T-Cell Lymphoma,Eczema,local_entropy_1,T-cells,24936279.0,0.255830147121336,126.63592282506133
+230,T-Cell Lymphoma,Eczema,local_entropy_1,B-cells,11693129.0,8.171172487644071e-14,4.044730381383816e-11
+231,T-Cell Lymphoma,Eczema,local_entropy_2,Macrophages,4854723.5,3.9026090953346165e-29,1.931791502190635e-26
+232,T-Cell Lymphoma,Eczema,local_entropy_2,Melanocytes,1709323.0,7.953237117399563e-17,3.9368523731127843e-14
+233,T-Cell Lymphoma,Eczema,local_entropy_2,Basal keratinocytes,2513986.5,1.4081636288317915e-34,6.970409962717368e-32
+234,T-Cell Lymphoma,Eczema,local_entropy_2,Smooth muscle cells,4493018.0,6.910131217568805e-20,3.420514952696559e-17
+235,T-Cell Lymphoma,Eczema,local_entropy_2,Fibroblasts,509873.5,0.0422303955248588,20.904045784805106
+236,T-Cell Lymphoma,Eczema,local_entropy_2,Suprabasal keratinocytes,849658.5,1.5196884176567005e-06,0.0007522457667400667
+237,T-Cell Lymphoma,Eczema,local_entropy_2,Langerhans cells,1079602.5,1.0234296755012777e-12,5.065976893731324e-10
+238,T-Cell Lymphoma,Eczema,local_entropy_2,Unknown,22083931.5,2.907193324956017e-82,1.439060695853228e-79
+239,T-Cell Lymphoma,Eczema,local_entropy_2,Endothelial cells,73407339.5,0.0,0.0
+240,T-Cell Lymphoma,Eczema,local_entropy_2,T-cells,26662142.5,2.783532781648244e-16,1.3778487269158807e-13
+241,T-Cell Lymphoma,Eczema,local_entropy_2,B-cells,12111950.0,1.2129570369782731e-26,6.004137333042452e-24
+242,T-Cell Lymphoma,Eczema,local_entropy_3,Macrophages,5005997.5,5.5783995233506784e-42,2.7613077640585857e-39
+243,T-Cell Lymphoma,Eczema,local_entropy_3,Melanocytes,1775412.0,3.0697126088280065e-26,1.519507741369863e-23
+244,T-Cell Lymphoma,Eczema,local_entropy_3,Basal keratinocytes,2619452.5,1.823935814778448e-51,9.028482283153318e-49
+245,T-Cell Lymphoma,Eczema,local_entropy_3,Smooth muscle cells,4669597.0,3.385622657993497e-33,1.6758832157067805e-30
+246,T-Cell Lymphoma,Eczema,local_entropy_3,Fibroblasts,535265.5,8.263072875304913e-05,0.04090221073275932
+247,T-Cell Lymphoma,Eczema,local_entropy_3,Suprabasal keratinocytes,882700.5,4.00289803690362e-11,1.981434528267292e-08
+248,T-Cell Lymphoma,Eczema,local_entropy_3,Langerhans cells,1101783.5,2.33951275012245e-16,1.1580588113106127e-13
+249,T-Cell Lymphoma,Eczema,local_entropy_3,Unknown,22854012.0,4.449706414990327e-119,2.202604675420212e-116
+250,T-Cell Lymphoma,Eczema,local_entropy_3,Endothelial cells,73979876.0,0.0,0.0
+251,T-Cell Lymphoma,Eczema,local_entropy_3,T-cells,27423872.0,1.4260378904132346e-29,7.058887557545512e-27
+252,T-Cell Lymphoma,Eczema,local_entropy_3,B-cells,12529879.5,6.162604316685509e-44,3.0504891367593274e-41
+253,T-Cell Lymphoma,Eczema,local_entropy_4,Macrophages,5114665.5,1.046378144425985e-52,5.179571814908626e-50
+254,T-Cell Lymphoma,Eczema,local_entropy_4,Melanocytes,1842067.0,5.690435850824413e-38,2.816765746158084e-35
+255,T-Cell Lymphoma,Eczema,local_entropy_4,Basal keratinocytes,2706821.0,4.493789552867147e-68,2.2244258286692375e-65
+256,T-Cell Lymphoma,Eczema,local_entropy_4,Smooth muscle cells,4815316.0,7.267963350768753e-47,3.597641858630533e-44
+257,T-Cell Lymphoma,Eczema,local_entropy_4,Fibroblasts,551286.0,2.7648838931590855e-07,0.00013686175271137476
+258,T-Cell Lymphoma,Eczema,local_entropy_4,Suprabasal keratinocytes,918031.0,1.54582887838063e-17,7.65185294798412e-15
+259,T-Cell Lymphoma,Eczema,local_entropy_4,Langerhans cells,1123064.0,2.570029630622491e-20,1.2721646671581331e-17
+260,T-Cell Lymphoma,Eczema,local_entropy_4,Unknown,23318616.5,1.2648415680928339e-144,6.2609657620595276e-142
+261,T-Cell Lymphoma,Eczema,local_entropy_4,Endothelial cells,74565892.5,0.0,0.0
+262,T-Cell Lymphoma,Eczema,local_entropy_4,T-cells,28125493.0,1.6764004821093803e-45,8.298182386441433e-43
+263,T-Cell Lymphoma,Eczema,local_entropy_4,B-cells,12675774.0,5.004570786005724e-51,2.4772625390728336e-48
+264,T-Cell Lymphoma,Eczema,local_entropy_5,Macrophages,5250028.0,7.974549902348228e-68,3.9474022016623735e-65
+265,T-Cell Lymphoma,Eczema,local_entropy_5,Melanocytes,1892206.0,2.78774669569538e-48,1.3799346143692133e-45
+266,T-Cell Lymphoma,Eczema,local_entropy_5,Basal keratinocytes,2778496.0,1.793620987096202e-83,8.8784238861262e-81
+267,T-Cell Lymphoma,Eczema,local_entropy_5,Smooth muscle cells,4919239.0,4.2417071670523426e-58,2.0996450476909097e-55
+268,T-Cell Lymphoma,Eczema,local_entropy_5,Fibroblasts,561719.0,3.1864531845201735e-09,1.577294326337486e-06
+269,T-Cell Lymphoma,Eczema,local_entropy_5,Suprabasal keratinocytes,947724.0,3.783781131379492e-24,1.8729716600328485e-21
+270,T-Cell Lymphoma,Eczema,local_entropy_5,Langerhans cells,1131936.0,4.2092490026143506e-22,2.0835782562941037e-19
+271,T-Cell Lymphoma,Eczema,local_entropy_5,Unknown,23723370.0,6.31128890704108e-169,3.124088008985335e-166
+272,T-Cell Lymphoma,Eczema,local_entropy_5,Endothelial cells,75206749.0,0.0,0.0
+273,T-Cell Lymphoma,Eczema,local_entropy_5,T-cells,28420324.0,2.9679443613693865e-53,1.4691324588778466e-50
+274,T-Cell Lymphoma,Eczema,local_entropy_5,B-cells,12893776.0,1.2230333158318068e-62,6.054014913367443e-60
+275,T-Cell Lymphoma,Eczema,egophily_1,Macrophages,4517353.5,2.3167999983840825e-09,1.1468159992001207e-06
+276,T-Cell Lymphoma,Eczema,egophily_1,Melanocytes,1563818.0,0.0006835120577194222,0.33833846857111394
+277,T-Cell Lymphoma,Eczema,egophily_1,Basal keratinocytes,1989075.5,0.06609769391665472,32.718358488744094
+278,T-Cell Lymphoma,Eczema,egophily_1,Smooth muscle cells,4279743.0,1.0767268798024882e-08,5.3297980550223155e-06
+279,T-Cell Lymphoma,Eczema,egophily_1,Fibroblasts,633496.0,2.110450817078583e-30,1.0446731544538986e-27
+280,T-Cell Lymphoma,Eczema,egophily_1,Suprabasal keratinocytes,874835.5,3.32733389836282e-10,1.647030279689596e-07
+281,T-Cell Lymphoma,Eczema,egophily_1,Langerhans cells,854054.0,0.00010075338862159794,0.049872927367690986
+282,T-Cell Lymphoma,Eczema,egophily_1,Unknown,17679819.0,0.00030470640530580955,0.15082967062637573
+283,T-Cell Lymphoma,Eczema,egophily_1,Endothelial cells,30296679.5,0.0,0.0
+284,T-Cell Lymphoma,Eczema,egophily_1,T-cells,30252954.0,2.155854572102296e-116,1.0671480131906366e-113
+285,T-Cell Lymphoma,Eczema,egophily_1,B-cells,10994769.5,0.036403381439605295,18.01967381260462
+286,T-Cell Lymphoma,Eczema,egophily_2,Macrophages,4734712.0,1.104549832458687e-20,5.4675216706705e-18
+287,T-Cell Lymphoma,Eczema,egophily_2,Melanocytes,1652062.5,1.8501758090478155e-10,9.158370254786688e-08
+288,T-Cell Lymphoma,Eczema,egophily_2,Basal keratinocytes,1959088.0,0.008908339998215444,4.409628299116645
+289,T-Cell Lymphoma,Eczema,egophily_2,Smooth muscle cells,4536669.5,7.30246835357488e-23,3.6147218350195655e-20
+290,T-Cell Lymphoma,Eczema,egophily_2,Fibroblasts,731720.0,6.091608997068195e-78,3.0153464535487564e-75
+291,T-Cell Lymphoma,Eczema,egophily_2,Suprabasal keratinocytes,975479.5,2.230560734491086e-31,1.1041275635730877e-28
+292,T-Cell Lymphoma,Eczema,egophily_2,Langerhans cells,849818.0,5.7672425510436835e-05,0.028547850627666235
+293,T-Cell Lymphoma,Eczema,egophily_2,Unknown,17769912.5,0.00173922809620711,0.8609179076225195
+294,T-Cell Lymphoma,Eczema,egophily_2,Endothelial cells,25847587.0,0.0,0.0
+295,T-Cell Lymphoma,Eczema,egophily_2,T-cells,33062313.0,3.669205856790679e-258,1.8162568991113861e-255
+296,T-Cell Lymphoma,Eczema,egophily_2,B-cells,11390171.0,2.947956101566305e-07,0.0001459238270275321
+297,T-Cell Lymphoma,Eczema,egophily_3,Macrophages,4963432.5,4.0106632073051307e-38,1.9852782876160394e-35
+298,T-Cell Lymphoma,Eczema,egophily_3,Melanocytes,1808021.0,1.0578972519904113e-31,5.236591397352537e-29
+299,T-Cell Lymphoma,Eczema,egophily_3,Basal keratinocytes,1981190.0,0.04320760720423211,21.38776556609489
+300,T-Cell Lymphoma,Eczema,egophily_3,Smooth muscle cells,4685268.0,1.489394342626979e-34,7.372501996003545e-32
+301,T-Cell Lymphoma,Eczema,egophily_3,Fibroblasts,755933.0,2.3127597835034267e-93,1.1448160928341963e-90
+302,T-Cell Lymphoma,Eczema,egophily_3,Suprabasal keratinocytes,1087236.0,3.017802771049544e-70,1.4938123716695243e-67
+303,T-Cell Lymphoma,Eczema,egophily_3,Langerhans cells,836932.5,3.4092156148796988e-06,0.0016875617293654506
+304,T-Cell Lymphoma,Eczema,egophily_3,Unknown,17902835.5,0.014581492099240534,7.217838589124064
+305,T-Cell Lymphoma,Eczema,egophily_3,Endothelial cells,23950423.0,0.0,0.0
+306,T-Cell Lymphoma,Eczema,egophily_3,T-cells,34901199.0,0.0,0.0
+307,T-Cell Lymphoma,Eczema,egophily_3,B-cells,11828318.0,1.8979203232340326e-17,9.394705600008463e-15
+308,T-Cell Lymphoma,Eczema,egophily_4,Macrophages,5017265.0,4.919091881566667e-43,2.4349504813755003e-40
+309,T-Cell Lymphoma,Eczema,egophily_4,Melanocytes,1877761.0,3.507676339362127e-45,1.736299787984253e-42
+310,T-Cell Lymphoma,Eczema,egophily_4,Basal keratinocytes,1920963.5,0.00027638415656858873,0.1368101575014514
+311,T-Cell Lymphoma,Eczema,egophily_4,Smooth muscle cells,4893651.0,3.213680314311732e-55,1.590771755584307e-52
+312,T-Cell Lymphoma,Eczema,egophily_4,Fibroblasts,771526.0,4.322269863376677e-104,2.139523582371455e-101
+313,T-Cell Lymphoma,Eczema,egophily_4,Suprabasal keratinocytes,1121575.5,2.1362978995279893e-85,1.0574674602663547e-82
+314,T-Cell Lymphoma,Eczema,egophily_4,Langerhans cells,803662.5,3.8988281263119547e-10,1.9299199225244172e-07
+315,T-Cell Lymphoma,Eczema,egophily_4,Unknown,17971709.5,0.03699214532998734,18.311111938343736
+316,T-Cell Lymphoma,Eczema,egophily_4,Endothelial cells,22821952.5,0.0,0.0
+317,T-Cell Lymphoma,Eczema,egophily_4,T-cells,35918031.5,0.0,0.0
+318,T-Cell Lymphoma,Eczema,egophily_4,B-cells,12211720.5,2.296077045709916e-30,1.1365581376264085e-27
+319,T-Cell Lymphoma,Eczema,egophily_5,Macrophages,5110617.0,2.764473226094781e-52,1.3684142469169167e-49
+320,T-Cell Lymphoma,Eczema,egophily_5,Melanocytes,1910621.0,2.1758979025058964e-52,1.0770694617404188e-49
+321,T-Cell Lymphoma,Eczema,egophily_5,Basal keratinocytes,1952708.0,0.00534809177503303,2.64730542864135
+322,T-Cell Lymphoma,Eczema,egophily_5,Smooth muscle cells,5031488.5,1.2633357852955247e-71,6.253512137212849e-69
+323,T-Cell Lymphoma,Eczema,egophily_5,Fibroblasts,780871.0,8.289202861320076e-111,4.1031554163534375e-108
+324,T-Cell Lymphoma,Eczema,egophily_5,Suprabasal keratinocytes,1149527.0,7.600629194381454e-99,3.762311451218821e-96
+325,T-Cell Lymphoma,Eczema,egophily_5,Langerhans cells,794005.5,1.739273746440126e-11,8.609405044878623e-09
+326,T-Cell Lymphoma,Eczema,egophily_5,Unknown,18223425.0,0.43413512152677325,214.89688515575278
+327,T-Cell Lymphoma,Eczema,egophily_5,Endothelial cells,21943218.5,0.0,0.0
+328,T-Cell Lymphoma,Eczema,egophily_5,T-cells,36791881.5,0.0,0.0
+329,T-Cell Lymphoma,Eczema,egophily_5,B-cells,12488776.0,4.88342630336485e-42,2.4172960201656005e-39
+330,Psoriasis,Eczema,local_homophily_1,Macrophages,16276502.5,2.2412771631624167e-116,1.1094321957653961e-113
+331,Psoriasis,Eczema,local_homophily_1,Melanocytes,1446541.0,5.064785354514457e-05,0.02507068750484656
+332,Psoriasis,Eczema,local_homophily_1,Basal keratinocytes,2753051.5,0.1577905137417115,78.10630430214718
+333,Psoriasis,Eczema,local_homophily_1,Smooth muscle cells,4683185.5,0.13785536971363455,68.23840800824911
+334,Psoriasis,Eczema,local_homophily_1,Fibroblasts,317102.0,0.0004440102431911837,0.21978507037963596
+335,Psoriasis,Eczema,local_homophily_1,Suprabasal keratinocytes,789205.0,0.00398046904397136,1.9703321767658233
+336,Psoriasis,Eczema,local_homophily_1,Langerhans cells,1216524.0,0.00021644877220989333,0.1071421422438972
+337,Psoriasis,Eczema,local_homophily_1,Unknown,20965422.0,1.2777589993216694e-27,6.324907046642263e-25
+338,Psoriasis,Eczema,local_homophily_1,Endothelial cells,41411465.0,0.0,0.0
+339,Psoriasis,Eczema,local_homophily_1,T-cells,26006981.5,0.5645980258023509,279.4760227721637
+340,Psoriasis,Eczema,local_homophily_1,B-cells,10516072.0,1.704539701800433e-15,8.437471523912143e-13
+341,Psoriasis,Eczema,local_homophily_2,Macrophages,13076267.0,0.0004092725639505281,0.2025899191555114
+342,Psoriasis,Eczema,local_homophily_2,Melanocytes,1382299.0,1.036072527629633e-09,5.128559011766683e-07
+343,Psoriasis,Eczema,local_homophily_2,Basal keratinocytes,2735510.0,0.07613349754814497,37.686081286331756
+344,Psoriasis,Eczema,local_homophily_2,Smooth muscle cells,4449523.5,2.4181484895645655e-06,0.00119698350233446
+345,Psoriasis,Eczema,local_homophily_2,Fibroblasts,306653.5,7.185468590988721e-06,0.003556806952539417
+346,Psoriasis,Eczema,local_homophily_2,Suprabasal keratinocytes,808197.5,9.114534395713626e-05,0.045116945258782445
+347,Psoriasis,Eczema,local_homophily_2,Langerhans cells,1133541.0,1.5033210778724734e-11,7.441439335468743e-09
+348,Psoriasis,Eczema,local_homophily_2,Unknown,21144011.0,5.115077792572776e-24,2.5319635073235244e-21
+349,Psoriasis,Eczema,local_homophily_2,Endothelial cells,41379684.5,0.0,0.0
+350,Psoriasis,Eczema,local_homophily_2,T-cells,24516636.5,1.8561009291999172e-10,9.18769959953959e-08
+351,Psoriasis,Eczema,local_homophily_2,B-cells,10661591.5,5.69749653590237e-12,2.8202607852716734e-09
+352,Psoriasis,Eczema,local_homophily_3,Macrophages,12721033.5,0.16607206881052572,82.20567406121023
+353,Psoriasis,Eczema,local_homophily_3,Melanocytes,1361234.0,1.1429781507053514e-11,5.657741845991491e-09
+354,Psoriasis,Eczema,local_homophily_3,Basal keratinocytes,2649936.5,0.00035648110331513755,0.1764581461409931
+355,Psoriasis,Eczema,local_homophily_3,Smooth muscle cells,4360751.5,2.764675605136451e-09,1.3685144245425432e-06
+356,Psoriasis,Eczema,local_homophily_3,Fibroblasts,307909.5,1.2707674013516312e-05,0.006290298636690574
+357,Psoriasis,Eczema,local_homophily_3,Suprabasal keratinocytes,800737.5,0.0004705349455871429,0.23291479806563575
+358,Psoriasis,Eczema,local_homophily_3,Langerhans cells,1112223.5,4.751670574576488e-14,2.3520769344153616e-11
+359,Psoriasis,Eczema,local_homophily_3,Unknown,21015181.0,1.6167508283763673e-26,8.002916600463017e-24
+360,Psoriasis,Eczema,local_homophily_3,Endothelial cells,41240227.5,0.0,0.0
+361,Psoriasis,Eczema,local_homophily_3,T-cells,24452515.0,3.5376666481042044e-11,1.7511449908115813e-08
+362,Psoriasis,Eczema,local_homophily_3,B-cells,10623646.5,8.003760844626868e-13,3.9618616180902995e-10
+363,Psoriasis,Eczema,local_homophily_4,Macrophages,12564149.0,0.6629704977781019,328.1703964001604
+364,Psoriasis,Eczema,local_homophily_4,Melanocytes,1344005.5,2.0383845344847357e-13,1.0090003445699443e-10
+365,Psoriasis,Eczema,local_homophily_4,Basal keratinocytes,2583058.0,6.537566663388597e-07,0.0003236095498377356
+366,Psoriasis,Eczema,local_homophily_4,Smooth muscle cells,4297888.5,9.356566145918638e-12,4.631500242229726e-09
+367,Psoriasis,Eczema,local_homophily_4,Fibroblasts,304005.0,2.0589215602791335e-06,0.001019166172338171
+368,Psoriasis,Eczema,local_homophily_4,Suprabasal keratinocytes,801098.5,0.00043624909853830294,0.21594330377645993
+369,Psoriasis,Eczema,local_homophily_4,Langerhans cells,1106666.0,9.574831321003374e-15,4.739541503896671e-12
+370,Psoriasis,Eczema,local_homophily_4,Unknown,20835448.0,3.185922553178204e-30,1.5770316638232106e-27
+371,Psoriasis,Eczema,local_homophily_4,Endothelial cells,40843275.5,0.0,0.0
+372,Psoriasis,Eczema,local_homophily_4,T-cells,24286005.5,3.5938076321516576e-13,1.7789347779150706e-10
+373,Psoriasis,Eczema,local_homophily_4,B-cells,10591890.5,1.4631298554257196e-13,7.242492784357312e-11
+374,Psoriasis,Eczema,local_homophily_5,Macrophages,12507343.0,0.9265784001404322,458.656308069514
+375,Psoriasis,Eczema,local_homophily_5,Melanocytes,1334881.0,2.13346887203976e-14,1.0560670916596812e-11
+376,Psoriasis,Eczema,local_homophily_5,Basal keratinocytes,2547699.5,1.0839195888125744e-08,5.365401964622244e-06
+377,Psoriasis,Eczema,local_homophily_5,Smooth muscle cells,4250146.5,7.568284151886565e-14,3.74630065518385e-11
+378,Psoriasis,Eczema,local_homophily_5,Fibroblasts,301693.0,6.557497585580833e-07,0.0003245961304862513
+379,Psoriasis,Eczema,local_homophily_5,Suprabasal keratinocytes,794172.5,0.0017428649561200596,0.8627181532794295
+380,Psoriasis,Eczema,local_homophily_5,Langerhans cells,1103148.0,3.398845871539097e-15,1.6824287064118531e-12
+381,Psoriasis,Eczema,local_homophily_5,Unknown,20722100.5,1.0868896304341255e-32,5.380103670648921e-30
+382,Psoriasis,Eczema,local_homophily_5,Endothelial cells,40497007.5,0.0,0.0
+383,Psoriasis,Eczema,local_homophily_5,T-cells,24187012.5,1.930684542569428e-14,9.556888485718666e-12
+384,Psoriasis,Eczema,local_homophily_5,B-cells,10519229.0,2.4663526885019644e-15,1.2208445808084725e-12
+385,Psoriasis,Eczema,local_entropy_1,Macrophages,8881134.0,5.997329832727258e-106,2.968678267199993e-103
+386,Psoriasis,Eczema,local_entropy_1,Melanocytes,1642262.5,0.019538624200608187,9.671618979301051
+387,Psoriasis,Eczema,local_entropy_1,Basal keratinocytes,2984268.5,0.0005496634060622615,0.2720833860008194
+388,Psoriasis,Eczema,local_entropy_1,Smooth muscle cells,4852330.5,0.3853990156508593,190.77251274717537
+389,Psoriasis,Eczema,local_entropy_1,Fibroblasts,387353.5,0.0006179741694036568,0.3058972138548101
+390,Psoriasis,Eczema,local_entropy_1,Suprabasal keratinocytes,726282.5,0.5116463054837441,253.26492121445335
+391,Psoriasis,Eczema,local_entropy_1,Langerhans cells,1332234.0,0.5312381419615873,262.9628802709857
+392,Psoriasis,Eczema,local_entropy_1,Unknown,25615312.5,2.899832391285385e-19,1.4354170336862655e-16
+393,Psoriasis,Eczema,local_entropy_1,Endothelial cells,86843333.0,4.891012589259718e-292,2.4210512316835602e-289
+394,Psoriasis,Eczema,local_entropy_1,T-cells,25695591.0,0.07379129783218616,36.526692426932144
+395,Psoriasis,Eczema,local_entropy_1,B-cells,12440562.0,2.3757516402409776e-09,1.1759970619192839e-06
+396,Psoriasis,Eczema,local_entropy_2,Macrophages,9564982.0,3.602249494985116e-70,1.7831135000176326e-67
+397,Psoriasis,Eczema,local_entropy_2,Melanocytes,1702851.0,1.729739304920841e-05,0.008562209559358162
+398,Psoriasis,Eczema,local_entropy_2,Basal keratinocytes,3106733.0,1.733254874220034e-09,8.579611627389168e-07
+399,Psoriasis,Eczema,local_entropy_2,Smooth muscle cells,4948251.5,0.028104694221959225,13.911823639869816
+400,Psoriasis,Eczema,local_entropy_2,Fibroblasts,383844.0,0.00211795881588649,1.0483896138638125
+401,Psoriasis,Eczema,local_entropy_2,Suprabasal keratinocytes,753611.0,0.3849349245010414,190.5427876280155
+402,Psoriasis,Eczema,local_entropy_2,Langerhans cells,1401737.5,0.0013555684646391637,0.671006389996386
+403,Psoriasis,Eczema,local_entropy_2,Unknown,25606889.5,4.3413901207364875e-19,2.1489881097645614e-16
+404,Psoriasis,Eczema,local_entropy_2,Endothelial cells,87953221.5,0.0,0.0
+405,Psoriasis,Eczema,local_entropy_2,T-cells,25861501.0,0.25397941029039695,125.71980809374648
+406,Psoriasis,Eczema,local_entropy_2,B-cells,12216374.5,1.4030349372766877e-05,0.006945022939519604
+407,Psoriasis,Eczema,local_entropy_3,Macrophages,9886173.5,5.383081896601412e-56,2.6646255388176985e-53
+408,Psoriasis,Eczema,local_entropy_3,Melanocytes,1740482.0,3.424820556921501e-08,1.695286175676143e-05
+409,Psoriasis,Eczema,local_entropy_3,Basal keratinocytes,3231444.0,5.64209768369968e-18,2.7928383534313415e-15
+410,Psoriasis,Eczema,local_entropy_3,Smooth muscle cells,5143637.5,9.427332900269464e-07,0.00046665297856333845
+411,Psoriasis,Eczema,local_entropy_3,Fibroblasts,388586.5,0.00040358174133041787,0.19977296195855684
+412,Psoriasis,Eczema,local_entropy_3,Suprabasal keratinocytes,772610.5,0.05380492661620226,26.633438675020116
+413,Psoriasis,Eczema,local_entropy_3,Langerhans cells,1449960.5,5.936248424264354e-07,0.00029384429700108554
+414,Psoriasis,Eczema,local_entropy_3,Unknown,25893443.5,3.3089470775409006e-24,1.6379288033827456e-21
+415,Psoriasis,Eczema,local_entropy_3,Endothelial cells,88534442.0,0.0,0.0
+416,Psoriasis,Eczema,local_entropy_3,T-cells,25818823.0,0.19129054458532868,94.68881956973769
+417,Psoriasis,Eczema,local_entropy_3,B-cells,12413357.0,8.107235098705916e-09,4.013081373859428e-06
+418,Psoriasis,Eczema,local_entropy_4,Macrophages,10040421.0,9.066642173979429e-50,4.4879878761198175e-47
+419,Psoriasis,Eczema,local_entropy_4,Melanocytes,1759829.0,7.948294310737708e-10,3.934405683815165e-07
+420,Psoriasis,Eczema,local_entropy_4,Basal keratinocytes,3345642.0,2.5221564961608287e-28,1.2484674655996103e-25
+421,Psoriasis,Eczema,local_entropy_4,Smooth muscle cells,5271599.0,2.4495350535372392e-11,1.2125198515009333e-08
+422,Psoriasis,Eczema,local_entropy_4,Fibroblasts,398451.5,6.666111324859908e-06,0.003299725105805655
+423,Psoriasis,Eczema,local_entropy_4,Suprabasal keratinocytes,785603.0,0.007978690652865647,3.9494518731684956
+424,Psoriasis,Eczema,local_entropy_4,Langerhans cells,1466156.0,2.2161464421727905e-08,1.0969924888755312e-05
+425,Psoriasis,Eczema,local_entropy_4,Unknown,26152937.0,2.1403521270379373e-29,1.059474302883779e-26
+426,Psoriasis,Eczema,local_entropy_4,Endothelial cells,90008758.5,0.0,0.0
+427,Psoriasis,Eczema,local_entropy_4,T-cells,26079966.0,0.7711883616405171,381.73823901205594
+428,Psoriasis,Eczema,local_entropy_4,B-cells,12529796.0,3.9147841727394903e-11,1.9378181655060478e-08
+429,Psoriasis,Eczema,local_entropy_5,Macrophages,10189027.0,3.981341593383512e-44,1.9707640887248387e-41
+430,Psoriasis,Eczema,local_entropy_5,Melanocytes,1790156.0,1.0038480049613137e-12,4.969047624558502e-10
+431,Psoriasis,Eczema,local_entropy_5,Basal keratinocytes,3418901.5,2.87462712761839e-36,1.422940428171103e-33
+432,Psoriasis,Eczema,local_entropy_5,Smooth muscle cells,5341614.0,2.064648813674833e-14,1.0220011627690422e-11
+433,Psoriasis,Eczema,local_entropy_5,Fibroblasts,404317.0,3.801284657511522e-07,0.00018816359054682036
+434,Psoriasis,Eczema,local_entropy_5,Suprabasal keratinocytes,793913.0,0.0018307201828077543,0.9062064904898384
+435,Psoriasis,Eczema,local_entropy_5,Langerhans cells,1494900.0,2.7237847666864857e-11,1.3482734595098103e-08
+436,Psoriasis,Eczema,local_entropy_5,Unknown,26467350.0,2.1653318743225754e-36,1.0718392777896748e-33
+437,Psoriasis,Eczema,local_entropy_5,Endothelial cells,91627210.0,0.0,0.0
+438,Psoriasis,Eczema,local_entropy_5,T-cells,26466895.5,0.22456265173020984,111.15851260645387
+439,Psoriasis,Eczema,local_entropy_5,B-cells,12809033.0,6.452392422515674e-18,3.1939342491452584e-15
+440,Psoriasis,Eczema,egophily_1,Macrophages,19918013.0,0.0,0.0
+441,Psoriasis,Eczema,egophily_1,Melanocytes,1519841.0,0.09465803241882455,46.85572604731816
+442,Psoriasis,Eczema,egophily_1,Basal keratinocytes,2929389.5,0.01997106423195573,9.885676794818085
+443,Psoriasis,Eczema,egophily_1,Smooth muscle cells,5152234.5,3.8396839188702953e-07,0.0001900643539840796
+444,Psoriasis,Eczema,egophily_1,Fibroblasts,370896.0,0.06367013409658959,31.516716377811846
+445,Psoriasis,Eczema,egophily_1,Suprabasal keratinocytes,792145.0,0.00208176306399408,1.0304727166770697
+446,Psoriasis,Eczema,egophily_1,Langerhans cells,1294702.0,0.43477215992166396,215.21221916122363
+447,Psoriasis,Eczema,egophily_1,Unknown,22584330.0,6.916990188367221e-05,0.03423910143241775
+448,Psoriasis,Eczema,egophily_1,Endothelial cells,42962669.5,0.0,0.0
+449,Psoriasis,Eczema,egophily_1,T-cells,29393683.5,1.0453235562535294e-36,5.174351603454971e-34
+450,Psoriasis,Eczema,egophily_1,B-cells,10991483.0,5.8305744279083905e-06,0.0028861343418146532
+451,Psoriasis,Eczema,egophily_2,Macrophages,21546089.5,0.0,0.0
+452,Psoriasis,Eczema,egophily_2,Melanocytes,1582442.0,0.6961209262459311,344.579858491736
+453,Psoriasis,Eczema,egophily_2,Basal keratinocytes,2923395.0,0.02982535348677164,14.763549975951964
+454,Psoriasis,Eczema,egophily_2,Smooth muscle cells,5416872.0,3.533927001632843e-18,1.7492938658082568e-15
+455,Psoriasis,Eczema,egophily_2,Fibroblasts,401816.0,1.2866499157001604e-06,0.0006368917082715794
+456,Psoriasis,Eczema,egophily_2,Suprabasal keratinocytes,838861.5,1.8208995219497388e-08,9.013452633651207e-06
+457,Psoriasis,Eczema,egophily_2,Langerhans cells,1291794.5,0.38092207898422825,188.55642909719302
+458,Psoriasis,Eczema,egophily_2,Unknown,22902973.5,0.009176290590108561,4.542263842103738
+459,Psoriasis,Eczema,egophily_2,Endothelial cells,37205671.0,0.0,0.0
+460,Psoriasis,Eczema,egophily_2,T-cells,30642921.5,2.672377922591162e-68,1.3228270716826252e-65
+461,Psoriasis,Eczema,egophily_2,B-cells,10877544.5,9.90822696239097e-08,4.90457234638353e-05
+462,Psoriasis,Eczema,egophily_3,Macrophages,22112088.5,0.0,0.0
+463,Psoriasis,Eczema,egophily_3,Melanocytes,1705927.5,1.0957592037167978e-05,0.005424008058398148
+464,Psoriasis,Eczema,egophily_3,Basal keratinocytes,2991552.5,0.0003148918984846999,0.15587148974992643
+465,Psoriasis,Eczema,egophily_3,Smooth muscle cells,5631727.5,1.8759276493403076e-31,9.285841864234523e-29
+466,Psoriasis,Eczema,egophily_3,Fibroblasts,414663.5,1.1059499190975161e-09,5.474452099532705e-07
+467,Psoriasis,Eczema,egophily_3,Suprabasal keratinocytes,890122.5,2.2018311126558883e-17,1.0899064007646647e-14
+468,Psoriasis,Eczema,egophily_3,Langerhans cells,1338912.0,0.38274755337529265,189.46003892076988
+469,Psoriasis,Eczema,egophily_3,Unknown,22791581.5,0.0020683899384767337,1.0238530195459832
+470,Psoriasis,Eczema,egophily_3,Endothelial cells,34542756.5,0.0,0.0
+471,Psoriasis,Eczema,egophily_3,T-cells,31801064.5,5.940829903011788e-107,2.9407108019908347e-104
+472,Psoriasis,Eczema,egophily_3,B-cells,10972411.5,3.4493885995859628e-06,0.0017074473567950516
+473,Psoriasis,Eczema,egophily_4,Macrophages,22282363.0,0.0,0.0
+474,Psoriasis,Eczema,egophily_4,Melanocytes,1673101.0,0.0008624161286254628,0.42689598366960413
+475,Psoriasis,Eczema,egophily_4,Basal keratinocytes,2950395.5,0.00617379534503104,3.056028695790365
+476,Psoriasis,Eczema,egophily_4,Smooth muscle cells,5835990.5,1.2627215821907796e-47,6.250471831844359e-45
+477,Psoriasis,Eczema,egophily_4,Fibroblasts,430347.5,2.3693601629253187e-14,1.1728332806480327e-11
+478,Psoriasis,Eczema,egophily_4,Suprabasal keratinocytes,898918.0,2.8989841323351736e-19,1.4349971455059109e-16
+479,Psoriasis,Eczema,egophily_4,Langerhans cells,1305527.5,0.7144101192044805,353.6330090062178
+480,Psoriasis,Eczema,egophily_4,Unknown,22720989.0,0.0007214618179978969,0.357123599908959
+481,Psoriasis,Eczema,egophily_4,Endothelial cells,32457997.0,0.0,0.0
+482,Psoriasis,Eczema,egophily_4,T-cells,32306573.5,1.3788436715540202e-126,6.825276174192399e-124
+483,Psoriasis,Eczema,egophily_4,B-cells,11155909.0,0.0009114835341309065,0.45118434939479873
+484,Psoriasis,Eczema,egophily_5,Macrophages,22357136.0,0.0,0.0
+485,Psoriasis,Eczema,egophily_5,Melanocytes,1654961.5,0.006081946716957637,3.01056362489403
+486,Psoriasis,Eczema,egophily_5,Basal keratinocytes,2962110.0,0.002841749488316437,1.4066659967166362
+487,Psoriasis,Eczema,egophily_5,Smooth muscle cells,6005336.0,1.1686671973784569e-63,5.784902627023362e-61
+488,Psoriasis,Eczema,egophily_5,Fibroblasts,454478.5,1.6447622705014284e-23,8.141573238982071e-21
+489,Psoriasis,Eczema,egophily_5,Suprabasal keratinocytes,908527.0,1.938927990240531e-21,9.597693551690628e-19
+490,Psoriasis,Eczema,egophily_5,Langerhans cells,1316080.5,0.979574086101771,484.8891726203766
+491,Psoriasis,Eczema,egophily_5,Unknown,22682349.0,0.00039099220357947316,0.19354114077183926
+492,Psoriasis,Eczema,egophily_5,Endothelial cells,30705752.5,0.0,0.0
+493,Psoriasis,Eczema,egophily_5,T-cells,32748811.0,3.8464434242558634e-145,1.9039894950066522e-142
+494,Psoriasis,Eczema,egophily_5,B-cells,11204460.5,0.0030189368729616906,1.494373752116037

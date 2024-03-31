@@ -5,7 +5,7 @@ from statannotations.Annotator import Annotator
 from decimal import Decimal
 import matplotlib.pyplot as plt
 
-def _plot_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data, celltype, conditions, scores, subplot_axis_id):
+def _plot_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data, celltype, conditions, scores, subplot_axis_id, legend=None, legend_loc=None, palette=None):
     disease_combinations=list(itertools.combinations(conditions, 2))
     var_name='centrality_measure'
     value_name='centrality_score'
@@ -28,7 +28,7 @@ def _plot_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data
     fig, axes = plt.subplots(figsize=(20,10))
     sns.set(font_scale = 1.2)
     sns.set_style("white")
-    ax = sns.violinplot(**args, cut=0)
+    ax = sns.violinplot(**args, cut=0, palette=palette)
     annot = Annotator(ax, pairs, **args)
     annot.set_custom_annotations(pvals)
     annot.annotate()
@@ -44,22 +44,29 @@ def _plot_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data
     plot_title=f'{celltype}'
     sns.set(font_scale = 1.2)
     sns.set_style("white")
-    ax = sns.violinplot(ax=subplot_axis_id, **args, cut=0)
+    ax = sns.violinplot(ax=subplot_axis_id, **args, cut=0, palette=palette)
     annot = Annotator(ax, pairs, **args)
-    annot.configure(text_format='simple', loc='inside', verbose=2, ) # fontsize=25
+    annot.configure(text_format='simple', loc='inside', verbose=2) # fontsize=25
     annot.set_custom_annotations(pvals_corrected)
     annot.annotate()
-    ax.set_xlabel('', fontsize=25, labelpad=20)
-    ax.set_ylabel('Centrality scores', ) # fontsize=25, labelpad=20
-    ax.set_title(plot_title, ) # fontsize=25, pad=20
-    sns.move_legend(
-        ax, "lower right",
-        bbox_to_anchor=(1.02, -0.04), ncol=3, title=None, frameon=False,
-    )
-    xticks=[]
+    ax.set_xlabel('', fontsize=20, labelpad=20)
+    ax.set_ylabel('Centrality scores', fontsize=20) # fontsize=25, labelpad=20
+    ax.set_title(plot_title, fontsize=30) # fontsize=25, pad=20
+    # sns.move_legend(
+    #     ax, "lower right",
+    #     bbox_to_anchor=(1.02, -0.04), ncol=3, title=None, frameon=False,
+    # )
+    yticks=[]
     for j in ax.get_yticks():
-        xticks.append(round(j,1))
-    ax.set_yticklabels(xticks, ) # size = 20
+        yticks.append(round(j,1))
+    ax.set_yticklabels(yticks, fontsize=20) # size = 20
+    ax.set_xticklabels(['Degree centrality', 'Closeness centrality'], fontsize=20) # size = 20
+    if legend:
+        sns.move_legend(ax, loc=legend_loc,
+                        title=None, fontsize=20,
+                        bbox_to_anchor=(1.5, 0.92))
+    else:
+        ax.legend([],[], frameon=False)
     
     
     

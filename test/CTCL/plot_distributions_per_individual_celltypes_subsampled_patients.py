@@ -56,16 +56,16 @@ if __name__ == '__main__':
                 data_disease_combinations=pd.concat(data_disease_combinations, axis=0)
                 data_heterogeneity_measure.append(data_disease_combinations)
                 df=data_disease_combinations.copy()
-                df=df[['score', 'p_value_adj']]
+                df=df[['score', 'p_value']]
                 # df['minus_log10_p_value_adj'] = -np.log10(df['p_value_adj'])
                 # args = dict(ax=axes[row], x='score', y='minus_log10_p_value_adj', data=df)
-                args = dict(ax=axes[row], x='score', y='p_value_adj', data=df)
+                args = dict(ax=axes[row], x='score', y='p_value', data=df)
                 ax = sns.boxplot(**args)
                 title=str(j)
                 ax.set_title(f'{title}')
                 ax.set_xlabel("radius\n")
                 # ax.set_ylabel("-log10(p_value_adjusted)\n")
-                ax.set_ylabel("p_value_adjusted\n")
+                ax.set_ylabel("p_value\n")
                 ax.set_xticklabels(radii) # , size=20
             fig.suptitle(suptitle, weight='bold', fontsize=15, y=1.001)
             plt.xlabel('radius') # fontsize=25, labelpad=20

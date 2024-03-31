@@ -9,9 +9,6 @@ import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import itertools
-from statannotations.Annotator import Annotator
-from decimal import Decimal
-import numpy as np
 from decimal import Decimal
 
 if __name__ == '__main__':
@@ -78,7 +75,7 @@ if __name__ == '__main__':
                     # df = df.iloc[no_of_elements_to_be_dropped:]
                     df[df.minus_log10_p_value_adj > np.percentile(df.minus_log10_p_value_adj,5)]
                     # ===================================================================================
-                    ax=sns.histplot(ax=axes[row, col], data=df, x="minus_log10_p_value_adj", kde=True)
+                    ax=sns.histplot(ax=axes[row, col], data=df, x="minus_log10_p_value", kde=True)
                     # ax.axvline(x=p, color='red')
                     text_str=str('%.2E' % Decimal(p))                  
                     # Show texts

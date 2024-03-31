@@ -45,6 +45,7 @@ def _pick_column_maximizing_spread_(no_of_spread_scores_per_row, _celltypes_impG
             clustered_cells.append(anndata_clustered_indices)
             # ---
             clustering_tree[impGenes_good[_pos_]]=celltypes_good[_pos_]
+            anndata_clustered_indices=[int(i) for i in anndata_clustered_indices]
             clustering_results[celltypes_good[_pos_]]=anndata_clustered_indices
             # ---
             adata_df=adata_df.drop(anndata_clustered_indices)

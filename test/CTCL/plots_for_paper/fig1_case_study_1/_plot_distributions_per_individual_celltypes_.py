@@ -5,18 +5,20 @@ import itertools
 from statannotations.Annotator import Annotator
 from decimal import Decimal
 
-def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc, title_prefix):
+def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=None, title_prefix=None, plot_title=None, title_loc=None, xlabel=None):
     disease_combinations=list(itertools.combinations(conditions, 2))
     if heterogeneity_measure=='egophily':
-        plot_title=f'{heterogeneity_measure} ({celltype})'
+        # plot_title=f'{heterogeneity_measure} ({celltype})'
         local_heterogeneity_measure=[f'{heterogeneity_measure}_{radius}' for radius in radii]
         var_name=f'{heterogeneity_measure}_measure'
         value_name=f'{heterogeneity_measure}_score'
+        ylabel=f'{heterogeneity_measure}'
     else:
-        plot_title=f'local {heterogeneity_measure} ({celltype})'
+        # plot_title=f'local {heterogeneity_measure} ({celltype})'
         local_heterogeneity_measure=[f'local_{heterogeneity_measure}_{radius}' for radius in radii]
         var_name=f'local_{heterogeneity_measure}_measure'
         value_name=f'local_{heterogeneity_measure}_score'
+        ylabel=f'local {heterogeneity_measure}'
     columns=local_heterogeneity_measure+['condition']
     data_=cell_results[cell_results['cell_type']==celltype][columns]
     data=data_.melt('condition', var_name=var_name, value_name=value_name)
@@ -34,6 +36,7 @@ def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_resul
                 pvals.append('%.2E' % Decimal(p_))
             else:
                 pvals.append('$ns$')
+    xticklabels=[f'$r={radius}$' for radius in radii]
     pairs_pvals_dict=dict(zip(pairs, pvals))
     fig, axes = plt.subplots(figsize=(20,10))
     sns.set(font_scale = 1.2)
@@ -54,21 +57,25 @@ def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_resul
     sns.set_style("white")
     ax = sns.violinplot(ax=subplot_axis_id, **args, cut=0)
     if title_prefix:
-        plot_title=r"$\bf{" + title_prefix + "}$" + plot_title
-    ax.set_title(plot_title, ) # fontsize=25, pad=20
-    ax.set_xlabel('radius', ) # fontsize=25, labelpad=20
-    ax.set_ylabel(f'{heterogeneity_measure} score', ) # fontsize=25, labelpad=20
-    ax.set_xticklabels(radii, ) # size=20
+        if plot_title:
+            plot_title=r"$\bf{" + title_prefix + "}$" + plot_title
+        else:
+            plot_title=r"$\bf{" + title_prefix + "}$"
+    ax.set_title(plot_title, loc=title_loc, fontsize=25) # fontsize=25, pad=20
+    ax.set_xlabel(xlabel, fontsize=25) # fontsize=25, labelpad=20
+    ax.set_ylabel(ylabel, fontsize=25, labelpad=5) # fontsize=25, labelpad=20
+    ax.set_xticklabels(xticklabels, size=20) # size=20
     annot = Annotator(ax, pairs, **args)
-    annot.configure(text_format='simple', loc='inside', verbose=2, ) # fontsize=25
+    annot.configure(text_format='simple', loc='inside', verbose=2, fontsize=20) # fontsize=25
     annot.set_custom_annotations(pvals_corrected)
     annot.annotate()
     # ax.legend(title='Condition', bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0)
-    ax.legend(title=None, loc=legend_loc, borderaxespad=0)
-    xticks=[]
+    ax.legend(title=None, loc=legend_loc, borderaxespad=0, fontsize=20)
+    yticks=[]
     for j in ax.get_yticks():
-        xticks.append(round(j,1))
-    ax.set_yticklabels(xticks, ) # size = 20
+        yticks.append(round(j,1))
+    ax.set_yticklabels(yticks, size = 20) # size = 20
+    ax.tick_params(axis='x', which='major', labelsize=20)
     
     
     
