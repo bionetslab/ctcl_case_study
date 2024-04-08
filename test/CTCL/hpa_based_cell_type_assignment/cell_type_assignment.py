@@ -104,6 +104,7 @@ if __name__ == '__main__':
     adata=_generate_anndata_(clustered_cells_df, clustered_cells_metadata, label='celltype', obs=['celltype', 'condition', 'sex', 'age', 'ages_binned_column'])
     # Save as h5ad file:
     filename='celltype_assigned_anndata.h5ad'
+    sc.pp.neighbors(adata)
     # Perform PCA using scanpy:
     sc.tl.pca(adata)
     sc.pl.pca(adata, color="celltype")

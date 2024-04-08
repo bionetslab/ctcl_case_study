@@ -77,7 +77,7 @@ subplot_axis_id=axes["315_few_cells"]
 # n=[1, 5, 10, 20, 40, 80, 100]
 # adata=sc.read_h5ad('test/CTCL/data/315.h5ad')
 
-# for _count_ in range (3):
+# for _count_ in range (100):
 #     for i in n:
 #         print('Iteration '+str(_count_+1)+', i= '+str(i))
 #         # ---

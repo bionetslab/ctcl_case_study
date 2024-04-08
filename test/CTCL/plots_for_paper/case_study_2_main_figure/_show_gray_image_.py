@@ -22,5 +22,5 @@ def _show_gray_image_(image, axes, title_prefix=None, plot_title=None, title_loc
                            Line2D([0], [0], color='red', lw=10, label=legend_labels[1])]
         # axes.legend(handles=legend_elements, bbox_to_anchor=(1.00, 0.90), loc='lower left', fontsize=23)
         axes.legend(handles=legend_elements, loc='upper right', fontsize=25)
-    
+    axes.grid(False)
     

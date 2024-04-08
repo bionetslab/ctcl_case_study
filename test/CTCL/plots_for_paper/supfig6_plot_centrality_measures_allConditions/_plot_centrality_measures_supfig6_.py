@@ -67,6 +67,7 @@ def _plot_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data
                         bbox_to_anchor=(1.5, 0.92))
     else:
         ax.legend([],[], frameon=False)
+    ax.grid(False)
     
     
     

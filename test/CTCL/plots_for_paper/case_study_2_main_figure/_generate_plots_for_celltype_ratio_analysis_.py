@@ -64,6 +64,7 @@ def _generate_violinplot_(data, categories, x_col_name, y_col_name, p_value, sub
         yticks.append(round(j,1))
     ax.set_yticklabels(yticks, size = 30)
     ax.tick_params(axis='x', which='major', labelsize=30)
+    ax.grid(False)
 
 
 def _generate_histplot_(score, data, subplot_axis_id, hue, legend_loc, title_prefix=None, plot_title='', xlabel='Score', ylabel='Count', palette=None):
@@ -72,7 +73,7 @@ def _generate_histplot_(score, data, subplot_axis_id, hue, legend_loc, title_pre
         plot_title=r"$\bf{" + title_prefix + "}$" + plot_title
     ax.set_title(plot_title) # fontsize=25, pad=20
     sns.move_legend(ax, loc=legend_loc, title=None)
-    
+    ax.grid(False)
     
     
     

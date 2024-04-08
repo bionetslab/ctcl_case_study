@@ -97,6 +97,7 @@ ax.set_xticklabels(xticks, size = 20)
 ylabel='Mean cell type fraction'
 ax.set_ylabel(ylabel, fontsize=35, labelpad=10)
 ax.set_xlabel(None, fontsize=30, labelpad=5)
+axes["celltype_ratios"].grid(False)
 
 sns.move_legend(
     ax,
