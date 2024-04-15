@@ -91,11 +91,11 @@ for count in range(12):
     if count==4:
         ax=axes[axes_str]
         ax.grid(False)
-        ax.text(265.17, 0.40, '$P_{subsampled} = \infty$', fontsize=17, color='black', rotation=90)
+        ax.text(268.17, 0.40, '$P_{subsampled} = 0$', fontsize=17, color='black', rotation=90)
     if count==5:
         ax=axes[axes_str]
         ax.grid(False)
-        ax.text(290.17, 0.40, '$P_{subsampled} = \infty$', fontsize=17, color='black', rotation=90)
+        ax.text(306.17, 0.40, '$P_{subsampled} = 0$', fontsize=17, color='black', rotation=90)
 
     
     # # This will add title to subplot:

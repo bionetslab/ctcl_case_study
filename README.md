@@ -1,1 +1,1 @@
-# CTCLcase study for the SHouT python package.
+# CTCL case study for the SHouT python package.

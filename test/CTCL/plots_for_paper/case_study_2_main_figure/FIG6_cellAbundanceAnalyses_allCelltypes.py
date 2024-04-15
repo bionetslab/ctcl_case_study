@@ -45,7 +45,7 @@ cell_type_ratios_df=_substitute_value_in_dataframe_from_dict_(cell_type_ratios_d
 conditions=list(sorted(conditions_abbreviations_lookup.values()))
 celltypes=sorted(list(set(cell_type_ratios_df.celltype)))
 
-# ===== Generate celltype ratio plots for the most important celltypes: =====
+# ===== Generate cell type ratio plots for the most important celltypes: =====
 conditions=['AD', 'PSO', 'CTCL']
 for celltype in celltypes:
     # Generate violinplot:
@@ -56,7 +56,7 @@ for celltype in celltypes:
     data=data.reset_index(drop=True)
     p_value=p_value_cell_type_ratios_df[p_value_cell_type_ratios_df['celltype']==celltype]
     p_value=p_value.reset_index(drop=True)
-    _generate_violinplot_(data, conditions, 'category', 'value', p_value, subplot_axis_id, legend_loc, plot_title=plot_title, ylabel='Celltype ratio', palette=palette)
+    _generate_violinplot_(data, conditions, 'category', 'value', p_value, subplot_axis_id, legend_loc, plot_title=plot_title, ylabel='Cell type ratio', palette=palette)
 
 # ========== Generate, save and show final plot (fig1): ==========
 # plt.subplots_adjust(wspace=0.02, hspace=0.5)
