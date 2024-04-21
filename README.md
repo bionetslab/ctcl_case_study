@@ -10,11 +10,11 @@
 
 ### Local entropy
 
-![local_entropy_r=5](/readme_images/local_entropy_r_5.jpg)
+![local_entropy_r=5](/readme_images/local_entropy_r_5.png)
 *Fig: Distributions of local entropy with radius $r=5$, across all samples, annotated with Bonferonni-corrected MWU $P$-values per condition pair.*
 
 
 ### Local homophily
 
-![local_homophily_r=5](/readme_images/local_homophily_r_5.jpg)
+![local_homophily_r=5](/readme_images/local_homophily_r_5.png)
 *Fig: Distributions of local homophily with radius $r=5$, across all samples, annotated with Bonferonni-corrected MWU $P$-values per condition pair.*
