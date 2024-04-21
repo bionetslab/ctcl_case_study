@@ -24,3 +24,9 @@
 
 ![egophily_r=5](/readme_images/egophily_r_5.png)
 *Fig: Distributions of egophily with radius r = 5, across all samples, annotated with Bonferonni-corrected MWU P-values per condition pair.*
+
+
+## Citing the work
+
+Please cite the paper as follows:
+- Will be updated once available.
