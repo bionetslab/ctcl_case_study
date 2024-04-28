@@ -1,0 +1,166 @@
+,condition_1,condition_2,score,celltype_1,celltype_2,statistic,p_value,p_value_adj
+0,Psoriasis,Eczema,sq_ne_zscore,Basal keratinocytes,Fibroblasts,492.0,0.0014247529134473246,0.5171853075813788
+1,Psoriasis,Eczema,sq_ne_zscore,B-cells,Basal keratinocytes,287.5,1.0,363.0
+2,Psoriasis,Eczema,sq_ne_zscore,Basal keratinocytes,Melanocytes,536.0,4.226773936705573e-08,1.534318939024123e-05
+3,Psoriasis,Eczema,sq_ne_zscore,Basal keratinocytes,Langerhans cells,439.0,2.11150027647819e-06,0.0007664746003615831
+4,Psoriasis,Eczema,sq_ne_zscore,Basal keratinocytes,T-cells,4652.0,7.295130466133517e-11,2.6481323592064672e-08
+5,Psoriasis,Eczema,sq_ne_zscore,Basal keratinocytes,Endothelial cells,812.5,0.0005989307886488061,0.21741187627951664
+6,Psoriasis,Eczema,sq_ne_zscore,Basal keratinocytes,Macrophages,534.0,8.481717438524127e-07,0.00030788634301842584
+7,Psoriasis,Eczema,sq_ne_zscore,Basal keratinocytes,Unknown,529.0,2.093799162746387e-11,7.600490960769386e-09
+8,Psoriasis,Eczema,sq_ne_zscore,Basal keratinocytes,Smooth muscle cells,585.0,1.1755666022679288e-08,4.267306766232581e-06
+9,Psoriasis,Eczema,sq_ne_zscore,Basal keratinocytes,Suprabasal keratinocytes,568.0,1.0164927876040944e-09,3.6898688190028627e-07
+10,Psoriasis,Eczema,sq_ne_zscore,B-cells,Fibroblasts,1331.0,5.474223428814342e-05,0.019871431046596062
+11,Psoriasis,Eczema,sq_ne_zscore,Fibroblasts,Melanocytes,2483.0,0.000476864710888676,0.1731018900525894
+12,Psoriasis,Eczema,sq_ne_zscore,Fibroblasts,Langerhans cells,1212.5,0.6691783187113243,242.91172969221068
+13,Psoriasis,Eczema,sq_ne_zscore,Fibroblasts,T-cells,975.0,3.6215657240050207e-07,0.00013146283578138225
+14,Psoriasis,Eczema,sq_ne_zscore,Endothelial cells,Fibroblasts,1062.5,0.06671978176269229,24.2192807798573
+15,Psoriasis,Eczema,sq_ne_zscore,Fibroblasts,Macrophages,1372.0,0.7230116252433683,262.4532199633427
+16,Psoriasis,Eczema,sq_ne_zscore,Fibroblasts,Unknown,4577.0,1.174421725338662e-06,0.0004263150862979343
+17,Psoriasis,Eczema,sq_ne_zscore,Fibroblasts,Smooth muscle cells,2278.0,0.2895475910130708,105.1057755377447
+18,Psoriasis,Eczema,sq_ne_zscore,Fibroblasts,Suprabasal keratinocytes,2666.0,0.19737169676944688,71.64592592730922
+19,Psoriasis,Eczema,sq_ne_zscore,B-cells,Melanocytes,2228.0,0.0204807897561038,7.434526681465679
+20,Psoriasis,Eczema,sq_ne_zscore,B-cells,Langerhans cells,1574.0,0.004701862887407251,1.7067762281288323
+21,Psoriasis,Eczema,sq_ne_zscore,B-cells,T-cells,1482.0,0.00048731250994801963,0.17689444111113112
+22,Psoriasis,Eczema,sq_ne_zscore,B-cells,Endothelial cells,307.0,0.0010514069206088573,0.3816607121810152
+23,Psoriasis,Eczema,sq_ne_zscore,B-cells,Macrophages,1484.0,0.8019438953923635,291.105634027428
+24,Psoriasis,Eczema,sq_ne_zscore,B-cells,Unknown,3781.0,0.009700345193656534,3.521225305297322
+25,Psoriasis,Eczema,sq_ne_zscore,B-cells,Smooth muscle cells,2376.0,0.14683913313892596,53.30260532943013
+26,Psoriasis,Eczema,sq_ne_zscore,B-cells,Suprabasal keratinocytes,2876.0,0.04238486196815536,15.385704894440394
+27,Psoriasis,Eczema,sq_ne_zscore,Langerhans cells,Melanocytes,1841.0,0.5942682472427687,215.71937374912505
+28,Psoriasis,Eczema,sq_ne_zscore,Melanocytes,T-cells,1132.0,4.3835393141754135e-06,0.0015912247710456752
+29,Psoriasis,Eczema,sq_ne_zscore,Endothelial cells,Melanocytes,2103.0,0.08169262603537963,29.654423250842804
+30,Psoriasis,Eczema,sq_ne_zscore,Macrophages,Melanocytes,1787.5,0.7723939332500706,280.3789977697756
+31,Psoriasis,Eczema,sq_ne_zscore,Melanocytes,Unknown,3803.0,0.008068987045438285,2.9290422974940973
+32,Psoriasis,Eczema,sq_ne_zscore,Melanocytes,Smooth muscle cells,1787.5,0.3658875912974888,132.81719564098844
+33,Psoriasis,Eczema,sq_ne_zscore,Melanocytes,Suprabasal keratinocytes,2769.0,0.09846425886899755,35.742525969446106
+34,Psoriasis,Eczema,sq_ne_zscore,Langerhans cells,T-cells,2685.0,0.7594870895666654,275.6938135126996
+35,Psoriasis,Eczema,sq_ne_zscore,Endothelial cells,Langerhans cells,1533.0,0.01067648760221508,3.875564999604074
+36,Psoriasis,Eczema,sq_ne_zscore,Langerhans cells,Macrophages,1387.5,0.7833823257698797,284.36778425446636
+37,Psoriasis,Eczema,sq_ne_zscore,Langerhans cells,Unknown,2275.0,0.08683765996602849,31.522070567668344
+38,Psoriasis,Eczema,sq_ne_zscore,Langerhans cells,Smooth muscle cells,2193.0,0.4718953610154829,171.2980160486203
+39,Psoriasis,Eczema,sq_ne_zscore,Langerhans cells,Suprabasal keratinocytes,2548.0,0.3827155903541476,138.9257592985556
+40,Psoriasis,Eczema,sq_ne_zscore,Endothelial cells,T-cells,1240.0,2.1239750767507612e-05,0.007710029528605262
+41,Psoriasis,Eczema,sq_ne_zscore,Macrophages,T-cells,1199.0,1.1821803051626134e-05,0.0042913145077402865
+42,Psoriasis,Eczema,sq_ne_zscore,T-cells,Unknown,2412.5,0.18566177781014193,67.39522534508153
+43,Psoriasis,Eczema,sq_ne_zscore,Smooth muscle cells,T-cells,1597.0,0.0017800546480026957,0.6461598372249785
+44,Psoriasis,Eczema,sq_ne_zscore,Suprabasal keratinocytes,T-cells,2862.5,0.3843972915064272,139.53621681683308
+45,Psoriasis,Eczema,sq_ne_zscore,Endothelial cells,Macrophages,1416.0,0.9088332640057839,329.9064748340996
+46,Psoriasis,Eczema,sq_ne_zscore,Endothelial cells,Unknown,3415.0,0.12333006380197042,44.76881316011526
+47,Psoriasis,Eczema,sq_ne_zscore,Endothelial cells,Smooth muscle cells,2549.0,0.0321766550827416,11.680125795035199
+48,Psoriasis,Eczema,sq_ne_zscore,Endothelial cells,Suprabasal keratinocytes,2533.0,0.41221587382493485,149.63436219845136
+49,Psoriasis,Eczema,sq_ne_zscore,Macrophages,Unknown,4594.0,9.179384353133135e-07,0.00033321165201873277
+50,Psoriasis,Eczema,sq_ne_zscore,Macrophages,Smooth muscle cells,2241.0,0.3621698685372857,131.4676622790347
+51,Psoriasis,Eczema,sq_ne_zscore,Macrophages,Suprabasal keratinocytes,3162.0,0.0023783003968559442,0.8633230440587079
+52,Psoriasis,Eczema,sq_ne_zscore,Smooth muscle cells,Unknown,3695.0,0.019247899230603865,6.9869874207092035
+53,Psoriasis,Eczema,sq_ne_zscore,Suprabasal keratinocytes,Unknown,687.0,4.1563236792472456e-10,1.5087454955667501e-07
+54,Psoriasis,Eczema,sq_ne_zscore,Smooth muscle cells,Suprabasal keratinocytes,2237.5,0.8259829498280506,299.8318107875824
+55,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Fibroblasts,415.0,0.0006841038076297001,0.24832968216958112
+56,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,Basal keratinocytes,262.5,1.0,363.0
+57,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Melanocytes,390.0,6.06323016885348e-09,2.2009525512938134e-06
+58,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Langerhans cells,300.0,1.2851095388156857e-07,4.6649476259009396e-05
+59,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,T-cells,4074.0,2.4463465802992166e-10,8.880238086486157e-08
+60,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Endothelial cells,725.0,0.0002130250842286826,0.0773281055750118
+61,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Macrophages,499.0,3.4558899612410805e-06,0.0012544880559305122
+62,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Unknown,478.0,3.389916526757692e-11,1.2305396992130421e-08
+63,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Smooth muscle cells,408.0,1.0468365755711509e-09,3.800016769323278e-07
+64,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Suprabasal keratinocytes,445.0,4.185175486545547e-10,1.5192187016160336e-07
+65,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,Fibroblasts,1166.0,0.0002254020488745629,0.08182094374146634
+66,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Melanocytes,2203.0,0.00023152471560440374,0.08404347176439857
+67,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Langerhans cells,925.0,0.5592545480702018,203.00940094948322
+68,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,T-cells,1087.0,2.106408135829266e-05,0.0076462615330602345
+69,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Fibroblasts,887.5,0.25514325174952357,92.61700038507705
+70,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Macrophages,1258.0,0.9630026994372629,349.5699798957264
+71,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Unknown,4096.0,7.598131628647401e-07,0.0002758121781199006
+72,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Smooth muscle cells,2101.0,0.11086340099448047,40.24341456099641
+73,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Suprabasal keratinocytes,2300.0,0.22875208261375968,83.03700598879476
+74,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,Melanocytes,1988.0,0.01061762142043134,3.8541965756165766
+75,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,Langerhans cells,1337.0,0.011071118646512725,4.018816068684119
+76,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,T-cells,1641.0,0.0220390348210575,8.000169640043872
+77,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,Endothelial cells,235.0,0.00029516708906128763,0.1071456533292474
+78,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,Macrophages,1357.0,0.5101017043085173,185.16691866399174
+79,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,Unknown,3470.0,0.003257939332041724,1.1826319775311458
+80,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,Smooth muscle cells,2183.0,0.04914645166494131,17.840161954373695
+81,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,B-cells,Suprabasal keratinocytes,2508.0,0.041404668623628384,15.029894710377103
+82,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Melanocytes,1633.0,0.4874024176074542,176.92707759150585
+83,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Melanocytes,T-cells,1392.0,0.001512602792547513,0.5490748136947472
+84,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Melanocytes,1869.0,0.05344019769640291,19.398791763794257
+85,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Macrophages,Melanocytes,1500.0,1.0,363.0
+86,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Melanocytes,Unknown,3451.0,0.003957960768332132,1.436739758904564
+87,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Melanocytes,Smooth muscle cells,1750.0,1.0,363.0
+88,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Melanocytes,Suprabasal keratinocytes,2424.0,0.08877603229339046,32.225699722500735
+89,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,T-cells,2570.0,0.31753991930895686,115.26699070915133
+90,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Langerhans cells,1321.0,0.015535360520336515,5.6393358688821555
+91,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Macrophages,1400.0,0.34464183117906255,125.10498471799968
+92,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Unknown,2115.0,0.16442312184882513,59.685593231123526
+93,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Smooth muscle cells,2033.0,0.19878816059366733,72.16010229550125
+94,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Suprabasal keratinocytes,2205.0,0.41118514272404627,149.2602068088288
+95,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,T-cells,1417.0,0.0020448195792625505,0.7422695072723058
+96,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Macrophages,T-cells,1370.0,0.0011531092916842703,0.41857867288139017
+97,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,T-cells,Unknown,2225.0,0.29721893611977757,107.89047381147927
+98,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Smooth muscle cells,T-cells,1786.0,0.0757735134002062,27.50578536427485
+99,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Suprabasal keratinocytes,T-cells,3012.5,0.009862859867313872,3.5802181318349358
+100,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Macrophages,1308.0,0.7221214230188964,262.1300765558594
+101,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Unknown,3144.0,0.05754745758525997,20.889727103449367
+102,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Smooth muscle cells,2416.0,0.0024685558354365492,0.8960857682634674
+103,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Suprabasal keratinocytes,2185.0,0.4584283818775071,166.4095026215351
+104,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Macrophages,Unknown,4107.0,6.338252981599642e-07,0.00023007858323206704
+105,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Macrophages,Smooth muscle cells,2045.0,0.1803766039554462,65.47670723582696
+106,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Macrophages,Suprabasal keratinocytes,2773.0,0.001906707653419263,0.6921348781911925
+107,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Smooth muscle cells,Unknown,3410.0,0.005954111958775843,2.1613426410356316
+108,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Suprabasal keratinocytes,Unknown,640.0,9.952318343175544e-10,3.6126915585727226e-07
+109,Psoriasis,T-Cell Lymphoma,sq_ne_zscore,Smooth muscle cells,Suprabasal keratinocytes,1850.0,0.5453304100745298,197.95493885705432
+110,Eczema,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Fibroblasts,412.0,0.0027431006963475842,0.9957455527741731
+111,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,Basal keratinocytes,241.5,1.0,363.0
+112,Eczema,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Melanocytes,217.0,1.589969932653687e-10,5.7715908555328845e-08
+113,Eczema,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Langerhans cells,198.0,9.781887101089491e-09,3.5508250176954847e-06
+114,Eczema,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,T-cells,2662.0,0.038617506123579254,14.018154722859268
+115,Eczema,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Endothelial cells,667.0,0.0003577997220816251,0.1298812991156299
+116,Eczema,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Macrophages,562.0,0.00013395872598677349,0.04862701753319877
+117,Eczema,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Unknown,275.0,3.984775306565324e-12,1.4464734362832125e-09
+118,Eczema,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Smooth muscle cells,372.0,3.5362011869238836e-09,1.2836410308533699e-06
+119,Eczema,T-Cell Lymphoma,sq_ne_zscore,Basal keratinocytes,Suprabasal keratinocytes,458.0,5.899571839587632e-09,2.1415445777703104e-06
+120,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,Fibroblasts,791.0,0.439842263303856,159.66274157929973
+121,Eczema,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Melanocytes,1883.0,0.005693480845121893,2.0667335467792474
+122,Eczema,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Langerhans cells,851.0,0.5732198337114135,208.0787996372431
+123,Eczema,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,T-cells,2485.0,0.1582424880153669,57.44202314957818
+124,Eczema,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Fibroblasts,816.5,0.2722839035603317,98.83905699240042
+125,Eczema,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Macrophages,1147.0,0.98703387876091,358.2932979902103
+126,Eczema,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Unknown,3332.0,0.0009594314057792691,0.34827360029787474
+127,Eczema,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Smooth muscle cells,2059.0,0.0323587709331042,11.746233848716823
+128,Eczema,T-Cell Lymphoma,sq_ne_zscore,Fibroblasts,Suprabasal keratinocytes,1949.0,0.6476299860494357,235.08968493594514
+129,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,Melanocytes,1799.0,0.021293829837266458,7.729660230927723
+130,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,Langerhans cells,1160.0,0.056969941687943434,20.680088832723463
+131,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,T-cells,1972.0,0.624035297019558,226.52481281809952
+132,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,Endothelial cells,252.0,0.0026063329006301033,0.9460988429287275
+133,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,Macrophages,1703.0,0.0003287224162620497,0.11932623710312407
+134,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,Unknown,2646.0,0.31559627143777114,114.56144653191092
+135,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,Smooth muscle cells,2095.0,0.02079317069590497,7.547920962613503
+136,Eczema,T-Cell Lymphoma,sq_ne_zscore,B-cells,Suprabasal keratinocytes,1833.0,0.9781556111431857,355.0704868449764
+137,Eczema,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Melanocytes,1625.0,0.17852039492236316,64.80290335681782
+138,Eczema,T-Cell Lymphoma,sq_ne_zscore,Melanocytes,T-cells,2487.0,0.15606422222449934,56.65131266749326
+139,Eczema,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Melanocytes,1356.0,0.8971161263887809,325.65315387912744
+140,Eczema,T-Cell Lymphoma,sq_ne_zscore,Macrophages,Melanocytes,1380.0,1.0,363.0
+141,Eczema,T-Cell Lymphoma,sq_ne_zscore,Melanocytes,Unknown,2981.0,0.03349921585980756,12.160215357110143
+142,Eczema,T-Cell Lymphoma,sq_ne_zscore,Melanocytes,Smooth muscle cells,1610.0,1.0,363.0
+143,Eczema,T-Cell Lymphoma,sq_ne_zscore,Melanocytes,Suprabasal keratinocytes,2077.0,0.31912472808573156,115.84227629512054
+144,Eczema,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,T-cells,2436.0,0.21904873223620325,79.51468980174178
+145,Eczema,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Langerhans cells,1188.0,0.03349619751208357,12.159119696886336
+146,Eczema,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Macrophages,1288.0,0.36198876017482295,131.40191994346074
+147,Eczema,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Unknown,2671.0,0.2768966522269294,100.51348475837537
+148,Eczema,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Smooth muscle cells,1969.0,0.08716810307812106,31.64202141735795
+149,Eczema,T-Cell Lymphoma,sq_ne_zscore,Langerhans cells,Suprabasal keratinocytes,1966.0,0.5970345564285036,216.7235439835468
+150,Eczema,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,T-cells,2241.0,0.6135644168382345,222.72388331227916
+151,Eczema,T-Cell Lymphoma,sq_ne_zscore,Macrophages,T-cells,1996.0,0.6884031153542962,249.89033087360954
+152,Eczema,T-Cell Lymphoma,sq_ne_zscore,T-cells,Unknown,2047.0,0.31554319561963806,114.54218000992861
+153,Eczema,T-Cell Lymphoma,sq_ne_zscore,Smooth muscle cells,T-cells,2408.0,0.2605498004409358,94.57957756005969
+154,Eczema,T-Cell Lymphoma,sq_ne_zscore,Suprabasal keratinocytes,T-cells,2771.5,0.012931203241101783,4.694026776519948
+155,Eczema,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Macrophages,1490.0,0.027318827795339402,9.916734489708203
+156,Eczema,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Unknown,2396.0,0.8682655961764063,315.1804114120355
+157,Eczema,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Smooth muscle cells,1977.0,0.0803429317777965,29.16448423534013
+158,Eczema,T-Cell Lymphoma,sq_ne_zscore,Endothelial cells,Suprabasal keratinocytes,2107.0,0.2615932239295563,94.95834028642895
+159,Eczema,T-Cell Lymphoma,sq_ne_zscore,Macrophages,Unknown,3542.0,6.180341364396453e-05,0.02243463915275912
+160,Eczema,T-Cell Lymphoma,sq_ne_zscore,Macrophages,Smooth muscle cells,1907.0,0.15715493097682134,57.04723994458615
+161,Eczema,T-Cell Lymphoma,sq_ne_zscore,Macrophages,Suprabasal keratinocytes,2448.0,0.010494395584798302,3.8094655972817835
+162,Eczema,T-Cell Lymphoma,sq_ne_zscore,Smooth muscle cells,Unknown,2835.0,0.10166398950093719,36.9040281888402
+163,Eczema,T-Cell Lymphoma,sq_ne_zscore,Suprabasal keratinocytes,Unknown,1548.0,0.007535117923035908,2.7352478060620347
+164,Eczema,T-Cell Lymphoma,sq_ne_zscore,Smooth muscle cells,Suprabasal keratinocytes,1702.0,0.5601408162025395,203.33111628152187

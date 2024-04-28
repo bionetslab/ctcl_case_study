@@ -1,0 +1,10 @@
+,condition_1,condition_2,score,statistic,p_value,p_value_adj
+0,Psoriasis,Eczema,degree_centrality,37458.0,0.12736631465566606,0.3820989439669982
+1,Psoriasis,Eczema,average_clustering,30737.5,0.02076308566121015,0.06228925698363045
+2,Psoriasis,Eczema,closeness_centrality,36919.0,0.22367985405615087,0.6710395621684526
+3,Psoriasis,T-Cell Lymphoma,degree_centrality,28715.5,0.16692040576988476,0.5007612173096543
+4,Psoriasis,T-Cell Lymphoma,average_clustering,29378.0,0.33205923288894823,0.9961776986668447
+5,Psoriasis,T-Cell Lymphoma,closeness_centrality,28340.0,0.10613874344009588,0.31841623032028765
+6,Eczema,T-Cell Lymphoma,degree_centrality,24379.0,0.006756023867867034,0.020268071603601102
+7,Eczema,T-Cell Lymphoma,average_clustering,30180.5,0.2545452142461784,0.7636356427385351
+8,Eczema,T-Cell Lymphoma,closeness_centrality,24347.0,0.006336021805378739,0.019008065416136217
