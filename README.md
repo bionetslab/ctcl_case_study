@@ -1,3 +1,45 @@
+# About
+
+This is a repository that contains information on how to reproduce results corresponding to the *cutaneous T cell lymphoma (CTCL)* case study reported in [Link text Here](https://paper-doi-when-available).
+
+# Data
+
+Complete data available publicly over [Zenodo](data-link).
+
+# Installation
+
+Install conda environment as follows (there also exists a requirements.txt)
+```bash
+conda create --name ctcl_case_study
+conda activate ctcl_case_study
+pip install scipy==1.10.1 numpy==1.23.5 squidpy==1.3.0 pandas==1.5.3 scikit-learn==1.2.2
+```
+*Note:* Additionally, modules *math* and *statistics* were used, however no installation is required as they are provided with Python by default.
+
+
+
+# HPA-based cell type assignment
+
+## Steps involved:
+
+Install conda environment as follows (there also exists a requirements.txt)
+```bash
+conda create --name ctcl_case_study
+conda activate ctcl_case_study
+pip install scipy==1.10.1 numpy==1.23.5 squidpy==1.3.0 pandas==1.5.3 scikit-learn==1.2.2
+```
+*Note:* Additionally, modules *math* and *statistics* were used, however no installation is required as they are provided with Python by default.
+
+## Running the code:
+
+Navigate  to */scripts/plots\_for\_paper/fig2\_database/* and run **fig2\_database.py**. Plot saved as *fig2\_database.pdf*.
+
+*Note:* Additionally, modules *math* and *statistics* were used, however no installation is required as they are provided with Python by default.
+
+## Output:
+
+
+
 # CTCL case study for the SHouT python package
 
 ## Requirements and installation
