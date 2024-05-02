@@ -22,7 +22,8 @@ pip install scipy==1.10.1 numpy==1.23.5 squidpy==1.3.0 pandas==1.5.3 scikit-lear
 
 ## Steps involved:
 
-*Algorithm:*
+**Algorithm:**
+
 Step-1: Fit GMM model.
 
 Step-2: Find list of good split genes.
@@ -37,7 +38,7 @@ Step-6: Assign g+: C.
 
 Step-7: Repeat step-1.
 
-*Once the algorithm is complete, do the following:*
+**Once the algorithm is complete, do the following:**
 
 i. Assign unassigned cells to 'Unknown' type.
 
