@@ -161,8 +161,7 @@ def _fit_gaussian_mixture_model_(anndata_allConditions_dict):
     return good_split_genes, geneName_upperThreshold_dict
 
 def read_hpa_data(hpa_data_path, channels):
-    # expr_per_cell_type=pd.read_csv('cell_type_nTPM.csv')
-    expr_per_cell_type_max_norm=pd.read_csv('cell_type_nTPM_max_norm.csv')
+    expr_per_cell_type_max_norm=pd.read_csv(hpa_data_path)
     expr_per_cell_type_max_norm=expr_per_cell_type_max_norm.rename(columns={'Unnamed: 0': "Celltypes"})
     expr_per_cell_type_max_norm=expr_per_cell_type_max_norm.set_index('Celltypes')
     expr_per_cell_type_max_norm=expr_per_cell_type_max_norm[channels]

@@ -3,16 +3,19 @@ from _utilities_ import _save_celltype_assignment_results_, _generate_metadata_d
 import scanpy as sc
 import hdf5plugin
 
-hpa_data_path='cell_type_nTPM.csv'
-channels=[
-  'ADAM10', 'ITGAL', 'ITGAX', 'CD14', 'CD163', 'CD24', 'IL2RA', 'ITGB1',
-  'CD3D', 'CD36', 'CD38', 'CD4', 'CD40', 'CD44', 'PTPRC', 'ICAM1', 'CD55',
-  'NCAM1', 'CD6', 'SELP', 'CD63', 'CD68', 'CD69', 'CD8A', 'CD9', 'FAS',
-  'KRT14', 'HLA-A', 'HLA-DRA', 'NOTCH1', 'NOTCH3', 'VIM']
+hpa_data_path='data/cell_type_nTPM_max_norm.csv'
+# channels=[
+#   'ADAM10', 'ITGAL', 'ITGAX', 'CD14', 'CD163', 'CD24', 'IL2RA', 'ITGB1',
+#   'CD3D', 'CD36', 'CD38', 'CD4', 'CD40', 'CD44', 'PTPRC', 'ICAM1', 'CD55',
+#   'NCAM1', 'CD6', 'SELP', 'CD63', 'CD68', 'CD69', 'CD8A', 'CD9', 'FAS',
+#   'KRT14', 'HLA-A', 'HLA-DRA', 'NOTCH1', 'NOTCH3', 'VIM']
+channels=['ITGAL', 'ITGAX', 'CD14', 'CD163', 'LY75', 'MRC1', 'CD24', 'IL2RA', 'ITGB1', 'CD3D', 
+    'CD36', 'CD38', 'CD4', 'CD40', 'CD44', 'PTPRC', 'CD52', 'ICAM1', 'CD55', 'NCAM1', 'CD6', 'SELP', 
+    'CD63', 'CD68', 'CD69', 'CD8A', 'CD9', 'FAS', 'KRT14', 'HLA-A', 'HLA-DRA', 'NOTCH1', 'NOTCH3', 'PPARG', 'CTNNB1']
 expr_per_cell_type_max_norm=read_hpa_data(hpa_data_path, channels)
 clustering_tree={}
 clustering_results={}
-with open('/Volumes/time-mach-14pro/anndataCTCL_allConditions.pkl', 'rb') as f:
+with open('data/anndataCTCL_allConditions.pkl', 'rb') as f:
     anndata_allConditions = pickle.load(f)
 anndata_allConditions_df=anndata_allConditions.to_df()
 metadata_df=_generate_metadata_df_(anndata_allConditions_df, anndata_allConditions)
@@ -69,11 +72,11 @@ clustering_results['Unknown']=non_clustered_cells
 # Step-9 (Map back assigned celltypes to the original cells):
 clustered_cells_df, clustered_cells_metadata, clustered_cells_combined=_save_celltype_assignment_results_(clustering_results, metadata_df, celltype_annotated_df)
 # Save celltype assignment results:
-clustered_cells_combined.to_csv('sample-wise celltypes (HPA-based clustering).csv')
+clustered_cells_combined.to_csv('result/sample-wise celltypes (HPA-based clustering).csv')
 # Save df as anndata object containing all samples:
 adata=sc.AnnData(clustered_cells_combined)
 # Save anndata object as .h5ad file:
-filename='celltype_assigned_anndata.h5ad'
+filename='result/celltype_assigned_anndata.h5ad'
 adata.write_h5ad(filename, compression=hdf5plugin.FILTERS["zstd"], compression_opts=hdf5plugin.Zstd(clevel=5).filter_options)
 
 # # ----------

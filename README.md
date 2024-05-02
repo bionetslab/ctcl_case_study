@@ -22,33 +22,71 @@ pip install scipy==1.10.1 numpy==1.23.5 squidpy==1.3.0 pandas==1.5.3 scikit-lear
 
 ## Steps involved:
 
-Install conda environment as follows (there also exists a requirements.txt)
-```bash
-conda create --name ctcl_case_study
-conda activate ctcl_case_study
-pip install scipy==1.10.1 numpy==1.23.5 squidpy==1.3.0 pandas==1.5.3 scikit-learn==1.2.2
-```
-*Note:* Additionally, modules *math* and *statistics* were used, however no installation is required as they are provided with Python by default.
+Step-1: Fit GMM model.
+Step-2: Find list of good split genes.
+Step-3: Calculate spread per celltype per gene in set {good_split_genes}.
+Step-4: Arrange all genes in set {good_split_genes} in descending order, per celltype.
+Step-5: Pick {gene-g, celltype-C} that maximizes spread.
+Step-6: Assign g+: C.
+Step-7: Repeat step-1.
+
+Once the algorithm is complete, do the following:
+i. Assign unassigned cells to 'Unknown' type.
+ii. Map back assigned celltypes to the original cells.
+iii. Save sample-wise cell type assignment results to a csv file and as an anndata.h5ad file.
+
+*Note:* For a detailed explanation of the cell type assignment algorithm, please refer to the [paper](https://paper-doi-when-available).
 
 ## Running the code:
 
-Navigate  to */scripts/plots\_for\_paper/fig2\_database/* and run **fig2\_database.py**. Plot saved as *fig2\_database.pdf*.
-
-*Note:* Additionally, modules *math* and *statistics* were used, however no installation is required as they are provided with Python by default.
+Navigate  to */scripts/hpa\_based\_cell\_type\_assignment/* and run **cell\_type\_assignment.py**.
 
 ## Output:
 
+Sample-wise cell type assignment results saved as **/scripts/hpa\_based\_cell\_type\_assignment/result/sample-wise celltypes (HPA-based clustering).csv** and **/scripts/hpa\_based\_cell\_type\_assignment/result/celltype\_assigned\_anndata.h5ad**.
 
 
-# CTCL case study for the SHouT python package
+# Generating and saving SHouT heterogeneity scores
 
-## Requirements and installation
+## Computing the actual SHouT scores
 
-Explain what has to be installed in order to run the code for reproducing the analysis
+Navigate  to */scripts/shout\_score\_generation/* and run **compute\_shout\_scores.py**.
 
-## Data
+New AnnData objects with SHouT scores saved in */results* folder as **.h5ad** files, with the same name as the original sample number.
 
-Explain which data has to be downloaded and were in the repository it has to be put in order to reproduce the results
+## Saving SHouT scores as .csv files
+
+Navigate  to */scripts/shout\_score\_generation/* and run **results\_to\_csv.py**.
+
+Results are saved in */results/sample\_results.csv* for global (sample-wise) heterogeneity scores, and */results/cell\_results.csv* for local (individual cell-wise) heterogeneity scores.
+
+## Statistical testing (Mann-Whitney U-test)
+
+Navigate  to */scripts/shout\_score\_generation/* and run **statistical\_tests.py**.
+
+Results are saved in */results/p\_values\_global.csv* for local (individual cell-wise) and global (sample-wise) heterogeneity scores with **r={1,2,3,4,5}** between all pairs of conditions; and */results/p\_values\_cell\_type.csv* for local (individual cell-wise) heterogeneity scores with **r={1,2,3,4,5}** and per celltype, between all pairs of conditions.
+
+
+# Robustness testing
+
+## Shuffled labels
+
+### Statistical testing (Mann-Whitney U-test)
+
+Navigate  to */scripts/shout\_score\_generation/* and run **save\_pvalue\_statistics\_shuffled\_labels.py**.
+
+Results are saved in */results/pvalue\_statistics\_shuffled\_labels.csv* for local (individual cell-wise) heterogeneity scores with **r={1,2,3,4,5}** between all pairs of conditions after having randomized the condition labels.
+
+
+## Subsampled patients
+
+### Statistical testing (Mann-Whitney U-test)
+
+Navigate  to */scripts/shout\_score\_generation/* and run **statistical_tests_subsampled_patientwise.py**.
+
+Results for local (individual cell-wise) heterogeneity scores are saved in */results/p_values_cell_type_subsampled_patientwise.csv* with **r={1,2,3,4,5}** between all pairs of conditions after having randomly subsampled 15 patients per condition at a time, while maintaining the actual condition labels, and repeating this subsampling process for 100 iterations.
+
+Results for global (sample-wise) heterogeneity scores are saved in */results/p_values_global_subsampled_patientwise.csv* with **r={1,2,3,4,5}** between all pairs of conditions after having randomly subsampled 15 patients per condition at a time, while maintaining the actual condition labels, and repeating this subsampling process for 100 iterations.
 
 ## Reproducing results shown in Fig 2
 
