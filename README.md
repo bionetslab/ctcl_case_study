@@ -1,6 +1,6 @@
 # About
 
-This is a repository that contains information on how to reproduce results corresponding to the *cutaneous T cell lymphoma (CTCL)* case study reported in [Link text Here](https://paper-doi-when-available).
+This is a repository that contains information on how to reproduce results corresponding to the *cutaneous T cell lymphoma (CTCL)* case study reported in [paper-doi-when-available](https://paper-doi-when-available).
 
 # Data
 
@@ -22,17 +22,27 @@ pip install scipy==1.10.1 numpy==1.23.5 squidpy==1.3.0 pandas==1.5.3 scikit-lear
 
 ## Steps involved:
 
+*Algorithm:*
 Step-1: Fit GMM model.
+
 Step-2: Find list of good split genes.
+
 Step-3: Calculate spread per celltype per gene in set {good_split_genes}.
+
 Step-4: Arrange all genes in set {good_split_genes} in descending order, per celltype.
+
 Step-5: Pick {gene-g, celltype-C} that maximizes spread.
+
 Step-6: Assign g+: C.
+
 Step-7: Repeat step-1.
 
-Once the algorithm is complete, do the following:
+*Once the algorithm is complete, do the following:*
+
 i. Assign unassigned cells to 'Unknown' type.
+
 ii. Map back assigned celltypes to the original cells.
+
 iii. Save sample-wise cell type assignment results to a csv file and as an anndata.h5ad file.
 
 *Note:* For a detailed explanation of the cell type assignment algorithm, please refer to the [paper](https://paper-doi-when-available).
