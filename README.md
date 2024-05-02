@@ -99,6 +99,8 @@ Results for local (individual cell-wise) heterogeneity scores are saved in */res
 
 Results for global (sample-wise) heterogeneity scores are saved in */results/p_values_global_subsampled_patientwise.csv* with **r={1,2,3,4,5}** between all pairs of conditions after having randomly subsampled 15 patients per condition at a time, while maintaining the actual condition labels, and repeating this subsampling process for 100 iterations.
 
+# Reproducing figures
+
 ## Reproducing results shown in Fig 2
 
 Navigate  to */scripts/plots\_for\_paper/fig2\_database/* and run **fig2\_database.py**. Plot saved as *fig2\_database.pdf*.
