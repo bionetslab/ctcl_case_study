@@ -2,9 +2,13 @@
 
 This is a repository that contains information on how to reproduce results corresponding to the *cutaneous T cell lymphoma (CTCL)* case study reported in [paper-doi-when-available](https://paper-doi-when-available).
 
+<!------------------>
+
 # Data
 
 Complete data available publicly over [Zenodo](data-link).
+
+<!------------------>
 
 # Installation
 
@@ -16,7 +20,7 @@ pip install scipy==1.10.1 numpy==1.23.5 squidpy==1.3.0 pandas==1.5.3 scikit-lear
 ```
 *Note:* Additionally, modules *math* and *statistics* were used, however no installation is required as they are provided with Python by default.
 
-
+<!------------------>
 
 # HPA-based cell type assignment
 
@@ -56,6 +60,7 @@ Navigate  to */scripts/hpa\_based\_cell\_type\_assignment/* and run **cell\_type
 
 Sample-wise cell type assignment results saved as **/scripts/hpa\_based\_cell\_type\_assignment/result/sample-wise celltypes (HPA-based clustering).csv** and **/scripts/hpa\_based\_cell\_type\_assignment/result/celltype\_assigned\_anndata.h5ad**.
 
+<!------------------>
 
 # Generating and saving SHouT heterogeneity scores
 
@@ -77,6 +82,7 @@ Navigate  to */scripts/shout\_score\_generation/* and run **statistical\_tests.p
 
 Results are saved in */results/p\_values\_global.csv* for local (individual cell-wise) and global (sample-wise) heterogeneity scores with **r={1,2,3,4,5}** between all pairs of conditions; and */results/p\_values\_cell\_type.csv* for local (individual cell-wise) heterogeneity scores with **r={1,2,3,4,5}** and per celltype, between all pairs of conditions.
 
+<!------------------>
 
 # Robustness testing
 
@@ -99,6 +105,8 @@ Results for local (individual cell-wise) heterogeneity scores are saved in */res
 
 Results for global (sample-wise) heterogeneity scores are saved in */results/p_values_global_subsampled_patientwise.csv* with **r={1,2,3,4,5}** between all pairs of conditions after having randomly subsampled 15 patients per condition at a time, while maintaining the actual condition labels, and repeating this subsampling process for 100 iterations.
 
+<!------------------>
+
 # Reproducing figures
 
 ## Reproducing results shown in Fig 2
@@ -113,7 +121,6 @@ Navigate  to */scripts/plots\_for\_paper/fig3\_subplot\_mosaic/* and run **fig3\
 ## Reproducing results shown in Fig 4
 
 Navigate  to */scripts/plots\_for\_paper/fig4\_shuffled\_labels/* and run **fig4\_shuffled\_labels.py**. Plot saved as *fig4\_shuffled\_labels.pdf*.
-
 
 ## Reproducing results shown in Fig 5
 
@@ -142,10 +149,9 @@ Navigate  to */scripts/plots\_for\_paper/supfig6\_SHouT\_scores\_all\_radii/* an
 
 Navigate  to */scripts/plots\_for\_paper/supfig7\_centrality\_scores/* and run **generate\_supfig7\_centrality\_scores.py**. Plot saved as *supfig7\_centrality\_scores.pdf*.
 
+<!------------------>
 
-Detailed instruction on how to run the code to reproduce the results
-
-## Citing the work
+# Citing the work
 
 Please cite the paper as follows:
 - Will be updated once available.
