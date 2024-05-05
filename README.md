@@ -60,6 +60,10 @@ Navigate  to */scripts/hpa\_based\_cell\_type\_assignment/* and run **cell\_type
 
 Sample-wise cell type assignment results saved as **/scripts/hpa\_based\_cell\_type\_assignment/result/sample-wise celltypes (HPA-based clustering).csv** and **/scripts/hpa\_based\_cell\_type\_assignment/result/celltype\_assigned\_anndata.h5ad**.
 
+Additionally, if you want to save the results as separate .h5ad files per sample, please uncomment and run the last section of **cell\_type\_assignment.py** titled *Generate separate .h5ad files* (lines 83-92). This will result in separate .h5ad files saved as **/scripts/hpa\_based\_cell\_type\_assignment/result/<sample_id>.h5ad**. However, since these files have already been provided under the **/data** directory, upon which all of our subsequent SHouT heterogeneity score-based analyses have been performed, this code has been commented out by default in order to avoid generation of redundant .h5ad files.
+
+*Note:* It must be noted that two of the samples, namely *291* and *294*, have been removed from the **/data** directory: that is simply because samples *291* and *294* contain too few segmented cells to run the SHouT heterogeneity scores on.
+
 <!------------------>
 
 # Generating and saving SHouT heterogeneity scores
