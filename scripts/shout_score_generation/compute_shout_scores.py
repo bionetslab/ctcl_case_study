@@ -1,6 +1,6 @@
 import sys
 sys.path.insert(0, '../../')
-from shout import all_scores
+from SHouT.shout import all_scores
 import os
 import time
 import scanpy as sc

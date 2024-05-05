@@ -1,25 +1,18 @@
-import pickle
-from _utilities_ import _save_celltype_assignment_results_, _generate_metadata_df_, declare_celltype_annotated_df_from_anndata, _pick_column_maximizing_spread_, _calculate_spread_per_row_in_dataframe_, _fit_gaussian_mixture_model_, read_hpa_data, preprocess_anndata_dataframe
+from _utilities_ import _save_celltype_assignment_results_, _generate_metadata_df_, declare_celltype_annotated_df_from_anndata, _pick_column_maximizing_spread_, _calculate_spread_per_row_in_dataframe_, _fit_gaussian_mixture_model_, read_hpa_data, preprocess_anndata_dataframe, _save_anndata_as_h5ad_
 import scanpy as sc
 import hdf5plugin
 
 hpa_data_path='data/cell_type_nTPM_max_norm.csv'
-# channels=[
-#   'ADAM10', 'ITGAL', 'ITGAX', 'CD14', 'CD163', 'CD24', 'IL2RA', 'ITGB1',
-#   'CD3D', 'CD36', 'CD38', 'CD4', 'CD40', 'CD44', 'PTPRC', 'ICAM1', 'CD55',
-#   'NCAM1', 'CD6', 'SELP', 'CD63', 'CD68', 'CD69', 'CD8A', 'CD9', 'FAS',
-#   'KRT14', 'HLA-A', 'HLA-DRA', 'NOTCH1', 'NOTCH3', 'VIM']
 channels=['ITGAL', 'ITGAX', 'CD14', 'CD163', 'LY75', 'MRC1', 'CD24', 'IL2RA', 'ITGB1', 'CD3D', 
     'CD36', 'CD38', 'CD4', 'CD40', 'CD44', 'PTPRC', 'CD52', 'ICAM1', 'CD55', 'NCAM1', 'CD6', 'SELP', 
     'CD63', 'CD68', 'CD69', 'CD8A', 'CD9', 'FAS', 'KRT14', 'HLA-A', 'HLA-DRA', 'NOTCH1', 'NOTCH3', 'PPARG', 'CTNNB1']
 expr_per_cell_type_max_norm=read_hpa_data(hpa_data_path, channels)
 clustering_tree={}
 clustering_results={}
-with open('data/anndataCTCL_allConditions.pkl', 'rb') as f:
-    anndata_allConditions = pickle.load(f)
+anndata_allConditions=sc.read_h5ad('anndata_allConditions.h5ad')
 anndata_allConditions_df=anndata_allConditions.to_df()
 metadata_df=_generate_metadata_df_(anndata_allConditions_df, anndata_allConditions)
-celltype_annotated_df, cell_coords_df, _sample_id_, Labels=declare_celltype_annotated_df_from_anndata(anndata_allConditions_df, anndata_allConditions)
+celltype_annotated_df, _sample_id_, Labels=declare_celltype_annotated_df_from_anndata(anndata_allConditions_df, anndata_allConditions)
 anndata_allConditions_df_index, _sample_id_, CellIndexNumber=preprocess_anndata_dataframe(anndata_allConditions_df, anndata_allConditions)
 
 
@@ -74,26 +67,20 @@ clustered_cells_df, clustered_cells_metadata, clustered_cells_combined=_save_cel
 # Save celltype assignment results:
 clustered_cells_combined.to_csv('result/sample-wise celltypes (HPA-based clustering).csv')
 # Save df as anndata object containing all samples:
-adata=sc.AnnData(clustered_cells_combined)
+adata=sc.AnnData(clustered_cells_combined[list(set(channels).intersection(set(clustered_cells_combined.columns)))])
 # Save anndata object as .h5ad file:
 filename='result/celltype_assigned_anndata.h5ad'
+list_of_obsms=['x', 'y', 'sample_id', 'condition', 'celltype', 'cell_idx', 'cell_id', '_index_']
+adata=_save_anndata_as_h5ad_(adata, filename, clustered_cells_combined, list_of_obsms)
 adata.write_h5ad(filename, compression=hdf5plugin.FILTERS["zstd"], compression_opts=hdf5plugin.Zstd(clevel=5).filter_options)
 
-# # ----------
-# with open('/Volumes/time-mach-14pro/adataCTCLFinal_cell.pkl', 'rb') as f:
-#     Pickle_=pickle.load(f)
-# # ----------
-# Pkl={}
-# for i in np.unique(list(clustered_cells_combined['sample_id'])):
-#     Pkl[int(i)]=Pickle_[i].copy()
-#     Pkl[int(i)].obs['celltype']=list(clustered_cells_combined[clustered_cells_combined['sample_id']==int(i)]['celltype'])    # Pkl[i].obs['x']=np.array(list(DF_celltypeAssigned[DF_celltypeAssigned['sample_id']==int(i)]['x']))
-# with open('/Volumes/time-mach-14pro/adataTCL_celltype_annotated.pkl', 'wb') as f:
-#     pickle.dump(Pkl, f)
-# # ----------
-# Pkl_=Pkl.copy()
-# for i in Pkl:
-#     Pkl_[i].obs['celltype']=[np.str_(x) for x in Pkl[i].obs['celltype']]
-
-# with open('/Volumes/time-mach-14pro/_adataTCL_celltype_annotated_.pkl', 'wb') as f:
-#     pickle.dump(Pkl_, f)
-# # ----------
+# # ============= Generate separate .h5ad files: =============
+# sample_ids=list(np.unique(clustered_cells_combined.sample_id))
+# for i in sample_ids:
+#     filename=f'result/{str(int(i))}.h5ad'
+#     clustered_cells_combined_filtered=clustered_cells_combined[clustered_cells_combined['sample_id']==i]
+#     adata_filtered=sc.AnnData(clustered_cells_combined_filtered[list(set(channels).intersection(set(clustered_cells_combined.columns)))])
+#     list_of_obsms=['x', 'y', 'sample_id', 'condition', 'celltype', 'cell_idx', 'cell_id', '_index_']
+#     adata_filtered=_save_anndata_as_h5ad_(adata_filtered, filename, clustered_cells_combined_filtered, list_of_obsms)
+#     adata_filtered.write_h5ad(filename, compression=hdf5plugin.FILTERS["zstd"], compression_opts=hdf5plugin.Zstd(clevel=5).filter_options)
+# # ===========================================================

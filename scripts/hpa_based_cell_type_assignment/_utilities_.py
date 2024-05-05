@@ -29,24 +29,22 @@ def _generate_metadata_df_(anndata_allConditions_df, anndata_allConditions):
     metadata_df['_index_']=list(anndata_allConditions.obsm['_index_'])
     # metadata_df['patient_label']=list(anndata_allConditions.obsm['patient_number'])
     metadata_df['condition']=list(anndata_allConditions.obsm['label'])
-    coords_df=pd.DataFrame([l.tolist() for l in anndata_allConditions.obsm['_cell_coords_'].tolist()])
-    coords_df=coords_df.rename(columns={0:'x', 1:'y'})
-    metadata_df['x']=list(coords_df['x'])
-    metadata_df['y']=list(coords_df['y'])
+    metadata_df['x']=list(anndata_allConditions.obsm['x'])
+    metadata_df['y']=list(anndata_allConditions.obsm['y'])
     metadata_df.index=[str(x) for x in list(metadata_df.index)]
     return metadata_df
 
 def declare_celltype_annotated_df_from_anndata(anndata_df, anndata):
     df=anndata_df.copy()
-    cell_coords_df=pd.DataFrame([l.tolist() for l in anndata.obsm['_cell_coords_'].tolist()])
-    cell_coords_df=cell_coords_df.rename(columns={0:'x', 1:'y'})
+    # cell_coords_df=pd.DataFrame([l.tolist() for l in anndata.obsm['_cell_coords_'].tolist()])
+    # cell_coords_df=cell_coords_df.rename(columns={0:'x', 1:'y'})
     _sample_id_=list(anndata.obsm['patient_number'])
     Labels=list(anndata.obsm['label'])
-    df['x']=list(cell_coords_df['x'])
-    df['y']=list(cell_coords_df['y'])
+    df['x']=list(anndata.obsm['x'])
+    df['y']=list(anndata.obsm['y'])
     df['sample_id']=_sample_id_
     df['condition']=list(Labels)
-    return df, cell_coords_df, _sample_id_, Labels
+    return df, _sample_id_, Labels
 
 def _pick_column_maximizing_spread_(no_of_spread_scores_per_row, _celltypes_impGenes_, _celltypes_spreadScores_, good_split_genes, adata_df, geneName_upperThreshold_dict, clustering_tree, clustering_results, clustered_cells, hpa_data, errorStatement, suddenStopFlag):
     error_flag=1
@@ -173,3 +171,7 @@ def preprocess_anndata_dataframe(anndata_allConditions_df, anndata_allConditions
     CellIndexNumber=list(anndata_allConditions.obsm['cell_index_number_within_patient'])
     return anndata_allConditions_df_index, _sample_id_, CellIndexNumber
 
+def _save_anndata_as_h5ad_(anndata, filename, df, list_of_obsms):
+    for col in list_of_obsms:
+        anndata.obsm[col]=np.array(df[col])
+    return anndata
