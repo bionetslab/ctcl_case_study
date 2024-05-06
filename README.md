@@ -127,6 +127,14 @@ Results for global (sample-wise) heterogeneity scores are saved in */results/p_v
 
 <!------------------>
 
+# Scalability testing
+
+## Runtimes with varying radii
+
+In order to record the runtimes of executing SHouT heterogeneity scores on all 69 samples, with radii r = {1, 5, 10, 20, 40, 80, 100}, navigate to */scripts/plots\_for\_paper/fig6\_scalability\_plot/* and run **per\_sample\_runtimes\_with\_varying\_radius.py**. The runtimes per sample, for each of r = {1, 5, 10, 20, 40, 80, 100}, is saved as */results/data\_all\_cells.csv*
+
+<!------------------>
+
 # Reproducing figures
 
 ## Reproducing results shown in Fig 2
