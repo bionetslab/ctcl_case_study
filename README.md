@@ -1,12 +1,28 @@
 # About
 
-This is a repository that contains information on how to reproduce results corresponding to the *cutaneous T cell lymphoma (CTCL)* case study reported in [paper-doi-when-available](https://paper-doi-when-available).
+This is a repository that contains information on how to reproduce results corresponding to the *cutaneous T cell lymphoma (CTCL)* case study reported in [Spatial cell graph analysis reveals skin tissue organization characteristic for cutaneous T cell lymphoma](https://paper-doi-when-available).
 
 <!------------------>
 
 # Data
 
-Complete data available publicly over [Zenodo](data-link).
+## Overview
+
+As described in the [paper](https://paper-doi-when-available), the data used for our analyses comprised a total of 69 skin tissue samples (21 CTCL, 23 AD, 25 PSO), obtained from 27 treated patients (8 CTCL, 7 AD, 12 PSO). Each sample contained at least 35 images protein channels, each of resolution 2018 X 2018.
+
+## Availability
+
+Complete data available publicly over [Zenodo](zenodo-data-link). For the purpose of conserving memory, each of the images have been down-scaled to 512 X 512 pixels from their original resolution of 2018 X 2018 pixels.
+
+## Description
+
+The [repository](zenodo-data-link) follows the following data structure:
+
+1. File **data\_description.xlsx**: Provides information pertaining to *PatientID*, *SampleNumber* and *Condition*; this file has been color coded per condition for improved readability.
+
+2. File **additional\_metadata.xlsx**: Provides additional information pertaining to the samples specified in **data\_description.xlsx**.
+
+3. Directories **/AD**, **/PSO** and **/CTCL**: Folders containing the respective samples specified in **data\_description.xlsx** and **additional\_metadata.xlsx**. The sub directory organizations are self explanatory---they are of the form: **/Condition/PatientID\_<patientID>/SampleNumber\_<sampleNumber>/**. Each sample contains at least 35 .tif images, each corresponding to a (protein channel, dye) combination.
 
 <!------------------>
 
@@ -32,9 +48,9 @@ Step-1: Fit GMM model.
 
 Step-2: Find list of good split genes.
 
-Step-3: Calculate spread per celltype per gene in set {good_split_genes}.
+Step-3: Calculate spread per celltype per gene in set {good\_split\_genes}.
 
-Step-4: Arrange all genes in set {good_split_genes} in descending order, per celltype.
+Step-4: Arrange all genes in set {good\_split\_genes} in descending order, per celltype.
 
 Step-5: Pick {gene-g, celltype-C} that maximizes spread.
 
