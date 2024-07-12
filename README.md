@@ -181,5 +181,5 @@ Navigate  to */scripts/plots\_for\_paper/supfig7\_centrality\_scores/* and run *
 
 # Citing the work
 
-Please cite the paper as follows:
-- Will be updated once available.
+Please cite our work as follows:
+- Sarkar, S., Möller, A., Hartebrodt, A., Erdmann, M., Ostalecki, C., Baur, A. & Blumenthal, D. B. Spatial cell graph analysis reveals skin tissue organization characteristic for cutaneous T cell lymphoma. bioRxiv 2024.05.17.594629 (2024). doi:10.1101/2024.05.17.594629
