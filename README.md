@@ -8,7 +8,7 @@ This is a repository that contains information on how to reproduce results corre
 
 ## Overview
 
-As described in the [paper](https://paper-doi-when-available), the data used for our analyses comprised a total of 69 skin tissue samples (21 CTCL, 23 AD, 25 PSO), obtained from 27 treated patients (8 CTCL, 7 AD, 12 PSO). Each sample contained at least 35 images protein channels, each of resolution 2018 X 2018.
+As described in our [preprint](https://doi.org/10.1101/2024.05.17.594629), the data used for our analyses comprised a total of 69 skin tissue samples (21 CTCL, 23 AD, 25 PSO), obtained from 27 treated patients (8 CTCL, 7 AD, 12 PSO). Each sample contained at least 35 images protein channels, each of resolution 2018 X 2018.
 
 ## Availability
 
