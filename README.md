@@ -12,11 +12,11 @@ As described in the [paper](https://paper-doi-when-available), the data used for
 
 ## Availability
 
-Complete data available publicly over [Zenodo](zenodo-data-link). For the purpose of conserving memory, each of the images have been down-scaled to 512 X 512 pixels from their original resolution of 2018 X 2018 pixels.
+Complete data available publicly over [Zenodo](https://doi.org/10.5281/zenodo.11125482). For the purpose of conserving memory, each of the images have been down-scaled to 512 X 512 pixels from their original resolution of 2018 X 2018 pixels.
 
 ## Description
 
-The [repository](zenodo-data-link) follows the following data structure:
+The [repository](https://doi.org/10.5281/zenodo.11125482) follows the following data structure:
 
 1. File **data\_description.xlsx**: Provides information pertaining to *PatientID*, *SampleNumber* and *Condition*; this file has been color coded per condition for improved readability.
 
