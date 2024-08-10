@@ -13,7 +13,7 @@ def _show_gray_image_(image, axes, title_prefix=None, plot_title=None, title_loc
             plot_title=title_prefix + plot_title
         else:
             plot_title=title_prefix
-    axes.set_title(plot_title, loc=title_loc, fontsize=30, fontweight='bold') # fontsize=25, pad=20
+    axes.set_title(plot_title, loc=title_loc, fontsize=35, fontweight='bold') # fontsize=25, pad=20
     axes.grid(False)
     
     if legend:
@@ -21,6 +21,6 @@ def _show_gray_image_(image, axes, title_prefix=None, plot_title=None, title_loc
         legend_elements = [Line2D([0], [0], color='gray', lw=10, label=legend_labels[0]),
                            Line2D([0], [0], color='red', lw=10, label=legend_labels[1])]
         # axes.legend(handles=legend_elements, bbox_to_anchor=(1.00, 0.90), loc='lower left', fontsize=23)
-        axes.legend(handles=legend_elements, loc='upper right', fontsize=25)
+        axes.legend(handles=legend_elements, loc='upper right', fontsize=30)
     axes.grid(False)
     
