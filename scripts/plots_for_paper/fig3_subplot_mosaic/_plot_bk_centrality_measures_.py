@@ -68,6 +68,7 @@ def _plot_bk_centrality_measures_(p_values_cell_type_squidpy_centralityScores, d
     ax.set_yticklabels(yticks, size = 20) # size = 20
     # ax.tick_params(axis='x', which='major', labelsize=20) # or:
     ax.set_xticklabels(['Degree centrality', 'Closeness centrality'], size = 20) # size = 20
+    ax.get_legend().remove()
     ax.grid(False)
         
         

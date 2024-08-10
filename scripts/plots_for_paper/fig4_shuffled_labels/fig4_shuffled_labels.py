@@ -34,25 +34,60 @@ celltypes_of_interest=["T-cells", "T-cells", "T-cells", "T-cells", "T-cells", "T
 condition_pairs_of_interest=[('CTCL', 'AD'), ('CTCL', 'PSO'), ('AD', 'PSO'), ('CTCL', 'AD'), ('CTCL', 'PSO'), ('AD', 'PSO'), ('CTCL', 'AD'), ('CTCL', 'PSO'), ('AD', 'PSO'), ('CTCL', 'AD'), ('CTCL', 'PSO'), ('AD', 'PSO')]
 scores_of_interest=["entropy", "entropy", "entropy", "egophily", "egophily", "egophily", "entropy", "entropy", "entropy", "homophily", "homophily", "homophily"]
 
+# layout = [
+#     ["T-cells_entropy_CTCLvsAD", "T-cells_entropy_CTCLvsAD", "T-cells_entropy_CTCLvsPSO", "T-cells_entropy_CTCLvsPSO"], # "T-cells_egophily_CTCLvsAD", "T-cells_egophily_CTCLvsAD"],
+#     ["T-cells_entropy_ADvsPSO", "T-cells_entropy_ADvsPSO", "T-cells_egophily_CTCLvsAD", "T-cells_egophily_CTCLvsAD",],
+#     ["T-cells_egophily_CTCLvsPSO", "T-cells_egophily_CTCLvsPSO", "T-cells_egophily_ADvsPSO", "T-cells_egophily_ADvsPSO",],
+#     # --------
+#     ["Basal keratinocytes_entropy_CTCLvsAD", "Basal keratinocytes_entropy_CTCLvsAD", "Basal keratinocytes_entropy_CTCLvsPSO", "Basal keratinocytes_entropy_CTCLvsPSO"],
+#     ["Basal keratinocytes_entropy_ADvsPSO", "Basal keratinocytes_entropy_ADvsPSO", "Basal keratinocytes_homophily_CTCLvsAD", "Basal keratinocytes_homophily_CTCLvsAD"],
+#     ["Basal keratinocytes_homophily_CTCLvsPSO", "Basal keratinocytes_homophily_CTCLvsPSO", "Basal keratinocytes_homophily_ADvsPSO", "Basal keratinocytes_homophily_ADvsPSO"]
+# ]
+
+# layout = [
+#     ["T-cells_entropy_CTCLvsAD", "T-cells_egophily_CTCLvsAD", "Basal keratinocytes_homophily_CTCLvsAD"],
+#     ["T-cells_entropy_CTCLvsPSO", "T-cells_egophily_CTCLvsAD", "Basal keratinocytes_homophily_CTCLvsAD"],
+#     ["T-cells_entropy_ADvsPSO",  "T-cells_egophily_CTCLvsPSO", "Basal keratinocytes_homophily_CTCLvsPSO"],
+#     ["Basal keratinocytes_entropy_CTCLvsAD", "T-cells_egophily_CTCLvsPSO", "Basal keratinocytes_homophily_CTCLvsPSO"],
+#     ["Basal keratinocytes_entropy_CTCLvsPSO", "T-cells_egophily_ADvsPSO", "Basal keratinocytes_homophily_ADvsPSO"],
+#     ["Basal keratinocytes_entropy_ADvsPSO", "T-cells_egophily_ADvsPSO", "Basal keratinocytes_homophily_ADvsPSO"]    
+# ]
+
 layout = [
-    ["T-cells_entropy_CTCLvsAD", "T-cells_entropy_CTCLvsAD", "T-cells_entropy_CTCLvsPSO", "T-cells_entropy_CTCLvsPSO"], # "T-cells_egophily_CTCLvsAD", "T-cells_egophily_CTCLvsAD"],
-    ["T-cells_entropy_ADvsPSO", "T-cells_entropy_ADvsPSO", "T-cells_egophily_CTCLvsAD", "T-cells_egophily_CTCLvsAD",],
-    ["T-cells_egophily_CTCLvsPSO", "T-cells_egophily_CTCLvsPSO", "T-cells_egophily_ADvsPSO", "T-cells_egophily_ADvsPSO",],
-    # --------
-    ["Basal keratinocytes_entropy_CTCLvsAD", "Basal keratinocytes_entropy_CTCLvsAD", "Basal keratinocytes_entropy_CTCLvsPSO", "Basal keratinocytes_entropy_CTCLvsPSO"],
-    ["Basal keratinocytes_entropy_ADvsPSO", "Basal keratinocytes_entropy_ADvsPSO", "Basal keratinocytes_homophily_CTCLvsAD", "Basal keratinocytes_homophily_CTCLvsAD"],
-    ["Basal keratinocytes_homophily_CTCLvsPSO", "Basal keratinocytes_homophily_CTCLvsPSO", "Basal keratinocytes_homophily_ADvsPSO", "Basal keratinocytes_homophily_ADvsPSO"]
+    ["T-cells_entropy_CTCLvsAD", "Basal keratinocytes_entropy_CTCLvsAD", "T-cells_egophily_CTCLvsAD", "Basal keratinocytes_homophily_CTCLvsAD"],
+    ["T-cells_entropy_CTCLvsPSO", "Basal keratinocytes_entropy_CTCLvsPSO", "T-cells_egophily_CTCLvsPSO", "Basal keratinocytes_homophily_CTCLvsPSO"],
+    ["T-cells_entropy_ADvsPSO", "Basal keratinocytes_entropy_ADvsPSO", "T-cells_egophily_ADvsPSO", "Basal keratinocytes_homophily_ADvsPSO"]    
 ]
-fig, axes = plt.subplot_mosaic(layout, figsize=(25,25))
+
+fig, axes = plt.subplot_mosaic(layout, figsize=(30,15))
 for count in range(12):
     if scores_of_interest[count]=='egophily':
-        ylabel='Egophily'
+        # title='Egophily\n'
         local_heterogeneity_measure=f'{scores_of_interest[count]}_5'
     else:
-        ylabel=f'Local\n{scores_of_interest[count]}'
+        # title=f'Local {scores_of_interest[count]}\n'
         local_heterogeneity_measure=f'local_{scores_of_interest[count]}_5'
-    title=f'{celltypes_of_interest[count]} ({condition_pairs_of_interest[count][0]} vs. {condition_pairs_of_interest[count][1]})'
+    if count not in [0,3,6,9]:
+        title=None
+    else:
+        if count==0:
+            title='Local entropy\n(T cells)\n'
+        elif count==3:
+            title='Local entropy\n(basal\nkeratinocytes)\n'
+        elif count==6:
+            title='Egophily\n(T cells)\n'
+        else:
+            title='Local homophily\n(basal\nkeratinocytes)\n'
+    ylabel=f'{condition_pairs_of_interest[count][0]} vs. {condition_pairs_of_interest[count][1]}\n'
+    if count not in [0,1,2]:
+        ylabel=None
+    # if celltypes_of_interest[count]=='T-cells':
+    #     ylabel=f'T-cells\n({condition_pairs_of_interest[count][0]} vs. {condition_pairs_of_interest[count][1]})'
+    # elif celltypes_of_interest[count]=='Basal keratinocytes':
+    #     ylabel=f'Basal\nkeratinocytes\n({condition_pairs_of_interest[count][0]} vs. {condition_pairs_of_interest[count][1]})'
     xlabel="$-log_{10}$"+"($P_{shuffled}$)"
+    if count not in [2,5,8,11]:
+        xlabel=None
     if len(p_values_cell_type[p_values_cell_type['cell_type']==celltypes_of_interest[count]][p_values_cell_type['condition_1']==condition_pairs_of_interest[count][0]][p_values_cell_type['condition_2']==condition_pairs_of_interest[count][1]][p_values_cell_type['score']==local_heterogeneity_measure]['p_value'])==0:
         p=float(p_values_cell_type[p_values_cell_type['cell_type']==celltypes_of_interest[count]][p_values_cell_type['condition_1']==condition_pairs_of_interest[count][1]][p_values_cell_type['condition_2']==condition_pairs_of_interest[count][0]][p_values_cell_type['score']==local_heterogeneity_measure]['p_value'].values[0])
         p=-np.log10(p)
@@ -80,22 +115,35 @@ for count in range(12):
     ax=sns.histplot(ax=axes[axes_str], data=df, x="minus_log10_p_value", kde=True)
     ax.axvline(x=p, color='red')
     ax.set_title(title, fontsize=30)
-    ax.set_xlabel(xlabel, fontsize=25) 
-    ax.set_ylabel(ylabel, fontsize=25)
+    ax.set_xlabel(xlabel, fontsize=30) 
+    ax.set_ylabel(ylabel, fontsize=30)
     ax.tick_params(axis='x', which='major', labelsize=20)
     ax.tick_params(axis='y', which='major', labelsize=20)
     ax.grid(False)
     if count==3:
         trans = ax.get_xaxis_transform()
-        ax.text(2.35, 0.84, '$P_{original}=0$', transform=trans, fontsize=23, color='red')
+        ax.text(1.85, 0.89, '$P_{original}=0$', transform=trans, fontsize=23, color='red')
         # ax.legend(title='$P_{original}=0$', bbox_to_anchor=(-0.00, -0.00), loc='lower left', fontsize=23, labelcolor='red')
-
+    if count==9:
+        ax=axes[axes_str]
+        ax.grid(False)
+        ax.text(5.50, 18.50, 'Count', fontsize=25, color='black', rotation=90)
+    elif count==10:
+        ax=axes[axes_str]
+        ax.grid(False)
+        ax.text(30.00, 18.50, 'Count', fontsize=25, color='black', rotation=90)
+    elif count==11:
+        ax=axes[axes_str]
+        ax.grid(False)
+        ax.text(9.25, 18.50, 'Count', fontsize=25, color='black', rotation=90)
+    
+    
 # ========== Generate legend: ===========
 legend_elements = [Line2D([0], [0], color='red', lw=4, label='$-log_{10}$'+'($P_{original}$)')]
-plt.legend(handles=legend_elements, bbox_to_anchor=(-0.30, -0.65), loc='lower left', fontsize=23)
+plt.legend(handles=legend_elements, bbox_to_anchor=(-1.70, -0.75), loc='lower left', fontsize=27)
    
 # ========== Generate, save and show final plot (fig1): ==========
-plt.subplots_adjust(wspace=0.5, hspace=0.7)
+# plt.subplots_adjust(wspace=0.3, hspace=0.6)
 plt.savefig('fig4_shuffled_labels.pdf', format='pdf', bbox_inches='tight')
 plt.show()
 

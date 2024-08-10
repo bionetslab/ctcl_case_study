@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import itertools
 from statannotations.Annotator import Annotator
 from decimal import Decimal
+# from matplotlib.pyplot import setp
 
 def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=None, title_prefix=None, plot_title=None, title_loc=None, xlabel=None, palette=None):
     disease_combinations=list(itertools.combinations(conditions, 2))
@@ -79,6 +80,8 @@ def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_resul
         yticks.append(round(j,1))
     ax.set_yticklabels(yticks, size = 20) # size = 20
     ax.tick_params(axis='x', which='major', labelsize=20)
+    # setp(ax, frame_on=False)
+    ax.patch.set_edgecolor('black')
     ax.grid(False)
     
     

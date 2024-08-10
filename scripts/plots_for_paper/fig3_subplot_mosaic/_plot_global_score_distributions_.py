@@ -10,7 +10,7 @@ def _plot_global_score_distributions_(p_values_sample_wise, sample_results, args
     if palette:
         args['palette']=palette
     disease_combinations=list(itertools.combinations(conditions, 2))
-    ylabel='Global heterogeneity scores'
+    ylabel='Global\nheterogeneity\nscores'
     pairs=[]
     pvals=[]
     for j in ['global_entropy', 'global_homophily']:

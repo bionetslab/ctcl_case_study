@@ -10,6 +10,36 @@ from _generate_scatter_subplot_ import _generate_scatter_subplot_
 from _plot_global_score_distributions_ import _plot_global_score_distributions_
 import scanpy as sc
 
+abbr={
+              'B-cells': 'B',
+              'Basal keratinocytes': 'BK',
+              'Endothelial cells': 'En',
+              'Fibroblasts': 'Fi',
+              'Langerhans cells': 'La',
+              'Macrophages': 'Ma',
+              'Melanocytes': 'Me',
+              'Smooth muscle cells': 'SMC',
+              'Suprabasal keratinocytes': 'SK',
+              'T-cells': 'T',
+              'Unknown': 'Un'
+      }
+
+textstr = (r'$\bf{B}$: B-cells                                  '+
+    r'$\bf{BK}$: Basal keratinocytes       '+
+    r'$\bf{En}$: Endothelial cells              '+
+    r'$\bf{Fi}$: Fibroblasts'+
+    '\n'+
+    r'$\bf{La}$: Langerhans cells                '+
+    r'$\bf{Ma}$: Macrophages                '+
+    r'$\bf{Me}$: Melanocytes                  '+
+    r'$\bf{SMC}$: Smooth muscle cells'+
+    '\n'+
+    r'$\bf{SK}$: Suprabasal keratinocytes  '+
+    r'$\bf{T}$: T cells                               '+
+    r'$\bf{Un}$: Unknown')
+
+props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+
 # ========== Load and pre-process data required for generating plots: ==========
 cell_results=pd.read_csv(os.path.join('../../../results', 'cell_results.csv'))
 p_values_cell_type=pd.read_csv(os.path.join('../../../results', 'p_values_cell_type.csv'))
@@ -35,7 +65,7 @@ palette={"AD":(0.12156862745098039, 0.4666666666666667, 0.7058823529411765),
          "CTCL": (1.0, 0.4980392156862745, 0.054901960784313725)}
 fig = plt.figure(figsize=(25, 25))
 # subfigs = fig.subfigures(3, 1, hspace=0.07)
-subfigs = fig.subfigures(3, 1, hspace=0.00)
+subfigs = fig.subfigures(3, 1, hspace=0.0, height_ratios=[1, 2, 2])
 
 # ========== Create mosaic for: I. T-cell plots ==========
 layout = [
@@ -44,9 +74,9 @@ layout = [
     ["D1", "D1", "D2", "D2", "D3", "D3"],
     ["D1", "D1", "D2", "D2", "D3", "D3"],
 ]
-axes = subfigs[0].subplot_mosaic(layout)
-subfigs[0].set_facecolor('0.85')
-subfigs[0].suptitle(r'$\bf{A}$ Local heterogeneity, centrality and neighborhood enrichment scores (T-cells)', fontsize=30, x=0.3)
+axes = subfigs[1].subplot_mosaic(layout)
+# subfigs[1].set_facecolor('0.85')
+subfigs[1].suptitle(r'$\bf{C}$ Local heterogeneity, centrality and neighborhood enrichment scores (T cells)', fontsize=30, x=0.3)
 
 # ========== Data for plot A: ==========
 heterogeneity_measure='entropy'
@@ -57,8 +87,9 @@ subplot_axis_id=axes["A"]
 legend_loc=None
 title_prefix=None # title_prefix='A '
 title_loc='left'
+plot_title=r'$\bf{C1}$'
 # Generate plot-1:
-_plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, palette=palette)
+_plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, palette=palette, plot_title=plot_title)
 
 # ========== Data for plot B: ==========
 heterogeneity_measure='egophily'
@@ -69,8 +100,9 @@ subplot_axis_id=axes["B"]
 legend_loc=None
 title_prefix=None # title_prefix='B '
 title_loc='left'
+plot_title=r'$\bf{C2}$'
 # Generate plot-B:
-_plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, palette=palette)
+_plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, palette=palette,plot_title=plot_title)
 
 # ========== Data for plot C: ==========
 celltype='T-cells'
@@ -86,10 +118,11 @@ columns=scores+['condition']
 data=data[columns]
 subplot_axis_id=axes["C"]
 title_loc="left"
+plot_title=r'$\bf{C3}$'
 legend_loc="upper right"
 ylabel='Centrality scores'
 bbox_to_anchor=(1.3, 1.00)
-_plot_bk_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data, celltype, conditions, scores, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, ylabel=ylabel, palette=palette, bbox_to_anchor=bbox_to_anchor)
+_plot_bk_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data, celltype, conditions, scores, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, ylabel=ylabel, palette=palette, bbox_to_anchor=bbox_to_anchor, plot_title=plot_title)
 
 # ========== Data for plot D: ==========
 reference_celltype='T-cells'
@@ -104,23 +137,33 @@ for celltype in celltypes_:
     if cnt==1:
         # title_prefix='D '
         # suptitle='\t\t      '
-        ylabel='Neighborhood enrichment\n(z-scores)'
+        ylabel='Neighborhood\nenrichment\n(z-scores)'
+        if celltype=='Suprabasal keratinocytes':
+            plot_title=r'\bf{C4}\n                         T vs. SK'
+        else:
+            plot_title=str(r'$\bf{C4}$'+f'\n                         T vs. {abbr[celltype]}')
+        title_loc="left"
     else:
         # title_prefix=None
         # suptitle=None
         ylabel=None
-    if celltype=='Suprabasal keratinocytes':
-        plot_title='Supra keratinocytes'
-    else:
-        plot_title=str(f'{celltype}')
+        if celltype=='Suprabasal keratinocytes':
+            plot_title='T vs. suprabasal keratinocytes'
+        else:
+            plot_title=str(f'T vs. {abbr[celltype]}')
+        title_loc="center"
+    # if celltype=='Suprabasal keratinocytes':
+    #     plot_title='T cells vs. suprabasal keratinocytes'
+    # else:
+    #     plot_title=str(f'T cells vs. {celltype.lower()}')
     data=pd.concat([squidpy_nhoodEnrichment_results[squidpy_nhoodEnrichment_results['celltype_1']==celltype][squidpy_nhoodEnrichment_results['celltype_2']=='T-cells'], squidpy_nhoodEnrichment_results[squidpy_nhoodEnrichment_results['celltype_2']==celltype][squidpy_nhoodEnrichment_results['celltype_1']=='T-cells']], axis=0)
     subplot_axis_id=axes[f"D{cnt}"]
     data_=[]
     for condition in conditions:
         data_.append(data[data['condition']==condition])
     data=pd.concat(data_, axis=0)
-    _plot_bk_neighborhood_enrichment_(p_values_cell_type_squidpy_nhoodEnrichment, squidpy_nhoodEnrichment_results, data, celltype, reference_celltype, conditions, subplot_axis_id, title_prefix=title_prefix, plot_title=plot_title, suptitle=suptitle, ylabel=ylabel, palette=palette)
-
+    _plot_bk_neighborhood_enrichment_(p_values_cell_type_squidpy_nhoodEnrichment, squidpy_nhoodEnrichment_results, data, celltype, reference_celltype, conditions, subplot_axis_id, title_prefix=title_prefix, plot_title=plot_title, suptitle=suptitle, ylabel=ylabel, palette=palette,title_loc=title_loc)
+subfigs[1].subplots_adjust(wspace=0.45, hspace=1.3)
 
 # ========== Create mosaic for: II. Basal keratinocyte plots ==========
 layout = [
@@ -129,9 +172,9 @@ layout = [
     ["D1", "D1", "D1", "D1", "D1", "D1", ".", "D2", "D2", "D2", "D2", "D2", "D2", ".", "D3", "D3", "D3", "D3", "D3", "D3", ".", "D4", "D4", "D4", "D4", "D4", "D4", ".", "D5", "D5", "D5", "D5", "D5", "D5"],
     ["D1", "D1", "D1", "D1", "D1", "D1", ".", "D2", "D2", "D2", "D2", "D2", "D2", ".", "D3", "D3", "D3", "D3", "D3", "D3", ".", "D4", "D4", "D4", "D4", "D4", "D4", ".", "D5", "D5", "D5", "D5", "D5", "D5"],
 ]
-axes = subfigs[1].subplot_mosaic(layout)
-subfigs[1].set_facecolor('1.00')
-subfigs[1].suptitle(r'$\bf{B}$ Local heterogeneity, centrality and neighborhood enrichment scores (basal keratinocytes)', fontsize=30, x=0.35)
+axes = subfigs[2].subplot_mosaic(layout)
+subfigs[2].set_facecolor('1.00')
+subfigs[2].suptitle(r'$\bf{D}$ Local heterogeneity, centrality and neighborhood enrichment scores (basal keratinocytes)', fontsize=30, x=0.35)
 
 # ========== Data for plot A: ==========
 heterogeneity_measure='entropy'
@@ -143,8 +186,9 @@ legend_loc='lower right'
 # title_prefix='A '
 title_prefix=None
 title_loc='left'
+plot_title=r'$\bf{D1}$'
 # Generate plot-1:
-_plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, palette=palette)
+_plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, palette=palette, plot_title=plot_title)
 
 # ========== Data for plot B: ==========
 heterogeneity_measure='homophily'
@@ -156,8 +200,9 @@ legend_loc='upper left'
 # title_prefix='B '
 title_prefix=None
 title_loc='left'
+plot_title=r'$\bf{D2}$'
 # Generate plot-B:
-_plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, palette=palette)
+_plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_results, celltype, heterogeneity_measure, conditions, radii, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, palette=palette, plot_title=plot_title)
 
 # ========== Data for plot C: ==========
 celltype='Basal keratinocytes'
@@ -174,10 +219,11 @@ columns=scores+['condition']
 data=data[columns]
 subplot_axis_id=axes["C"]
 title_loc="left"
+plot_title=r'$\bf{D3}$'
 legend_loc="lower right"
 ylabel='Centrality scores'
 bbox_to_anchor=(1.3, 0.51)
-_plot_bk_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data, celltype, conditions, scores, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, ylabel=ylabel, palette=palette, bbox_to_anchor=bbox_to_anchor)
+_plot_bk_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data, celltype, conditions, scores, subplot_axis_id, legend_loc=legend_loc, title_prefix=title_prefix, title_loc=title_loc, ylabel=ylabel, palette=palette, bbox_to_anchor=bbox_to_anchor, plot_title=plot_title)
 
 # ========== Data for plot D: ==========
 reference_celltype='Basal keratinocytes'
@@ -192,34 +238,42 @@ for celltype in celltypes_:
     if cnt==1:
         # title_prefix='D '
         # suptitle='\t\t      '
-        ylabel='Neighborhood enrichment\n(z-scores)'
+        ylabel='Neighborhood\nenrichment\n(z-scores)'
+        title_loc="left"
+        if celltype=='Suprabasal keratinocytes':
+            plot_title=r'\bf{D4}\n         BK vs. SK'
+        else:
+            # plot_title=str(f'BK vs.\n{celltype.lower()}')
+            plot_title=str(r'$\bf{D4}$'+f'\n         BK vs. {abbr[celltype]}')
     else:
         # title_prefix=None
         # suptitle=None
         ylabel=None
-    if celltype=='Suprabasal keratinocytes':
-        plot_title='Supra keratinocytes'
-    else:
-        plot_title=str(f'{celltype}')
+        title_loc="center"
+        if celltype=='Suprabasal keratinocytes':
+            plot_title='BK vs. SK'
+        else:
+            # plot_title=str(f'BK vs.\n{celltype.lower()}')
+            plot_title=str(f'BK vs. {abbr[celltype]}')
     data=pd.concat([squidpy_nhoodEnrichment_results[squidpy_nhoodEnrichment_results['celltype_1']==celltype][squidpy_nhoodEnrichment_results['celltype_2']=='Basal keratinocytes'], squidpy_nhoodEnrichment_results[squidpy_nhoodEnrichment_results['celltype_2']==celltype][squidpy_nhoodEnrichment_results['celltype_1']=='Basal keratinocytes']], axis=0)
     subplot_axis_id=axes[f"D{cnt}"]
     data_=[]
     for condition in conditions:
         data_.append(data[data['condition']==condition])
     data=pd.concat(data_, axis=0)
-    _plot_bk_neighborhood_enrichment_(p_values_cell_type_squidpy_nhoodEnrichment, squidpy_nhoodEnrichment_results, data, celltype, reference_celltype, conditions, subplot_axis_id, title_prefix=title_prefix, plot_title=plot_title, suptitle=suptitle, ylabel=ylabel, palette=palette)
+    _plot_bk_neighborhood_enrichment_(p_values_cell_type_squidpy_nhoodEnrichment, squidpy_nhoodEnrichment_results, data, celltype, reference_celltype, conditions, subplot_axis_id, title_prefix=title_prefix, plot_title=plot_title, suptitle=suptitle, ylabel=ylabel, palette=palette, title_loc=title_loc)
+subfigs[2].subplots_adjust(wspace=0.45, hspace=1.3)
 
+subplot_axis_id.text(-15.10, -9.00, textstr, fontsize=27, verticalalignment='top', bbox=props)
 
-subfigs_nested = subfigs[2].subfigures(1, 2, wspace=0.00, width_ratios=[0.5, 0.5])
-
-
+subfigs_nested = subfigs[0].subfigures(1, 2, wspace=0.00, width_ratios=[0.5, 0.5])
 # ========== Create mosaic for: IIIA. Global heterogeneity distributions ==========
 layout = [
     ["global_heterogeneity_scores"]
 ]
 axes = subfigs_nested[0].subplot_mosaic(layout)
-subfigs_nested[0].set_facecolor('0.85')
-subfigs_nested[0].suptitle(r'$\bf{C}$ Global heterogeneity scores', fontsize=30, x=0.25)
+# subfigs_nested[0].set_facecolor('0.85')
+subfigs_nested[0].suptitle(r'$\bf{A}$ Global heterogeneity scores', fontsize=30, x=0.25)
 sample_results=pd.read_csv(os.path.join('../../../results', 'sample_results.csv'))
 p_values_sample_wise=pd.read_csv(os.path.join('../../../results', 'p_values_global.csv'))
 sample_results=sample_results.replace({"condition": conditions_abbreviations_dict})
@@ -232,7 +286,6 @@ args = dict(x='global_heterogeneity_measure', y='global_heterogeneity_score', da
 subplot_axis_id=axes["global_heterogeneity_scores"]
 _plot_global_score_distributions_(p_values_sample_wise, sample_results, args, conditions, subplot_axis_id, palette=palette)
 
-
 # ========== Create mosaic for: IIIB. Visual analyses ==========
 layout = [
     ["60", "60", "71", "71"],
@@ -241,9 +294,9 @@ layout = [
     ["295", "295", "307", "307"]
 ]
 axes = subfigs_nested[1].subplot_mosaic(layout)
-subfigs_nested[1].set_facecolor('0.85')
-subfigs_nested[1].suptitle(r'$\bf{D}$ Visual analyses (T-cells, basal keratinocytes)', fontsize=30, x=0.37)
-
+# subfigs_nested[1].set_facecolor('0.85')
+subfigs_nested[1].suptitle(r'$\bf{B}$ Visual analyses (T cells, basal keratinocytes)', fontsize=30, x=0.37)
+subfigs_nested[1].subplots_adjust(hspace=1.0)
 
 # =========== Read in spatial data: ===========
 # Case study 2: Samples 60, 82, 83, 70, 71, 72, 295, 296, 302, 303, 304, 305, 306 and 307 are of interest.
@@ -261,13 +314,13 @@ for filename in list_of_filenames:
     if file_count==0:
         # title_prefix='E '
         # title_loc='left'
-        ylabel='AD samples'
+        ylabel='AD\nsamples'
         legend=True
     # elif file_count==3:
     elif file_count==2:
         # title_prefix='F '
         # title_loc='left'
-        ylabel='CTCL samples'
+        ylabel='CTCL\nsamples'
         legend=None
     else:
         # title_prefix=None
@@ -276,7 +329,7 @@ for filename in list_of_filenames:
         legend=None
     print(f'Reading file {filename}...')
     subplot_axis_id=axes[list_of_files[file_count]]
-    adata = sc.read_h5ad('../../data/'+filename)
+    adata = sc.read_h5ad('../../../data/'+filename)
     prop_iodide=adata.uns['spatial']['images']['Propidium iodide']
     # isns.imgplot(img, cmap='gray', ax=subplot_axis_id)
     # subplot_axis_id.imshow(prop_iodide, cmap='gray', aspect='auto')
@@ -310,7 +363,7 @@ for filename in list_of_filenames:
 
 # ========== Generate, save and show final plot (fig1): ==========
 # plt.subplots_adjust(wspace=0.02, hspace=0.5)
-plt.subplots_adjust(wspace=0.45, hspace=3.3)
+# plt.subplots_adjust(wspace=0.45, hspace=3.3)
 plt.savefig('fig3_subplot_mosaic.pdf', format='pdf', bbox_inches='tight')
 # fig.tight_layout(pad=100.0)
 plt.show()

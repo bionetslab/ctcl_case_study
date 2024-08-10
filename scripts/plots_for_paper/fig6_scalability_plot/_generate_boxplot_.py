@@ -23,6 +23,7 @@ def _generate_boxplot_(data, var_name, val_name, subplot_axis_id, radii, legend_
         yticks.append(round(j,1))
     ax.set_yticklabels(yticks, size = 20) # size = 20
     ax.tick_params(axis='x', which='major', labelsize=20)
+    ax.yaxis.set_tick_params(which='both', labelleft=True)
     ax.grid(False)
     
     

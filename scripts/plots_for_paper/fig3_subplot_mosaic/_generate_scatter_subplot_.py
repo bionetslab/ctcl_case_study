@@ -36,7 +36,7 @@ def _generate_scatter_subplot_(background_image, scatter_plot_data, x, y, cellty
         sns.move_legend(
             ax,
             "lower center",
-            bbox_to_anchor=[1.090, -0.375],
+            bbox_to_anchor=[1.090, -0.400],
             ncol=3,
             title=legend_title,
             frameon=True,

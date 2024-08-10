@@ -49,9 +49,9 @@ def _generate_violinplot_(data, categories, x_col_name, y_col_name, p_value, sub
     ax = sns.violinplot(ax=subplot_axis_id, **args, cut=0, palette=palette)
     if title_prefix:
         plot_title=r"$\bf{" + title_prefix + "}$ " + plot_title
-    ax.set_title(plot_title, fontsize=35) # fontsize=25, pad=20
-    ax.set_xlabel(xlabel, fontsize=30) # fontsize=25, labelpad=20
-    ax.set_ylabel(ylabel, fontsize=30) # fontsize=25, labelpad=20
+    ax.set_title(plot_title, fontsize=30) # fontsize=25, pad=20
+    ax.set_xlabel(xlabel, fontsize=25) # fontsize=25, labelpad=20
+    ax.set_ylabel(ylabel, fontsize=25) # fontsize=25, labelpad=20
     # ax.set_xticklabels(categories, ) # size=20
     annot = Annotator(ax, pairs, **args)
     annot.configure(text_format='simple', loc='inside', verbose=2, fontsize=30) # fontsize=25
@@ -62,8 +62,8 @@ def _generate_violinplot_(data, categories, x_col_name, y_col_name, p_value, sub
     yticks=[]
     for j in ax.get_yticks():
         yticks.append(round(j,1))
-    ax.set_yticklabels(yticks, size = 30)
-    ax.tick_params(axis='x', which='major', labelsize=30)
+    ax.set_yticklabels(yticks, size = 20)
+    ax.tick_params(axis='x', which='major', labelsize=20)
     ax.grid(False)
 
 

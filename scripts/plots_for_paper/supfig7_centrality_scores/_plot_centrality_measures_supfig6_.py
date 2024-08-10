@@ -49,8 +49,8 @@ def _plot_centrality_measures_(p_values_cell_type_squidpy_centralityScores, data
     annot.configure(text_format='simple', loc='inside', verbose=2) # fontsize=25
     annot.set_custom_annotations(pvals_corrected)
     annot.annotate()
-    ax.set_xlabel('', fontsize=20, labelpad=20)
-    ax.set_ylabel('Centrality scores', fontsize=20) # fontsize=25, labelpad=20
+    ax.set_xlabel('', fontsize=20, labelpad=25)
+    ax.set_ylabel('Centrality scores', fontsize=25) # fontsize=25, labelpad=20
     ax.set_title(plot_title, fontsize=30) # fontsize=25, pad=20
     # sns.move_legend(
     #     ax, "lower right",

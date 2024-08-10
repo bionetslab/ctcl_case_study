@@ -131,8 +131,8 @@ for count in range(4):
         else:
             plot_title=r"$\bf{" + title_prefix + "}$"
     ax.set_title(plot_title, loc=title_loc, fontsize=30) # fontsize=25, pad=20
-    ax.set_xlabel(xlabel, fontsize=27) # fontsize=25, labelpad=20
-    ax.set_ylabel(ylabel, fontsize=27, labelpad=5) # fontsize=25, labelpad=20
+    ax.set_xlabel(xlabel, fontsize=25) # fontsize=25, labelpad=20
+    ax.set_ylabel(ylabel, fontsize=25, labelpad=5) # fontsize=25, labelpad=20
     # # ax.set(xticklabels=[]) # size=20
     # annot = Annotator(ax, pairs, **args)
     # annot.configure(text_format='simple', loc='inside', verbose=2, fontsize=20) # fontsize=25
@@ -145,11 +145,11 @@ for count in range(4):
     yticks=[]
     for j in ax.get_yticks():
         yticks.append(round(j,1))
-    ax.set_yticklabels(yticks, size = 23) # size = 20
+    ax.set_yticklabels(yticks, size = 20) # size = 20
     xticks=[]
     for r in radii:
         xticks.append(f'$r={r}$')
-    ax.set_xticklabels(xticks, size = 23) # size = 20
+    ax.set_xticklabels(xticks, size = 20) # size = 20
     # ax.tick_params(axis='x', which='major', labelsize=20)
     ax.grid(False)
     if legend:

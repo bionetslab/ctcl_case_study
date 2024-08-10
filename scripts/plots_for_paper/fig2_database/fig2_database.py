@@ -14,18 +14,31 @@ palette={"AD":(0.12156862745098039, 0.4666666666666667, 0.7058823529411765),
          "PSO": (0.17254901960784313, 0.6274509803921569, 0.17254901960784313),
          "CTCL": (1.0, 0.4980392156862745, 0.054901960784313725)}
 celltypes_lookup={
-        'B-cells': 'B cells',
-        'Basal keratinocytes': 'Basal kers',
-        'Endothelial cells': 'Endothelial',
-        'Fibroblasts': 'Fibroblasts',
-        'Langerhans cells': 'Langerhans',
-        'Macrophages': 'Macrophages',
-        'Melanocytes': 'Melanocytes',
-        'Smooth muscle cells': 'SMCs',
-        'Suprabasal keratinocytes': 'Supra kers',
-        'T-cells': 'T cells',
-        'Unknown': 'Unknown'
+        'B-cells': 'B',
+        'Basal keratinocytes': 'BK',
+        'Endothelial cells': 'En',
+        'Fibroblasts': 'Fi',
+        'Langerhans cells': 'La',
+        'Macrophages': 'Ma',
+        'Melanocytes': 'Me',
+        'Smooth muscle cells': 'SMC',
+        'Suprabasal keratinocytes': 'SK',
+        'T-cells': 'T',
+        'Unknown': 'Un'
     }
+textstr = '\n'.join((
+    r'$\bf{B}$: B-cells',
+    r'$\bf{BK}$: Basal keratinocytes',
+    r'$\bf{En}$: Endothelial cells',
+    r'$\bf{Fi}$: Fibroblasts',
+    r'$\bf{La}$: Langerhans cells',
+    r'$\bf{Ma}$: Macrophages',
+    r'$\bf{Me}$: Melanocytes',
+    r'$\bf{SMC}$: Smooth muscle cells',
+    r'$\bf{SK}$: Suprabasal keratinocytes',
+    r'$\bf{T}$: T cells',
+    r'$\bf{Un}$: Unknown'))
+props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
 # # ========== Create mosaic for "celltype_ratios": ==========
 layout = [
     ["celltype_ratios", "celltype_ratios", "celltype_ratios", "celltype_ratios", "celltype_ratios", "celltype_ratios"],
@@ -38,11 +51,11 @@ layout = [
 fig, axes = plt.subplot_mosaic(layout, figsize=(25,25))
 cell_type_ratios={}
 p_value_cell_type_ratios=[]
-for filename in os.listdir('../../cell_type_abundance_analyses/celltype_ratio'):
+for filename in os.listdir('../../../results/'):
     filename = os.fsdecode(filename)
     if filename.startswith('cell_type_ratios_'):
         print(filename)
-        cell_type_ratio = pd.read_csv('../../cell_type_abundance_analyses/celltype_ratio/'+filename)
+        cell_type_ratio = pd.read_csv('../../../results/'+filename)
         conditions_in_cell_type_ratio=list(set(cell_type_ratio.category))
         for condition in conditions_in_cell_type_ratio:
             if not(condition in cell_type_ratios.keys()):
@@ -91,9 +104,10 @@ for celltype, abbr in celltypes_lookup.items():
 ax.set_xticklabels(xticks, size = 20)
 # ylabel='$\overline{(\\frac{n_i}{N})}$'
 ylabel='Mean cell type fraction'
-ax.set_ylabel(ylabel, fontsize=35, labelpad=10)
-ax.set_xlabel(None, fontsize=30, labelpad=5)
+ax.set_ylabel(ylabel, fontsize=25, labelpad=10)
+ax.set_xlabel(None, fontsize=25, labelpad=5)
 axes["celltype_ratios"].grid(False)
+axes["celltype_ratios"].text(0.25, 0.98, textstr, transform=ax.transAxes, fontsize=27, verticalalignment='top', bbox=props)
 
 sns.move_legend(
     ax,
@@ -103,7 +117,7 @@ sns.move_legend(
     title=None,
     frameon=True,
     markerscale=3,
-    fontsize=25
+    fontsize=30
 )
 
 # =========== Plot for "PI": ===========
@@ -130,7 +144,7 @@ _show_gray_image_(img, subplot_axis_id, alpha=0.75, legend=True, legend_labels=[
 
 # ========== Generate, save and show final plot (fig1): ==========
 # plt.subplots_adjust(wspace=0.02, hspace=0.5)
-plt.subplots_adjust(wspace=0.5, hspace=0.4)
+plt.subplots_adjust(hspace=0.3)
 plt.savefig('fig2_database.pdf', format='pdf', bbox_inches='tight')
 # fig.tight_layout(pad=100.0)
 plt.show()
