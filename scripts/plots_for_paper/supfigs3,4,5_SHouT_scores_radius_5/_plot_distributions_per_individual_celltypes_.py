@@ -62,8 +62,8 @@ def _plot_distributions_per_individual_celltypes_(p_values_cell_type, cell_resul
         else:
             plot_title=r"$\bf{" + title_prefix + "}$"
     ax.set_title(plot_title, loc=title_loc, fontsize=25) # fontsize=25, pad=20
-    ax.set_xlabel(xlabel, fontsize=25) # fontsize=25, labelpad=20
-    ax.set_ylabel(ylabel, fontsize=25, labelpad=5) # fontsize=25, labelpad=20
+    ax.set_xlabel(xlabel, fontsize=20) # fontsize=25, labelpad=20
+    ax.set_ylabel(ylabel, fontsize=20, labelpad=5) # fontsize=25, labelpad=20
     ax.set(xticklabels=[]) # size=20
     annot = Annotator(ax, pairs, **args)
     annot.configure(text_format='simple', loc='inside', verbose=2, fontsize=20) # fontsize=25
