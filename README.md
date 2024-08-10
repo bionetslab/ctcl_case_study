@@ -8,15 +8,15 @@ This is a repository that contains information on how to reproduce results corre
 
 ## Overview
 
-As described in the [paper](https://paper-doi-when-available), the data used for our analyses comprised a total of 69 skin tissue samples (21 CTCL, 23 AD, 25 PSO), obtained from 27 treated patients (8 CTCL, 7 AD, 12 PSO). Each sample contained at least 35 images protein channels, each of resolution 2018 X 2018.
+As described in our [preprint](https://doi.org/10.1101/2024.05.17.594629), the data used for our analyses comprised a total of 69 skin tissue samples (21 CTCL, 23 AD, 25 PSO), obtained from 27 treated patients (8 CTCL, 7 AD, 12 PSO). Each sample contained at least 35 images protein channels, each of resolution 2018 X 2018.
 
 ## Availability
 
-Complete data available publicly over [Zenodo](zenodo-data-link). For the purpose of conserving memory, each of the images have been down-scaled to 512 X 512 pixels from their original resolution of 2018 X 2018 pixels.
+Complete data available publicly over [Zenodo](https://doi.org/10.5281/zenodo.11125482). For the purpose of conserving memory, each of the images have been down-scaled to 512 X 512 pixels from their original resolution of 2018 X 2018 pixels.
 
 ## Description
 
-The [repository](zenodo-data-link) follows the following data structure:
+The [repository](https://doi.org/10.5281/zenodo.11125482) follows the following data structure:
 
 1. File **data\_description.xlsx**: Provides information pertaining to *PatientID*, *SampleNumber* and *Condition*; this file has been color coded per condition for improved readability.
 
@@ -181,5 +181,5 @@ Navigate  to */scripts/plots\_for\_paper/supfig7\_centrality\_scores/* and run *
 
 # Citing the work
 
-Please cite the paper as follows:
-- Will be updated once available.
+Please cite our work as follows:
+- Sarkar, S., Möller, A., Hartebrodt, A., Erdmann, M., Ostalecki, C., Baur, A. & Blumenthal, D. B. Spatial cell graph analysis reveals skin tissue organization characteristic for cutaneous T cell lymphoma. bioRxiv 2024.05.17.594629 (2024). doi:10.1101/2024.05.17.594629
