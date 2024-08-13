@@ -73,7 +73,7 @@ if __name__ == '__main__':
             centrality_scores_per_graph_type=pd.concat(centrality_scores_per_graph_type, axis=1)
             sq_centrality_scores_results.append(centrality_scores_per_graph_type)
     centrality_scores=pd.concat(sq_centrality_scores_results, axis=0)
-    # centrality_scores.to_csv(os.path.join('../../results', 'squidpy_centralityScores_results.csv'))
+    centrality_scores.to_csv(os.path.join('../../results', 'squidpy_centralityScores_results.csv'))
     
     
     

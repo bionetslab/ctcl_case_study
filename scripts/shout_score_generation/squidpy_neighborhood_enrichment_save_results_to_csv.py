@@ -21,10 +21,6 @@ if __name__ == '__main__':
             celltypes=list(sorted(set(adata.obs['celltype'])))
             cluster_pairs_list=list(itt.combinations(celltypes, 2))
             nshape_interactions=len(cluster_pairs_list)
-            
-            
-            
-            
             ne_scores_per_graph_type=[]
             for graph_type in graph_types:
                 if graph_type=='delaunay_graph':
@@ -90,6 +86,7 @@ if __name__ == '__main__':
                 df['condition']=[adata.uns['Group'][0]]*nshape_interactions
                 ne_scores_per_graph_type.append(df)
             ne_scores_per_graph_type=pd.concat(ne_scores_per_graph_type, axis=1)
+            sq_ne_results.append(ne_scores_per_graph_type)
     sq_ne_results=pd.concat(sq_ne_results, axis=0)
     sq_ne_results.to_csv(os.path.join('../../results', 'squidpy_nhoodEnrichment_results.csv'))
     
